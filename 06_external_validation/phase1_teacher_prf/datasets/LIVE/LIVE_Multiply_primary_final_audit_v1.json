@@ -1,0 +1,90 @@
+{
+  "schema": "final_external_PRF_audit_v1",
+  "manifest_expected_pairs": 810,
+  "ABC_valid_pairs": 810,
+  "final_resolved_pairs": 810,
+  "unresolved_teacher_pairs": 0,
+  "paired_complete_queries": 405,
+  "paired_complete_pairs": 810,
+  "B_PRF_changed": 0,
+  "B_PRF_agreement": 1.0,
+  "B_wrong_to_PRF_correct": 0,
+  "B_correct_to_PRF_wrong": 0,
+  "changed_same_correctness_status": 0,
+  "net_correction": 0,
+  "mcnemar_exact_p": 1.0,
+  "ALL_VALID": {
+    "B": {
+      "N": 810,
+      "strict_accuracy": 1.0,
+      "coverage": 1.0,
+      "selective_accuracy": 1.0,
+      "precision_accept": 1.0,
+      "recall_accept": 1.0,
+      "f1_accept": 1.0,
+      "TP": 405,
+      "TN": 405,
+      "FP": 0,
+      "FN_including_ambiguous": 0,
+      "positive_acceptance": 1.0,
+      "hardnegative_reject": 1.0
+    },
+    "PRF": {
+      "N": 810,
+      "strict_accuracy": 1.0,
+      "coverage": 1.0,
+      "selective_accuracy": 1.0,
+      "precision_accept": 1.0,
+      "recall_accept": 1.0,
+      "f1_accept": 1.0,
+      "TP": 405,
+      "TN": 405,
+      "FP": 0,
+      "FN_including_ambiguous": 0,
+      "positive_acceptance": 1.0,
+      "hardnegative_reject": 1.0
+    }
+  },
+  "PAIRED_COMPLETE": {
+    "B": {
+      "N": 810,
+      "strict_accuracy": 1.0,
+      "coverage": 1.0,
+      "selective_accuracy": 1.0,
+      "precision_accept": 1.0,
+      "recall_accept": 1.0,
+      "f1_accept": 1.0,
+      "TP": 405,
+      "TN": 405,
+      "FP": 0,
+      "FN_including_ambiguous": 0,
+      "positive_acceptance": 1.0,
+      "hardnegative_reject": 1.0
+    },
+    "PRF": {
+      "N": 810,
+      "strict_accuracy": 1.0,
+      "coverage": 1.0,
+      "selective_accuracy": 1.0,
+      "precision_accept": 1.0,
+      "recall_accept": 1.0,
+      "f1_accept": 1.0,
+      "TP": 405,
+      "TN": 405,
+      "FP": 0,
+      "FN_including_ambiguous": 0,
+      "positive_acceptance": 1.0,
+      "hardnegative_reject": 1.0
+    }
+  },
+  "transition_table": {
+    "ACCEPT": {
+      "ACCEPT": 405,
+      "REJECT": 0
+    },
+    "REJECT": {
+      "ACCEPT": 0,
+      "REJECT": 405
+    }
+  }
+}

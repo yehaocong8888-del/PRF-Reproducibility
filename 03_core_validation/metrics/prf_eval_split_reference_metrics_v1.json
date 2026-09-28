@@ -1,0 +1,22 @@
+{
+  "method_raw": "PRF_BASELINE_EVAL_SPLIT",
+  "method": "Full PRF",
+  "model_type": "structured arbitration",
+  "calibration": "not applicable",
+  "eval_n": 3006,
+  "calib_n": 1288,
+  "tau_reject": null,
+  "tau_accept": null,
+  "eval_agreement_pct": 67.0,
+  "eval_coverage_pct": 86.16,
+  "eval_u_rate_pct": 13.84,
+  "eval_covered_agreement_pct": 77.76,
+  "eval_det_conflict_pct": 19.16,
+  "eval_A_to_R": 49,
+  "eval_R_to_A": 527,
+  "eval_pred_ACCEPT": 984,
+  "eval_pred_REJECT": 1606,
+  "eval_pred_AMBIGUOUS": 416,
+  "eval_direct_ACCEPT": 1817,
+  "eval_direct_REJECT": 1189
+}

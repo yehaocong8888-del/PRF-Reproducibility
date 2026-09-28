@@ -1,0 +1,15 @@
+{
+  "resume_from": "/mnt/f/PRF/loraUbuntu/GCSJ/prf_vl_student_v1/trainA_full_keep20260227_234225/ckpt_step020000",
+  "old_run_dir": "/mnt/f/PRF/loraUbuntu/GCSJ/prf_vl_student_v1/trainA_full_keep20260227_234225",
+  "keep_json": "<LOCAL_LINUX_HOME>/PRF_WORK_v1/keep_indices_trainA_v2.json",
+  "seed": 42,
+  "lr": 0.0001,
+  "use_ckpt": true,
+  "save_every": 500,
+  "log_every": 20,
+  "grad_clip": 1.0,
+  "start_step": 20000,
+  "target_step": 26607,
+  "resume_schedule_len": 6607,
+  "amp_dtype": "bfloat16"
+}

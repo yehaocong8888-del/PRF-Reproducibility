@@ -1,0 +1,3468 @@
+{
+  "schema": "PRF_G4_S2B_R_REPORT_GUIDED_CANONICAL_ASSET_RESOLUTION_V1",
+  "created_at": "2026-09-22T21:32:14.155050+08:00",
+  "external_validation_root": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation",
+  "g3n_final_audit": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3N_EXTERNAL_FINAL_AUDIT",
+  "policy": {
+    "main_settings": [
+      "PIPAL",
+      "LIVE",
+      "Waterloo",
+      "INRIA_Copydays",
+      "ISC2021",
+      "CLWD_controlled",
+      "LVW",
+      "IMD2020",
+      "COVERAGE200"
+    ],
+    "supplementary_settings": [
+      "COVERAGE1000"
+    ],
+    "KADID_TID": "ROUTE_ONLY_NOT_PAIR_LEVEL_ACCURACY"
+  },
+  "targets": {
+    "PIPAL": {
+      "expected_n": 2000,
+      "tokens": [
+        "pipal"
+      ],
+      "manifest_sha256": null,
+      "stage_hints": [],
+      "role": "MAIN"
+    },
+    "LIVE": {
+      "expected_n": 810,
+      "tokens": [
+        "live"
+      ],
+      "manifest_sha256": null,
+      "stage_hints": [],
+      "role": "MAIN"
+    },
+    "Waterloo": {
+      "expected_n": 3999,
+      "tokens": [
+        "waterloo",
+        "g3e",
+        "w2c"
+      ],
+      "manifest_sha256": null,
+      "stage_hints": [
+        "G3E",
+        "W2C"
+      ],
+      "role": "MAIN"
+    },
+    "INRIA_Copydays": {
+      "expected_n": 3284,
+      "tokens": [
+        "inria",
+        "copydays"
+      ],
+      "manifest_sha256": "9cecabaa042a80040a6b30f534ec8aaec65cd0e62249dd9cbfedfaa6b95a8603",
+      "stage_hints": [],
+      "role": "MAIN"
+    },
+    "ISC2021": {
+      "expected_n": 200,
+      "tokens": [
+        "isc2021",
+        "g3i"
+      ],
+      "manifest_sha256": "424c0a9fba3431308468d963f6fb9e3e01f52449228d504c20cc639d0612602d",
+      "stage_hints": [
+        "G3I_ISC2021"
+      ],
+      "role": "MAIN"
+    },
+    "CLWD_controlled": {
+      "expected_n": 80,
+      "tokens": [
+        "clwd",
+        "g3j",
+        "shared_watermark"
+      ],
+      "manifest_sha256": "7d74182a724d07050552ffbd2f00679402ed49e33996b02b9126a6b199ef60bd",
+      "stage_hints": [
+        "G3J_CLWD",
+        "01_shared_watermark_dev"
+      ],
+      "role": "MAIN"
+    },
+    "LVW": {
+      "expected_n": 2000,
+      "tokens": [
+        "lvw",
+        "g3k"
+      ],
+      "manifest_sha256": "fd628f2640cecee7344f5f30da92d73ea1fe487a741a6907728e84fe40b9c30b",
+      "stage_hints": [
+        "G3K_LVW"
+      ],
+      "role": "MAIN"
+    },
+    "IMD2020": {
+      "expected_n": 828,
+      "tokens": [
+        "imd2020",
+        "g3l"
+      ],
+      "manifest_sha256": "965cc6e8826ef95085e7da0673fca845daad79e1681d4431d665ada0c9890d80",
+      "stage_hints": [
+        "G3L_IMD2020"
+      ],
+      "role": "MAIN"
+    },
+    "COVERAGE200": {
+      "expected_n": 200,
+      "tokens": [
+        "coverage",
+        "g3g_inria_coverage"
+      ],
+      "manifest_sha256": "3ed9558c123bfd0c1ebd96765248aad10d7d5c5005af07dae7af50c1331d5c91",
+      "stage_hints": [
+        "G3G_INRIA_COVERAGE"
+      ],
+      "known_manifest": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3G_INRIA_COVERAGE\\01_manifest\\COVERAGE_pairs_v1.csv",
+      "role": "MAIN"
+    },
+    "COVERAGE1000": {
+      "expected_n": 1000,
+      "tokens": [
+        "coverage1000",
+        "g3g_coverage1000_confirmatory"
+      ],
+      "manifest_sha256": "ec16c828ae04f5892a1c0337db0e6072fbb5f611b6c8fdb906b58fa6996ae08e",
+      "stage_hints": [
+        "G3G_COVERAGE1000_CONFIRMATORY"
+      ],
+      "known_manifest": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3G_COVERAGE1000_CONFIRMATORY\\01_manifest\\COVERAGE1000_pairs_v1.csv",
+      "role": "SUPPLEMENTARY"
+    }
+  },
+  "structured_files_inspected": 274,
+  "resolution": {
+    "PIPAL": {
+      "role": "MAIN",
+      "expected_n": 2000,
+      "status": "MULTIPLE_N_MATCHES_REVIEW",
+      "selected": null,
+      "exact_sha_matches": [],
+      "exact_n_pair_candidates": [
+        "G3K_LVW\\01_manifest\\LVW_pairs_2000_v1.csv",
+        "G3D_PIPAL\\01_manifest\\PIPAL_D1_challenge1000_pairs_v1.csv",
+        "G3D_PIPAL\\01_manifest\\PIPAL_D1_challenge1000_pairs_v1.jsonl",
+        "G3D_PIPAL\\03_prf\\PIPAL_D1_challenge1000_b_pair_review_v3.jsonl",
+        "G3K_LVW\\99_final_closure\\B_pair_review_v3.jsonl"
+      ]
+    },
+    "LIVE": {
+      "role": "MAIN",
+      "expected_n": 810,
+      "status": "MULTIPLE_N_MATCHES_REVIEW",
+      "selected": null,
+      "exact_sha_matches": [],
+      "exact_n_pair_candidates": [
+        "G3F_LIVE_Multiply\\01_manifest\\LIVE_Multiply_primary_pairs_v1.csv",
+        "G3F_LIVE_Multiply\\01_manifest\\LIVE_Multiply_primary_pairs_v1.jsonl",
+        "G3F_LIVE_Multiply\\03_prf\\LIVE_Multiply_primary_b_pair_review_v3.jsonl"
+      ]
+    },
+    "Waterloo": {
+      "role": "MAIN",
+      "expected_n": 3999,
+      "status": "UNRESOLVED_REVIEW_REQUIRED",
+      "selected": null,
+      "exact_sha_matches": [],
+      "exact_n_pair_candidates": []
+    },
+    "INRIA_Copydays": {
+      "role": "MAIN",
+      "expected_n": 3284,
+      "status": "EXACT_SHA_RESOLVED",
+      "selected": {
+        "relative": "G3G_INRIA_COVERAGE\\01_manifest\\INRIA_Copydays_pairs_v1.csv",
+        "absolute": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3G_INRIA_COVERAGE\\01_manifest\\INRIA_Copydays_pairs_v1.csv",
+        "rows": 3284,
+        "sha256": "9cecabaa042a80040a6b30f534ec8aaec65cd0e62249dd9cbfedfaa6b95a8603",
+        "keys": [
+          "candidate_clip_similarity",
+          "candidate_id",
+          "candidate_path",
+          "crop_level",
+          "dataset",
+          "gold_label",
+          "negative_strategy",
+          "pair_id",
+          "positive_clip_similarity",
+          "query_id",
+          "query_path",
+          "same_source",
+          "strong_variant",
+          "subset"
+        ]
+      },
+      "exact_sha_matches": [
+        "G3G_INRIA_COVERAGE\\01_manifest\\INRIA_Copydays_pairs_v1.csv"
+      ],
+      "exact_n_pair_candidates": [
+        "G3G_INRIA_COVERAGE\\01_manifest\\INRIA_Copydays_pairs_v1.csv",
+        "G3G_INRIA_COVERAGE\\02_prf_inria\\INRIA_A_clip_pairs_v1.jsonl",
+        "G3G_INRIA_COVERAGE\\02_prf_inria\\INRIA_B_pair_review_v3.jsonl"
+      ]
+    },
+    "ISC2021": {
+      "role": "MAIN",
+      "expected_n": 200,
+      "status": "EXACT_SHA_RESOLVED",
+      "selected": {
+        "relative": "G3I_ISC2021\\01_manifest\\ISC2021_activation_pairs_200_v1.csv",
+        "absolute": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3I_ISC2021\\01_manifest\\ISC2021_activation_pairs_200_v1.csv",
+        "rows": 200,
+        "sha256": "424c0a9fba3431308468d963f6fb9e3e01f52449228d504c20cc639d0612602d",
+        "keys": [
+          "candidate_id",
+          "candidate_path",
+          "candidate_shard",
+          "clip_similarity",
+          "dataset",
+          "gold_label",
+          "pair_id",
+          "pair_type",
+          "pilot_index",
+          "query_id",
+          "query_path"
+        ]
+      },
+      "exact_sha_matches": [
+        "G3I_ISC2021\\01_manifest\\ISC2021_activation_pairs_200_v1.csv"
+      ],
+      "exact_n_pair_candidates": [
+        "G3I_ISC2021\\01_manifest\\ISC2021_activation_pairs_200_v1.csv",
+        "G3I_ISC2021\\99_final_closure\\B_pair_review_v3.jsonl",
+        "G3G_INRIA_COVERAGE\\01_manifest\\COVERAGE_pairs_v1.csv",
+        "G3G_INRIA_COVERAGE\\03_prf_coverage\\COVERAGE_A_clip_pairs_v1.jsonl",
+        "G3G_INRIA_COVERAGE\\03_prf_coverage\\COVERAGE_B_pair_review_v3.jsonl",
+        "G3G_INRIA_COVERAGE\\99_final_closure\\B_pair_review_v3.jsonl"
+      ]
+    },
+    "CLWD_controlled": {
+      "role": "MAIN",
+      "expected_n": 80,
+      "status": "EXACT_SHA_RESOLVED",
+      "selected": {
+        "relative": "G3J_CLWD\\01_shared_watermark_dev\\manifest\\CLWD_shared_watermark_DEV80_v2.csv",
+        "absolute": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3J_CLWD\\01_shared_watermark_dev\\manifest\\CLWD_shared_watermark_DEV80_v2.csv",
+        "rows": 80,
+        "sha256": "7d74182a724d07050552ffbd2f00679402ed49e33996b02b9126a6b199ef60bd",
+        "keys": [
+          "candidate_path",
+          "case_id",
+          "clean_A_id",
+          "clean_B_id",
+          "dataset",
+          "gold_label",
+          "logo_id",
+          "mask_fraction",
+          "pair_id",
+          "pair_type",
+          "query_path",
+          "shared_mask_path",
+          "stratum"
+        ]
+      },
+      "exact_sha_matches": [
+        "G3J_CLWD\\01_shared_watermark_dev\\manifest\\CLWD_shared_watermark_DEV80_v2.csv"
+      ],
+      "exact_n_pair_candidates": [
+        "G3J_CLWD\\01_shared_watermark_dev\\manifest\\CLWD_shared_watermark_DEV80_v2.csv",
+        "G3J_CLWD\\01_shared_watermark_dev\\02_prf_dev80\\CLWD_DEV80_A_clip_pairs_v1.jsonl",
+        "G3J_CLWD\\01_shared_watermark_dev\\manifest\\CLWD_shared_watermark_DEV80_v1.csv",
+        "G3J_CLWD\\01_shared_watermark_dev\\99_final_closure\\B_pair_review_v3.jsonl"
+      ]
+    },
+    "LVW": {
+      "role": "MAIN",
+      "expected_n": 2000,
+      "status": "EXACT_SHA_RESOLVED",
+      "selected": {
+        "relative": "G3K_LVW\\01_manifest\\LVW_pairs_2000_v1.csv",
+        "absolute": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3K_LVW\\01_manifest\\LVW_pairs_2000_v1.csv",
+        "rows": 2000,
+        "sha256": "fd628f2640cecee7344f5f30da92d73ea1fe487a741a6907728e84fe40b9c30b",
+        "keys": [
+          "A_decision",
+          "A_vote",
+          "alpha_path",
+          "candidate_id",
+          "candidate_path",
+          "case_id",
+          "clip_similarity",
+          "dataset",
+          "gold_label",
+          "mask_path",
+          "pair_id",
+          "pair_type",
+          "query_id",
+          "query_path"
+        ]
+      },
+      "exact_sha_matches": [
+        "G3K_LVW\\01_manifest\\LVW_pairs_2000_v1.csv"
+      ],
+      "exact_n_pair_candidates": [
+        "G3K_LVW\\01_manifest\\LVW_pairs_2000_v1.csv",
+        "G3K_LVW\\99_final_closure\\B_pair_review_v3.jsonl",
+        "G3D_PIPAL\\01_manifest\\PIPAL_D1_challenge1000_pairs_v1.csv",
+        "G3D_PIPAL\\01_manifest\\PIPAL_D1_challenge1000_pairs_v1.jsonl",
+        "G3D_PIPAL\\03_prf\\PIPAL_D1_challenge1000_b_pair_review_v3.jsonl"
+      ]
+    },
+    "IMD2020": {
+      "role": "MAIN",
+      "expected_n": 828,
+      "status": "EXACT_SHA_RESOLVED",
+      "selected": {
+        "relative": "G3L_IMD2020\\01_manifest\\IMD2020_pairs_828_v1.csv",
+        "absolute": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3L_IMD2020\\01_manifest\\IMD2020_pairs_828_v1.csv",
+        "rows": 828,
+        "sha256": "965cc6e8826ef95085e7da0673fca845daad79e1681d4431d665ada0c9890d80",
+        "keys": [
+          "A_decision",
+          "A_vote",
+          "candidate_id",
+          "candidate_path",
+          "case_id",
+          "clip_similarity",
+          "dataset",
+          "gold_label",
+          "mask_path",
+          "pair_id",
+          "pair_type",
+          "query_id",
+          "query_path",
+          "source_manipulation_count"
+        ]
+      },
+      "exact_sha_matches": [
+        "G3L_IMD2020\\01_manifest\\IMD2020_pairs_828_v1.csv"
+      ],
+      "exact_n_pair_candidates": [
+        "G3L_IMD2020\\01_manifest\\IMD2020_pairs_828_v1.csv",
+        "G3L_IMD2020\\99_final_closure\\B_pair_review_v3.jsonl"
+      ]
+    },
+    "COVERAGE200": {
+      "role": "MAIN",
+      "expected_n": 200,
+      "status": "EXACT_SHA_RESOLVED",
+      "selected": {
+        "relative": "G3G_INRIA_COVERAGE\\01_manifest\\COVERAGE_pairs_v1.csv",
+        "absolute": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3G_INRIA_COVERAGE\\01_manifest\\COVERAGE_pairs_v1.csv",
+        "rows": 200,
+        "sha256": "3ed9558c123bfd0c1ebd96765248aad10d7d5c5005af07dae7af50c1331d5c91",
+        "keys": [
+          "candidate_clip_similarity",
+          "candidate_id",
+          "candidate_path",
+          "coverage_id",
+          "dataset",
+          "gold_label",
+          "negative_strategy",
+          "pair_id",
+          "query_id",
+          "query_path",
+          "same_source",
+          "subset"
+        ]
+      },
+      "exact_sha_matches": [
+        "G3G_INRIA_COVERAGE\\01_manifest\\COVERAGE_pairs_v1.csv"
+      ],
+      "exact_n_pair_candidates": [
+        "G3G_INRIA_COVERAGE\\01_manifest\\COVERAGE_pairs_v1.csv",
+        "G3G_INRIA_COVERAGE\\03_prf_coverage\\COVERAGE_A_clip_pairs_v1.jsonl",
+        "G3G_INRIA_COVERAGE\\03_prf_coverage\\COVERAGE_B_pair_review_v3.jsonl",
+        "G3G_INRIA_COVERAGE\\99_final_closure\\B_pair_review_v3.jsonl",
+        "G3I_ISC2021\\01_manifest\\ISC2021_activation_pairs_200_v1.csv",
+        "G3I_ISC2021\\99_final_closure\\B_pair_review_v3.jsonl"
+      ]
+    },
+    "COVERAGE1000": {
+      "role": "SUPPLEMENTARY",
+      "expected_n": 1000,
+      "status": "EXACT_SHA_RESOLVED",
+      "selected": {
+        "relative": "G3G_COVERAGE1000_CONFIRMATORY\\01_manifest\\COVERAGE1000_pairs_v1.csv",
+        "absolute": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3G_COVERAGE1000_CONFIRMATORY\\01_manifest\\COVERAGE1000_pairs_v1.csv",
+        "rows": 1000,
+        "sha256": "ec16c828ae04f5892a1c0337db0e6072fbb5f611b6c8fdb906b58fa6996ae08e",
+        "keys": [
+          "A_decision",
+          "A_vote",
+          "candidate_case_id",
+          "candidate_id",
+          "candidate_path",
+          "case_id",
+          "clip_similarity",
+          "dataset",
+          "gold_label",
+          "negative_rank",
+          "pair_id",
+          "pair_type",
+          "query_id",
+          "query_index",
+          "query_path",
+          "source_case",
+          "source_manifest"
+        ]
+      },
+      "exact_sha_matches": [
+        "G3G_COVERAGE1000_CONFIRMATORY\\01_manifest\\COVERAGE1000_pairs_v1.csv"
+      ],
+      "exact_n_pair_candidates": [
+        "G3G_COVERAGE1000_CONFIRMATORY\\01_manifest\\COVERAGE1000_pairs_v1.csv",
+        "G3G_COVERAGE1000_CONFIRMATORY\\99_final_closure\\B_pair_review_v3.jsonl",
+        "G3D_PIPAL\\01_manifest\\PIPAL_D1_challenge1000_queries_v1.csv"
+      ]
+    }
+  },
+  "top_candidates": {
+    "PIPAL": [
+      {
+        "score": 265,
+        "rows": 2000,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3K_LVW\\01_manifest\\LVW_pairs_2000_v1.csv",
+        "sha256": "fd628f2640cecee7344f5f30da92d73ea1fe487a741a6907728e84fe40b9c30b",
+        "keys": [
+          "A_decision",
+          "A_vote",
+          "alpha_path",
+          "candidate_id",
+          "candidate_path",
+          "case_id",
+          "clip_similarity",
+          "dataset",
+          "gold_label",
+          "mask_path",
+          "pair_id",
+          "pair_type",
+          "query_id",
+          "query_path"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 260,
+        "rows": 2000,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3D_PIPAL\\01_manifest\\PIPAL_D1_challenge1000_pairs_v1.csv",
+        "sha256": "4c0bf8dfbdf2d652b21a21b55a7a1685d23a000e977d157c39831192c0026f79",
+        "keys": [
+          "A_decision",
+          "candidate_path",
+          "candidate_rank",
+          "candidate_reference_id",
+          "clip_similarity",
+          "dataset",
+          "ground_truth_same_reference",
+          "group_1",
+          "group_2",
+          "manifest_id",
+          "pair_id",
+          "pair_type",
+          "quality_score_raw",
+          "query_path",
+          "reference_id",
+          "retrieval_margin"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=pipal",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS"
+        ]
+      },
+      {
+        "score": 260,
+        "rows": 2000,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3D_PIPAL\\01_manifest\\PIPAL_D1_challenge1000_pairs_v1.jsonl",
+        "sha256": "183e7ae5e605700d7f953c66c3fb597323d1b8f3dff00e0f9035a8d9f7261342",
+        "keys": [
+          "A_decision",
+          "candidate_path",
+          "candidate_rank",
+          "candidate_reference_id",
+          "clip_similarity",
+          "dataset",
+          "ground_truth_same_reference",
+          "group_1",
+          "group_2",
+          "manifest_id",
+          "pair_id",
+          "pair_type",
+          "quality_score_raw",
+          "query_path",
+          "reference_id",
+          "retrieval_margin"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=pipal",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS"
+        ]
+      },
+      {
+        "score": 260,
+        "rows": 2000,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3D_PIPAL\\03_prf\\PIPAL_D1_challenge1000_b_pair_review_v3.jsonl",
+        "sha256": "62f0088ce288d0a5a5aedf5f220b3ba18f63cd9669e27760fdb3599118eefd97",
+        "keys": [
+          "b",
+          "candidate_path",
+          "pair_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=pipal",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS"
+        ]
+      },
+      {
+        "score": 247,
+        "rows": 2000,
+        "role_guess": "FINAL_RESULT",
+        "relative": "G3K_LVW\\99_final_closure\\final_results_v1.csv",
+        "sha256": "a45099c521ffc742742e9ca2d3e93071159240c36cd1e18554c4ede8333117e0",
+        "keys": [
+          "A_vote",
+          "B_final",
+          "C_decision",
+          "C_delta",
+          "candidate_path",
+          "dataset",
+          "final_decision",
+          "final_source",
+          "force_dispute",
+          "gold_label",
+          "pair_id",
+          "query_path",
+          "schema",
+          "teacher_decision",
+          "teacher_routed"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_PRED_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 247,
+        "rows": 2000,
+        "role_guess": "FINAL_RESULT",
+        "relative": "G3K_LVW\\99_final_closure\\full_prf_final_v1.jsonl",
+        "sha256": "a31c9336962ea378f0e000bac7ea17b83a77c81cd46653350cb33d7def04cab2",
+        "keys": [
+          "A_vote",
+          "B_final",
+          "C_decision",
+          "C_delta",
+          "candidate_path",
+          "dataset",
+          "final_decision",
+          "final_source",
+          "force_dispute",
+          "gold_label",
+          "pair_id",
+          "query_path",
+          "schema",
+          "teacher_decision",
+          "teacher_routed"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_PRED_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 242,
+        "rows": 2000,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3K_LVW\\99_final_closure\\B_pair_review_v3.jsonl",
+        "sha256": "e3d98bb42dc3f8593c35a0397eee81e817b2477a1b6d824a4ae30fd02e03ed90",
+        "keys": [
+          "b",
+          "candidate_path",
+          "pair_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 232,
+        "rows": 2000,
+        "role_guess": "OTHER",
+        "relative": "G3K_LVW\\99_final_closure\\merged_abc_votes_v1.jsonl",
+        "sha256": "ba352c64e903f1a4dfbb381ec7be28fc7262cceaac08ec75bcf69c89092a4448",
+        "keys": [
+          "A",
+          "B",
+          "C",
+          "auto_final",
+          "candidate_path",
+          "force_dispute",
+          "gold_label",
+          "pair_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 220,
+        "rows": 2000,
+        "role_guess": "OTHER",
+        "relative": "G3K_LVW\\02_A\\LVW_A_v1.jsonl",
+        "sha256": "4f5ca85c940042359f9142138b69bc05a2e8087119cf7c141bc8783bdfd73883",
+        "keys": [
+          "A_decision",
+          "A_vote",
+          "alpha_path",
+          "candidate_id",
+          "candidate_path",
+          "case_id",
+          "clip_similarity",
+          "dataset",
+          "gold_label",
+          "mask_path",
+          "pair_id",
+          "pair_type",
+          "query_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 215,
+        "rows": 2000,
+        "role_guess": "OTHER",
+        "relative": "G3D_PIPAL\\03_prf\\PIPAL_D1_challenge1000_c_noise_maskclip_v4.jsonl",
+        "sha256": "e1860e4ecd8ec2f57528dcfed24e33821b4970f9dc772c94e0ffb2b0e71016d1",
+        "keys": [
+          "C_decision",
+          "C_explain",
+          "candidate_path",
+          "cover_frac_capped",
+          "cover_frac_raw",
+          "mask_clip_delta",
+          "mask_clip_masked",
+          "mask_clip_raw",
+          "pair_id",
+          "polygon",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=pipal",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS"
+        ]
+      }
+    ],
+    "LIVE": [
+      {
+        "score": 260,
+        "rows": 810,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3F_LIVE_Multiply\\01_manifest\\LIVE_Multiply_primary_pairs_v1.csv",
+        "sha256": "3f976711bacf93c4a90cc90bf621e7dbe188fe8ba0f246c9ece9b70ed366587e",
+        "keys": [
+          "A_decision",
+          "DMOS",
+          "candidate_path",
+          "candidate_rank",
+          "candidate_reference_id",
+          "clip_similarity",
+          "dataset",
+          "distortion_chain",
+          "ground_truth_same_reference",
+          "level_1",
+          "level_2",
+          "manifest_id",
+          "pair_id",
+          "pair_type",
+          "part",
+          "query_path",
+          "retrieval_margin"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=live",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS"
+        ]
+      },
+      {
+        "score": 260,
+        "rows": 810,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3F_LIVE_Multiply\\01_manifest\\LIVE_Multiply_primary_pairs_v1.jsonl",
+        "sha256": "a255faef4ee39b596b7325c171714cd366303a1bc1df984f1c35b997133e16ea",
+        "keys": [
+          "A_decision",
+          "DMOS",
+          "candidate_path",
+          "candidate_rank",
+          "candidate_reference_id",
+          "clip_similarity",
+          "dataset",
+          "distortion_chain",
+          "ground_truth_same_reference",
+          "level_1",
+          "level_2",
+          "manifest_id",
+          "pair_id",
+          "pair_type",
+          "part",
+          "query_path",
+          "retrieval_margin"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=live",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS"
+        ]
+      },
+      {
+        "score": 260,
+        "rows": 810,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3F_LIVE_Multiply\\03_prf\\LIVE_Multiply_primary_b_pair_review_v3.jsonl",
+        "sha256": "27176891e47954065cd222a69acc8a58bf2e9f7a79a705820197ae31306081a1",
+        "keys": [
+          "b",
+          "candidate_path",
+          "pair_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=live",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS"
+        ]
+      },
+      {
+        "score": 215,
+        "rows": 810,
+        "role_guess": "OTHER",
+        "relative": "G3F_LIVE_Multiply\\03_prf\\LIVE_Multiply_primary_c_noise_maskclip_v4.jsonl",
+        "sha256": "002c39f8c3d730b6933889f3ce4f1ac8cc62c1aa11f5fb0fbc01f22a3ce7de00",
+        "keys": [
+          "C_decision",
+          "C_explain",
+          "candidate_path",
+          "cover_frac_capped",
+          "cover_frac_raw",
+          "mask_clip_delta",
+          "mask_clip_masked",
+          "mask_clip_raw",
+          "pair_id",
+          "polygon",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=live",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS"
+        ]
+      },
+      {
+        "score": 215,
+        "rows": 810,
+        "role_guess": "OTHER",
+        "relative": "G3F_LIVE_Multiply\\03_prf\\LIVE_Multiply_primary_merged_abc_votes_v1.jsonl",
+        "sha256": "5d8e4f16cbb90be9e2c7abd30f58ca095c0d499526cba857c7c5ac5e0b524d30",
+        "keys": [
+          "A",
+          "B",
+          "C",
+          "DMOS",
+          "auto_final",
+          "candidate_path",
+          "dataset",
+          "distortion_chain",
+          "force_dispute",
+          "ground_truth_same_reference",
+          "level_1",
+          "level_2",
+          "manifest_id",
+          "pair_id",
+          "pair_type",
+          "part",
+          "query_path",
+          "retrieval_margin",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=live",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS"
+        ]
+      },
+      {
+        "score": 165,
+        "rows": 4000,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3E_Waterloo\\01_benchmark\\metadata\\waterloo_pairs_4000_v1.jsonl",
+        "sha256": "2384dc2167d5e5d47140ded381b7f122a942c42b792a41281e57b8bb9d4682ea",
+        "keys": [
+          "candidate_path",
+          "candidate_source_id",
+          "distortion_type",
+          "distortion_type_id",
+          "expected_decision",
+          "ground_truth",
+          "level",
+          "matlab_seed",
+          "negative_control",
+          "pair_id",
+          "query_path",
+          "query_source_id",
+          "schema",
+          "seed_index0"
+        ],
+        "score_reasons": [
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 165,
+        "rows": 4000,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3E_Waterloo\\02_prf_full\\waterloo_B_pair_review_v3.jsonl",
+        "sha256": "538e0a196262acd9e3c7f38fbbb7e68f1d61cd60cccf7c6e150fdb6666963cf9",
+        "keys": [
+          "b",
+          "candidate_path",
+          "candidate_source_id",
+          "distortion_type",
+          "distortion_type_id",
+          "expected_decision",
+          "ground_truth",
+          "latency_sec",
+          "level",
+          "matlab_seed",
+          "negative_control",
+          "pair_id",
+          "query_path",
+          "query_source_id",
+          "schema",
+          "seed_index0",
+          "timestamp"
+        ],
+        "score_reasons": [
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 165,
+        "rows": 1000,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3G_COVERAGE1000_CONFIRMATORY\\01_manifest\\COVERAGE1000_pairs_v1.csv",
+        "sha256": "ec16c828ae04f5892a1c0337db0e6072fbb5f611b6c8fdb906b58fa6996ae08e",
+        "keys": [
+          "A_decision",
+          "A_vote",
+          "candidate_case_id",
+          "candidate_id",
+          "candidate_path",
+          "case_id",
+          "clip_similarity",
+          "dataset",
+          "gold_label",
+          "negative_rank",
+          "pair_id",
+          "pair_type",
+          "query_id",
+          "query_index",
+          "query_path",
+          "source_case",
+          "source_manifest"
+        ],
+        "score_reasons": [
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 165,
+        "rows": 200,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3G_INRIA_COVERAGE\\01_manifest\\COVERAGE_pairs_v1.csv",
+        "sha256": "3ed9558c123bfd0c1ebd96765248aad10d7d5c5005af07dae7af50c1331d5c91",
+        "keys": [
+          "candidate_clip_similarity",
+          "candidate_id",
+          "candidate_path",
+          "coverage_id",
+          "dataset",
+          "gold_label",
+          "negative_strategy",
+          "pair_id",
+          "query_id",
+          "query_path",
+          "same_source",
+          "subset"
+        ],
+        "score_reasons": [
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 165,
+        "rows": 3284,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3G_INRIA_COVERAGE\\01_manifest\\INRIA_Copydays_pairs_v1.csv",
+        "sha256": "9cecabaa042a80040a6b30f534ec8aaec65cd0e62249dd9cbfedfaa6b95a8603",
+        "keys": [
+          "candidate_clip_similarity",
+          "candidate_id",
+          "candidate_path",
+          "crop_level",
+          "dataset",
+          "gold_label",
+          "negative_strategy",
+          "pair_id",
+          "positive_clip_similarity",
+          "query_id",
+          "query_path",
+          "same_source",
+          "strong_variant",
+          "subset"
+        ],
+        "score_reasons": [
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      }
+    ],
+    "Waterloo": [
+      {
+        "score": 310,
+        "rows": 3999,
+        "role_guess": "OTHER",
+        "relative": "G3E_Waterloo\\02_prf_full\\waterloo_C_noise_maskclip_v4.jsonl",
+        "sha256": "9fcd0eeda0d5a73111b6283c875e702d904b2b8b56d1295af5596f82c7444740",
+        "keys": [
+          "C_decision",
+          "C_explain",
+          "candidate_path",
+          "candidate_source_id",
+          "cover_frac_capped",
+          "cover_frac_raw",
+          "distortion_type",
+          "distortion_type_id",
+          "expected_decision",
+          "ground_truth",
+          "latency_sec",
+          "level",
+          "mask_clip_delta",
+          "mask_clip_masked",
+          "mask_clip_raw",
+          "matlab_seed",
+          "negative_control",
+          "pair_id",
+          "polygon",
+          "query_path",
+          "query_source_id",
+          "schema",
+          "seed_index0",
+          "timestamp"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=waterloo|g3e|G3E",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 310,
+        "rows": 3999,
+        "role_guess": "OTHER",
+        "relative": "G3E_Waterloo\\02_prf_full\\waterloo_merged_abc_v1.jsonl",
+        "sha256": "e7c8ee586c91e8406c98c470c179dbbe2f8fec4501446afaae445385e92e50d9",
+        "keys": [
+          "A",
+          "B",
+          "C",
+          "auto_final",
+          "candidate_path",
+          "candidate_source_id",
+          "distortion_type",
+          "distortion_type_id",
+          "expected_decision",
+          "force_dispute",
+          "ground_truth",
+          "level",
+          "matlab_seed",
+          "negative_control",
+          "pair_id",
+          "pipeline_status",
+          "query_path",
+          "query_source_id",
+          "schema",
+          "seed_index0"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=waterloo|g3e|G3E",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 265,
+        "rows": 3999,
+        "role_guess": "FINAL_RESULT",
+        "relative": "G3E_Waterloo\\03_teacher_direct30b\\waterloo_full_prf_final_v1.jsonl",
+        "sha256": "7f2a16540f4131c4f76b775cd3cc5080e2986a52526568f2fff341838ff0cdaa",
+        "keys": [
+          "B_decision",
+          "B_equals_PRF",
+          "PRF_final",
+          "PRF_source",
+          "distortion_type",
+          "expected_decision",
+          "ground_truth",
+          "level",
+          "pair_id",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=waterloo|g3e|G3E",
+          "PAIR_ID",
+          "GT_FIELD",
+          "FINAL_PRED_FIELD"
+        ]
+      },
+      {
+        "score": 255,
+        "rows": 4000,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3E_Waterloo\\01_benchmark\\metadata\\waterloo_pairs_4000_v1.jsonl",
+        "sha256": "2384dc2167d5e5d47140ded381b7f122a942c42b792a41281e57b8bb9d4682ea",
+        "keys": [
+          "candidate_path",
+          "candidate_source_id",
+          "distortion_type",
+          "distortion_type_id",
+          "expected_decision",
+          "ground_truth",
+          "level",
+          "matlab_seed",
+          "negative_control",
+          "pair_id",
+          "query_path",
+          "query_source_id",
+          "schema",
+          "seed_index0"
+        ],
+        "score_reasons": [
+          "TOKENS=waterloo|g3e|G3E",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 255,
+        "rows": 4000,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3E_Waterloo\\02_prf_full\\waterloo_B_pair_review_v3.jsonl",
+        "sha256": "538e0a196262acd9e3c7f38fbbb7e68f1d61cd60cccf7c6e150fdb6666963cf9",
+        "keys": [
+          "b",
+          "candidate_path",
+          "candidate_source_id",
+          "distortion_type",
+          "distortion_type_id",
+          "expected_decision",
+          "ground_truth",
+          "latency_sec",
+          "level",
+          "matlab_seed",
+          "negative_control",
+          "pair_id",
+          "query_path",
+          "query_source_id",
+          "schema",
+          "seed_index0",
+          "timestamp"
+        ],
+        "score_reasons": [
+          "TOKENS=waterloo|g3e|G3E",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 225,
+        "rows": 4000,
+        "role_guess": "TEACHER",
+        "relative": "G3E_Waterloo\\03_teacher_direct30b\\waterloo_direct30b_v1.jsonl",
+        "sha256": "db2bca1a9a6c0009d915fe30f910781df64f6bb8d35c4e73492a4cea662879d8",
+        "keys": [
+          "candidate_path",
+          "candidate_source_id",
+          "confidence",
+          "distortion_type",
+          "distortion_type_id",
+          "expected_decision",
+          "ground_truth",
+          "latency_sec",
+          "level",
+          "pair_id",
+          "prediction",
+          "query_path",
+          "query_source_id",
+          "raw",
+          "reason",
+          "schema",
+          "timestamp"
+        ],
+        "score_reasons": [
+          "TOKENS=waterloo|g3e|G3E",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_PRED_FIELD"
+        ]
+      },
+      {
+        "score": 210,
+        "rows": 4000,
+        "role_guess": "OTHER",
+        "relative": "G3E_Waterloo\\02_prf_full\\waterloo_A_clip_v1.jsonl",
+        "sha256": "b0031dfc9daf49170864e8310f53256c4cc0db8f04cc152f0721b7700b6a78a5",
+        "keys": [
+          "A_decision",
+          "A_rank",
+          "candidate_path",
+          "candidate_source_id",
+          "clip_similarity",
+          "distortion_type",
+          "distortion_type_id",
+          "expected_decision",
+          "ground_truth",
+          "level",
+          "matlab_seed",
+          "negative_control",
+          "pair_id",
+          "query_path",
+          "query_source_id",
+          "schema",
+          "seed_index0"
+        ],
+        "score_reasons": [
+          "TOKENS=waterloo|g3e|G3E",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 210,
+        "rows": 752,
+        "role_guess": "TEACHER",
+        "relative": "G3E_Waterloo\\02_prf_full\\waterloo_dispute_for_teacher_v1.jsonl",
+        "sha256": "4e986437866c36ace0559cb694d2f571b69a1ba21fe968080e3fd939381e2be8",
+        "keys": [
+          "A",
+          "B",
+          "C",
+          "auto_final",
+          "candidate_path",
+          "candidate_source_id",
+          "distortion_type",
+          "distortion_type_id",
+          "expected_decision",
+          "force_dispute",
+          "ground_truth",
+          "level",
+          "matlab_seed",
+          "negative_control",
+          "pair_id",
+          "pipeline_status",
+          "query_path",
+          "query_source_id",
+          "schema",
+          "seed_index0"
+        ],
+        "score_reasons": [
+          "TOKENS=waterloo|g3e|G3E",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 210,
+        "rows": 1,
+        "role_guess": "OTHER",
+        "relative": "G3E_Waterloo\\02_prf_full\\waterloo_protocol_invalid_v1.jsonl",
+        "sha256": "96717624253c456aef78d7a9e514c2032b2a357bf00c6e499576403e1c0d2538",
+        "keys": [
+          "candidate_path",
+          "candidate_source_id",
+          "distortion_type",
+          "distortion_type_id",
+          "expected_decision",
+          "failure_count_logged",
+          "failure_errors",
+          "ground_truth",
+          "handling",
+          "level",
+          "manual_label_added",
+          "matlab_seed",
+          "missing_stages",
+          "negative_control",
+          "pair_id",
+          "pipeline_status",
+          "prompt_modified",
+          "query_path",
+          "query_source_id",
+          "schema",
+          "seed_index0",
+          "threshold_modified"
+        ],
+        "score_reasons": [
+          "TOKENS=waterloo|g3e|G3E",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 210,
+        "rows": 752,
+        "role_guess": "TEACHER",
+        "relative": "G3E_Waterloo\\03_teacher_direct30b\\waterloo_teacher_30b_v1.jsonl",
+        "sha256": "28e73718484556e3e8c6258c6c5d70e3712cb7bb01ca6b15001e704d6356752a",
+        "keys": [
+          "candidate_path",
+          "candidate_source_id",
+          "distortion_type",
+          "ground_truth",
+          "latency_sec",
+          "level",
+          "pair_id",
+          "query_path",
+          "query_source_id",
+          "schema",
+          "teacher",
+          "timestamp"
+        ],
+        "score_reasons": [
+          "TOKENS=waterloo|g3e|G3E",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      }
+    ],
+    "INRIA_Copydays": [
+      {
+        "score": 825,
+        "rows": 3284,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3G_INRIA_COVERAGE\\01_manifest\\INRIA_Copydays_pairs_v1.csv",
+        "sha256": "9cecabaa042a80040a6b30f534ec8aaec65cd0e62249dd9cbfedfaa6b95a8603",
+        "keys": [
+          "candidate_clip_similarity",
+          "candidate_id",
+          "candidate_path",
+          "crop_level",
+          "dataset",
+          "gold_label",
+          "negative_strategy",
+          "pair_id",
+          "positive_clip_similarity",
+          "query_id",
+          "query_path",
+          "same_source",
+          "strong_variant",
+          "subset"
+        ],
+        "score_reasons": [
+          "EXACT_MANIFEST_SHA",
+          "EXACT_N",
+          "TOKENS=inria|copydays",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 325,
+        "rows": 3284,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3G_INRIA_COVERAGE\\02_prf_inria\\INRIA_A_clip_pairs_v1.jsonl",
+        "sha256": "d371b965c33d8fa9f675ca9dc088d2567c64f5ae99dca7a73c7c9127c19bcc3f",
+        "keys": [
+          "A_decision",
+          "A_rank",
+          "A_vote",
+          "candidate_id",
+          "candidate_path",
+          "clip_similarity",
+          "crop_level",
+          "dataset",
+          "gold_label",
+          "pair_id",
+          "query_id",
+          "query_path",
+          "same_source",
+          "schema",
+          "strong_variant",
+          "subset"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=inria|copydays",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 325,
+        "rows": 3284,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3G_INRIA_COVERAGE\\02_prf_inria\\INRIA_B_pair_review_v3.jsonl",
+        "sha256": "d02241f5802a2adaac2b971e001ba88c377a5da328289d79fe4ed6bb04d55ad4",
+        "keys": [
+          "candidate_id",
+          "candidate_path",
+          "confidence",
+          "criteria",
+          "dataset",
+          "final_reason",
+          "final_recommendation",
+          "gold_label",
+          "pair_id",
+          "query_id",
+          "query_path",
+          "schema",
+          "subset"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=inria|copydays",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 280,
+        "rows": 3284,
+        "role_guess": "OTHER",
+        "relative": "G3G_INRIA_COVERAGE\\02_prf_inria\\INRIA_C_noise_maskclip_v4.jsonl",
+        "sha256": "e6192e4ef67867be7a50a0e48c341e2a08017250791df80123dda014cf3facde",
+        "keys": [
+          "C_decision",
+          "C_explain",
+          "candidate_id",
+          "candidate_path",
+          "cover_frac_capped",
+          "cover_frac_raw",
+          "dataset",
+          "gold_label",
+          "mask_clip_delta",
+          "mask_clip_masked",
+          "mask_clip_raw",
+          "pair_id",
+          "polygon",
+          "polygon_repair_status",
+          "query_id",
+          "query_path",
+          "schema",
+          "subset"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=inria|copydays",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 280,
+        "rows": 3284,
+        "role_guess": "OTHER",
+        "relative": "G3G_INRIA_COVERAGE\\02_prf_inria\\INRIA_C_polygon_v4.jsonl",
+        "sha256": "94a3330767bebbca0b10ef361e1a6007607dfe13d2d7303164b4e2eeec836a79",
+        "keys": [
+          "candidate_id",
+          "candidate_path",
+          "dataset",
+          "gold_label",
+          "pair_id",
+          "polygon",
+          "query_id",
+          "query_path",
+          "schema",
+          "subset"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=inria|copydays",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 280,
+        "rows": 3284,
+        "role_guess": "OTHER",
+        "relative": "G3G_INRIA_COVERAGE\\02_prf_inria\\INRIA_merged_abc_votes_v1.jsonl",
+        "sha256": "478615b1989f039a34b2f9309e132c81e7ddfd0f3abeeb6f5482f91f0e4537d8",
+        "keys": [
+          "A",
+          "B",
+          "C",
+          "auto_final",
+          "candidate_id",
+          "candidate_path",
+          "dataset",
+          "force_dispute",
+          "gold_label",
+          "pair_id",
+          "query_id",
+          "query_path",
+          "schema",
+          "subset"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=inria|copydays",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 235,
+        "rows": 3284,
+        "role_guess": "FINAL_RESULT",
+        "relative": "G3G_INRIA_COVERAGE\\02_prf_inria\\INRIA_full_prf_final_v1.csv",
+        "sha256": "b87ad86d1ff6e49994d1e946a0eee7c8ab9792aa183b09c1117f702e1e3900e7",
+        "keys": [
+          "A_score",
+          "A_vote",
+          "B_conf",
+          "B_correct",
+          "B_final",
+          "C_decision",
+          "C_delta",
+          "C_noise",
+          "PRF_correct",
+          "candidate_id",
+          "correction",
+          "dataset",
+          "final_decision",
+          "final_source",
+          "gold_label",
+          "harm",
+          "intervention",
+          "pair_id",
+          "query_id",
+          "strong_C",
+          "subset",
+          "teacher_decision"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=inria|copydays",
+          "PAIR_ID",
+          "GT_FIELD",
+          "FINAL_PRED_FIELD"
+        ]
+      },
+      {
+        "score": 235,
+        "rows": 3284,
+        "role_guess": "FINAL_RESULT",
+        "relative": "G3G_INRIA_COVERAGE\\02_prf_inria\\INRIA_full_prf_final_v1.jsonl",
+        "sha256": "d1b6dcfc53f6fd2dbd48f2e36bb2922e60d6872d7663e1de52a7cddcbc0b5075",
+        "keys": [
+          "A_score",
+          "A_vote",
+          "B_conf",
+          "B_correct",
+          "B_final",
+          "C_decision",
+          "C_delta",
+          "C_noise",
+          "PRF_correct",
+          "candidate_id",
+          "correction",
+          "dataset",
+          "final_decision",
+          "final_source",
+          "gold_label",
+          "harm",
+          "intervention",
+          "pair_id",
+          "query_id",
+          "strong_C",
+          "subset",
+          "teacher_decision"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=inria|copydays",
+          "PAIR_ID",
+          "GT_FIELD",
+          "FINAL_PRED_FIELD"
+        ]
+      },
+      {
+        "score": 225,
+        "rows": 2,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3G_INRIA_COVERAGE\\02_prf_inria\\INRIA_C_polygon_format_repair_v1.jsonl",
+        "sha256": "71f81f4425b25087c7149378e31e72d529a51ce3af836c0b5380cff32b8163ab",
+        "keys": [
+          "candidate_id",
+          "candidate_path",
+          "dataset",
+          "gold_label",
+          "pair_id",
+          "polygon",
+          "query_id",
+          "query_path",
+          "repair_reason",
+          "repair_status",
+          "repair_time",
+          "schema",
+          "subset"
+        ],
+        "score_reasons": [
+          "TOKENS=inria|copydays",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 195,
+        "rows": 1000,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3G_COVERAGE1000_CONFIRMATORY\\01_manifest\\COVERAGE1000_pairs_v1.csv",
+        "sha256": "ec16c828ae04f5892a1c0337db0e6072fbb5f611b6c8fdb906b58fa6996ae08e",
+        "keys": [
+          "A_decision",
+          "A_vote",
+          "candidate_case_id",
+          "candidate_id",
+          "candidate_path",
+          "case_id",
+          "clip_similarity",
+          "dataset",
+          "gold_label",
+          "negative_rank",
+          "pair_id",
+          "pair_type",
+          "query_id",
+          "query_index",
+          "query_path",
+          "source_case",
+          "source_manifest"
+        ],
+        "score_reasons": [
+          "TOKENS=inria",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      }
+    ],
+    "ISC2021": [
+      {
+        "score": 855,
+        "rows": 200,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3I_ISC2021\\01_manifest\\ISC2021_activation_pairs_200_v1.csv",
+        "sha256": "424c0a9fba3431308468d963f6fb9e3e01f52449228d504c20cc639d0612602d",
+        "keys": [
+          "candidate_id",
+          "candidate_path",
+          "candidate_shard",
+          "clip_similarity",
+          "dataset",
+          "gold_label",
+          "pair_id",
+          "pair_type",
+          "pilot_index",
+          "query_id",
+          "query_path"
+        ],
+        "score_reasons": [
+          "EXACT_MANIFEST_SHA",
+          "EXACT_N",
+          "TOKENS=isc2021|g3i|G3I_ISC2021",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 337,
+        "rows": 200,
+        "role_guess": "FINAL_RESULT",
+        "relative": "G3I_ISC2021\\99_final_closure\\final_results_v1.csv",
+        "sha256": "c94938dfbbf2c4d85d1f2a9645e2c839849c685a6fb95ec012ce3008c7a98e1f",
+        "keys": [
+          "A_vote",
+          "B_final",
+          "C_decision",
+          "C_delta",
+          "candidate_path",
+          "dataset",
+          "final_decision",
+          "final_source",
+          "force_dispute",
+          "gold_label",
+          "pair_id",
+          "query_path",
+          "schema",
+          "teacher_decision",
+          "teacher_routed"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=isc2021|g3i|G3I_ISC2021",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_PRED_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 337,
+        "rows": 200,
+        "role_guess": "FINAL_RESULT",
+        "relative": "G3I_ISC2021\\99_final_closure\\full_prf_final_v1.jsonl",
+        "sha256": "e25c9cb44c938680a9388c85e68bb1712cd6da0f5dda1e1303996a869fe90ba7",
+        "keys": [
+          "A_vote",
+          "B_final",
+          "C_decision",
+          "C_delta",
+          "candidate_path",
+          "dataset",
+          "final_decision",
+          "final_source",
+          "force_dispute",
+          "gold_label",
+          "pair_id",
+          "query_path",
+          "schema",
+          "teacher_decision",
+          "teacher_routed"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=isc2021|g3i|G3I_ISC2021",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_PRED_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 332,
+        "rows": 200,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3I_ISC2021\\99_final_closure\\B_pair_review_v3.jsonl",
+        "sha256": "2e21719d4e2bdb22ff52fe718306948633b3d92e398b6680406f98e5ddfbcc2e",
+        "keys": [
+          "b",
+          "candidate_path",
+          "pair_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=isc2021|g3i|G3I_ISC2021",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 322,
+        "rows": 200,
+        "role_guess": "OTHER",
+        "relative": "G3I_ISC2021\\99_final_closure\\merged_abc_votes_v1.jsonl",
+        "sha256": "1a299c56bc10f6bf0412865113190bd160b71ecb22dbf0ccddce4cd48110738b",
+        "keys": [
+          "A",
+          "B",
+          "C",
+          "auto_final",
+          "candidate_path",
+          "force_dispute",
+          "gold_label",
+          "pair_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=isc2021|g3i|G3I_ISC2021",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 310,
+        "rows": 200,
+        "role_guess": "OTHER",
+        "relative": "G3I_ISC2021\\02_prf_activation\\ISC2021_C_noise_maskclip_v4.jsonl",
+        "sha256": "3e7dd058b489a95e907b39147096b056dd82f22afcd7786c4d547ca3a65986a4",
+        "keys": [
+          "C_decision",
+          "C_explain",
+          "candidate_id",
+          "candidate_path",
+          "cover_frac_candidate",
+          "cover_frac_capped",
+          "cover_frac_query",
+          "cover_frac_raw",
+          "dataset",
+          "gold_label",
+          "manifest_raw_clip_similarity",
+          "mask_clip_delta",
+          "mask_clip_masked",
+          "mask_clip_raw",
+          "pair_id",
+          "pair_type",
+          "pilot_index",
+          "polygon",
+          "query_id",
+          "query_path",
+          "raw_recheck_diff",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=isc2021|g3i|G3I_ISC2021",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 310,
+        "rows": 200,
+        "role_guess": "OTHER",
+        "relative": "G3I_ISC2021\\02_prf_activation\\ISC2021_C_polygon_v4.jsonl",
+        "sha256": "3bcb79fde8a96230e8e5c9d8c5fb8473da844c6dd23601347eb9d93a7062b8f6",
+        "keys": [
+          "candidate_id",
+          "candidate_path",
+          "dataset",
+          "gold_label",
+          "pair_id",
+          "pair_type",
+          "pilot_index",
+          "polygon",
+          "query_id",
+          "query_path",
+          "raw_clip_similarity",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=isc2021|g3i|G3I_ISC2021",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 287,
+        "rows": 200,
+        "role_guess": "OTHER",
+        "relative": "G3I_ISC2021\\99_final_closure\\C_noise_maskclip_v4.jsonl",
+        "sha256": "ab40cbe5ff7f4cd80d82a581b349face6a35b8674269ecbbb7903a2533c679c6",
+        "keys": [
+          "C_decision",
+          "C_explain",
+          "candidate_path",
+          "cover_frac_capped",
+          "cover_frac_raw",
+          "mask_clip_delta",
+          "mask_clip_masked",
+          "mask_clip_raw",
+          "pair_id",
+          "polygon",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=isc2021|g3i|G3I_ISC2021",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 265,
+        "rows": 200,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3G_INRIA_COVERAGE\\01_manifest\\COVERAGE_pairs_v1.csv",
+        "sha256": "3ed9558c123bfd0c1ebd96765248aad10d7d5c5005af07dae7af50c1331d5c91",
+        "keys": [
+          "candidate_clip_similarity",
+          "candidate_id",
+          "candidate_path",
+          "coverage_id",
+          "dataset",
+          "gold_label",
+          "negative_strategy",
+          "pair_id",
+          "query_id",
+          "query_path",
+          "same_source",
+          "subset"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 265,
+        "rows": 200,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3G_INRIA_COVERAGE\\03_prf_coverage\\COVERAGE_A_clip_pairs_v1.jsonl",
+        "sha256": "40d358b94fe2b1318921697ea0cf0d0d6c4d3ebe240f2b6305b900dc2e721c12",
+        "keys": [
+          "A_decision",
+          "A_rank",
+          "A_vote",
+          "candidate_id",
+          "candidate_path",
+          "clip_similarity",
+          "coverage_id",
+          "dataset",
+          "gold_label",
+          "pair_id",
+          "query_id",
+          "query_path",
+          "schema",
+          "subset"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      }
+    ],
+    "CLWD_controlled": [
+      {
+        "score": 915,
+        "rows": 80,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3J_CLWD\\01_shared_watermark_dev\\manifest\\CLWD_shared_watermark_DEV80_v2.csv",
+        "sha256": "7d74182a724d07050552ffbd2f00679402ed49e33996b02b9126a6b199ef60bd",
+        "keys": [
+          "candidate_path",
+          "case_id",
+          "clean_A_id",
+          "clean_B_id",
+          "dataset",
+          "gold_label",
+          "logo_id",
+          "mask_fraction",
+          "pair_id",
+          "pair_type",
+          "query_path",
+          "shared_mask_path",
+          "stratum"
+        ],
+        "score_reasons": [
+          "EXACT_MANIFEST_SHA",
+          "EXACT_N",
+          "TOKENS=clwd|g3j|shared_watermark|G3J_CLWD|01_shared_watermark_dev",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 415,
+        "rows": 80,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3J_CLWD\\01_shared_watermark_dev\\02_prf_dev80\\CLWD_DEV80_A_clip_pairs_v1.jsonl",
+        "sha256": "a9576143a65b1e27e3c9bcb8b84b3b8d3535a129b83aa534ba9c20e861dfec4f",
+        "keys": [
+          "A_decision",
+          "A_vote",
+          "candidate_path",
+          "case_id",
+          "clip_similarity",
+          "dataset",
+          "gold_label",
+          "pair_id",
+          "pair_type",
+          "query_path",
+          "schema",
+          "shared_watermark_uplift",
+          "stratum"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=clwd|g3j|shared_watermark|G3J_CLWD|01_shared_watermark_dev",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 415,
+        "rows": 80,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3J_CLWD\\01_shared_watermark_dev\\manifest\\CLWD_shared_watermark_DEV80_v1.csv",
+        "sha256": "93b7a878ed7dbcae6d4f667f69f257bbd73b63dfde7ccaf9f71da7e24e11bff2",
+        "keys": [
+          "candidate_path",
+          "case_id",
+          "clean_A_id",
+          "clean_B_id",
+          "dataset",
+          "gold_label",
+          "logo_id",
+          "mask_fraction",
+          "pair_id",
+          "pair_type",
+          "query_path",
+          "shared_mask_path",
+          "stratum"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=clwd|g3j|shared_watermark|G3J_CLWD|01_shared_watermark_dev",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 397,
+        "rows": 80,
+        "role_guess": "FINAL_RESULT",
+        "relative": "G3J_CLWD\\01_shared_watermark_dev\\99_final_closure\\final_results_v1.csv",
+        "sha256": "27161a518f7a791f37f544e3999a762bf09dc26540f56578836c62f8a387af04",
+        "keys": [
+          "A_vote",
+          "B_final",
+          "C_decision",
+          "C_delta",
+          "candidate_path",
+          "dataset",
+          "final_decision",
+          "final_source",
+          "force_dispute",
+          "gold_label",
+          "pair_id",
+          "query_path",
+          "schema",
+          "teacher_decision",
+          "teacher_routed"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=clwd|g3j|shared_watermark|G3J_CLWD|01_shared_watermark_dev",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_PRED_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 397,
+        "rows": 80,
+        "role_guess": "FINAL_RESULT",
+        "relative": "G3J_CLWD\\01_shared_watermark_dev\\99_final_closure\\full_prf_final_v1.jsonl",
+        "sha256": "fc79eef9c02306eab04ded41855146b87dd38f16b4cee9af2412dfc80f3c88e0",
+        "keys": [
+          "A_vote",
+          "B_final",
+          "C_decision",
+          "C_delta",
+          "candidate_path",
+          "dataset",
+          "final_decision",
+          "final_source",
+          "force_dispute",
+          "gold_label",
+          "pair_id",
+          "query_path",
+          "schema",
+          "teacher_decision",
+          "teacher_routed"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=clwd|g3j|shared_watermark|G3J_CLWD|01_shared_watermark_dev",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_PRED_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 392,
+        "rows": 80,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3J_CLWD\\01_shared_watermark_dev\\99_final_closure\\B_pair_review_v3.jsonl",
+        "sha256": "fe2bda128b7e1c3d2854c354379a30335887a58e2eaa29fc76f23bbb911ad760",
+        "keys": [
+          "b",
+          "candidate_path",
+          "pair_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=clwd|g3j|shared_watermark|G3J_CLWD|01_shared_watermark_dev",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 382,
+        "rows": 80,
+        "role_guess": "OTHER",
+        "relative": "G3J_CLWD\\01_shared_watermark_dev\\99_final_closure\\merged_abc_votes_v1.jsonl",
+        "sha256": "d344d3d255a6e6797549cc90ae62c0c4f2185db00d2e92c51db75e4152c94a3d",
+        "keys": [
+          "A",
+          "B",
+          "C",
+          "auto_final",
+          "candidate_path",
+          "force_dispute",
+          "gold_label",
+          "pair_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=clwd|g3j|shared_watermark|G3J_CLWD|01_shared_watermark_dev",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 370,
+        "rows": 80,
+        "role_guess": "OTHER",
+        "relative": "G3J_CLWD\\01_shared_watermark_dev\\02_prf_dev80\\CLWD_DEV80_C_noise_maskclip_v4.jsonl",
+        "sha256": "00f01d1690e7cfd98162172c05f5532726bf47a76ea92e42b1a43fa788c711a3",
+        "keys": [
+          "A_clip_similarity",
+          "A_decision",
+          "A_vote",
+          "C_decision",
+          "C_explain",
+          "candidate_path",
+          "case_id",
+          "cover_frac_candidate",
+          "cover_frac_capped",
+          "cover_frac_query",
+          "cover_frac_raw",
+          "dataset",
+          "gold_label",
+          "gt_mask_intersection_px",
+          "gt_mask_iou",
+          "gt_mask_precision",
+          "gt_mask_recall",
+          "mask_clip_delta",
+          "mask_clip_masked",
+          "mask_clip_raw",
+          "pair_id",
+          "pair_type",
+          "polygon",
+          "pred_mask_px",
+          "query_path",
+          "raw_vs_A_diff",
+          "schema",
+          "shared_mask_path",
+          "shared_watermark_uplift",
+          "stratum",
+          "true_mask_px"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=clwd|g3j|shared_watermark|G3J_CLWD|01_shared_watermark_dev",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 370,
+        "rows": 80,
+        "role_guess": "OTHER",
+        "relative": "G3J_CLWD\\01_shared_watermark_dev\\02_prf_dev80\\CLWD_DEV80_C_polygon_v4.jsonl",
+        "sha256": "2988d0154551ad4deca9343e079cb68754c5dc5e582018df907d396037493ee6",
+        "keys": [
+          "candidate_path",
+          "case_id",
+          "dataset",
+          "gold_label",
+          "logo_id",
+          "mask_fraction",
+          "pair_id",
+          "pair_type",
+          "polygon",
+          "query_path",
+          "schema",
+          "shared_mask_path",
+          "stratum"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=clwd|g3j|shared_watermark|G3J_CLWD|01_shared_watermark_dev",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 347,
+        "rows": 80,
+        "role_guess": "OTHER",
+        "relative": "G3J_CLWD\\01_shared_watermark_dev\\99_final_closure\\C_noise_maskclip_v4.jsonl",
+        "sha256": "ce828043392cdb15a095d6b6eed4bc23b8952f683dea15241ded372e87e5c107",
+        "keys": [
+          "C_decision",
+          "C_explain",
+          "candidate_path",
+          "cover_frac_capped",
+          "cover_frac_raw",
+          "mask_clip_delta",
+          "mask_clip_masked",
+          "mask_clip_raw",
+          "pair_id",
+          "polygon",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=clwd|g3j|shared_watermark|G3J_CLWD|01_shared_watermark_dev",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "FINAL_CLOSURE"
+        ]
+      }
+    ],
+    "LVW": [
+      {
+        "score": 855,
+        "rows": 2000,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3K_LVW\\01_manifest\\LVW_pairs_2000_v1.csv",
+        "sha256": "fd628f2640cecee7344f5f30da92d73ea1fe487a741a6907728e84fe40b9c30b",
+        "keys": [
+          "A_decision",
+          "A_vote",
+          "alpha_path",
+          "candidate_id",
+          "candidate_path",
+          "case_id",
+          "clip_similarity",
+          "dataset",
+          "gold_label",
+          "mask_path",
+          "pair_id",
+          "pair_type",
+          "query_id",
+          "query_path"
+        ],
+        "score_reasons": [
+          "EXACT_MANIFEST_SHA",
+          "EXACT_N",
+          "TOKENS=lvw|g3k|G3K_LVW",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 337,
+        "rows": 2000,
+        "role_guess": "FINAL_RESULT",
+        "relative": "G3K_LVW\\99_final_closure\\final_results_v1.csv",
+        "sha256": "a45099c521ffc742742e9ca2d3e93071159240c36cd1e18554c4ede8333117e0",
+        "keys": [
+          "A_vote",
+          "B_final",
+          "C_decision",
+          "C_delta",
+          "candidate_path",
+          "dataset",
+          "final_decision",
+          "final_source",
+          "force_dispute",
+          "gold_label",
+          "pair_id",
+          "query_path",
+          "schema",
+          "teacher_decision",
+          "teacher_routed"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=lvw|g3k|G3K_LVW",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_PRED_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 337,
+        "rows": 2000,
+        "role_guess": "FINAL_RESULT",
+        "relative": "G3K_LVW\\99_final_closure\\full_prf_final_v1.jsonl",
+        "sha256": "a31c9336962ea378f0e000bac7ea17b83a77c81cd46653350cb33d7def04cab2",
+        "keys": [
+          "A_vote",
+          "B_final",
+          "C_decision",
+          "C_delta",
+          "candidate_path",
+          "dataset",
+          "final_decision",
+          "final_source",
+          "force_dispute",
+          "gold_label",
+          "pair_id",
+          "query_path",
+          "schema",
+          "teacher_decision",
+          "teacher_routed"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=lvw|g3k|G3K_LVW",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_PRED_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 332,
+        "rows": 2000,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3K_LVW\\99_final_closure\\B_pair_review_v3.jsonl",
+        "sha256": "e3d98bb42dc3f8593c35a0397eee81e817b2477a1b6d824a4ae30fd02e03ed90",
+        "keys": [
+          "b",
+          "candidate_path",
+          "pair_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=lvw|g3k|G3K_LVW",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 322,
+        "rows": 2000,
+        "role_guess": "OTHER",
+        "relative": "G3K_LVW\\99_final_closure\\merged_abc_votes_v1.jsonl",
+        "sha256": "ba352c64e903f1a4dfbb381ec7be28fc7262cceaac08ec75bcf69c89092a4448",
+        "keys": [
+          "A",
+          "B",
+          "C",
+          "auto_final",
+          "candidate_path",
+          "force_dispute",
+          "gold_label",
+          "pair_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=lvw|g3k|G3K_LVW",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 310,
+        "rows": 2000,
+        "role_guess": "OTHER",
+        "relative": "G3K_LVW\\02_A\\LVW_A_v1.jsonl",
+        "sha256": "4f5ca85c940042359f9142138b69bc05a2e8087119cf7c141bc8783bdfd73883",
+        "keys": [
+          "A_decision",
+          "A_vote",
+          "alpha_path",
+          "candidate_id",
+          "candidate_path",
+          "case_id",
+          "clip_similarity",
+          "dataset",
+          "gold_label",
+          "mask_path",
+          "pair_id",
+          "pair_type",
+          "query_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=lvw|g3k|G3K_LVW",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 287,
+        "rows": 2000,
+        "role_guess": "OTHER",
+        "relative": "G3K_LVW\\99_final_closure\\C_noise_maskclip_v4.jsonl",
+        "sha256": "6c5e619a76eead4a19a405eebcfe7b4c9e82a115049f7a06d3de67702814761a",
+        "keys": [
+          "C_decision",
+          "C_explain",
+          "candidate_path",
+          "cover_frac_capped",
+          "cover_frac_raw",
+          "mask_clip_delta",
+          "mask_clip_masked",
+          "mask_clip_raw",
+          "pair_id",
+          "polygon",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=lvw|g3k|G3K_LVW",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 230,
+        "rows": 2000,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3D_PIPAL\\01_manifest\\PIPAL_D1_challenge1000_pairs_v1.csv",
+        "sha256": "4c0bf8dfbdf2d652b21a21b55a7a1685d23a000e977d157c39831192c0026f79",
+        "keys": [
+          "A_decision",
+          "candidate_path",
+          "candidate_rank",
+          "candidate_reference_id",
+          "clip_similarity",
+          "dataset",
+          "ground_truth_same_reference",
+          "group_1",
+          "group_2",
+          "manifest_id",
+          "pair_id",
+          "pair_type",
+          "quality_score_raw",
+          "query_path",
+          "reference_id",
+          "retrieval_margin"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS"
+        ]
+      },
+      {
+        "score": 230,
+        "rows": 2000,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3D_PIPAL\\01_manifest\\PIPAL_D1_challenge1000_pairs_v1.jsonl",
+        "sha256": "183e7ae5e605700d7f953c66c3fb597323d1b8f3dff00e0f9035a8d9f7261342",
+        "keys": [
+          "A_decision",
+          "candidate_path",
+          "candidate_rank",
+          "candidate_reference_id",
+          "clip_similarity",
+          "dataset",
+          "ground_truth_same_reference",
+          "group_1",
+          "group_2",
+          "manifest_id",
+          "pair_id",
+          "pair_type",
+          "quality_score_raw",
+          "query_path",
+          "reference_id",
+          "retrieval_margin"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS"
+        ]
+      },
+      {
+        "score": 230,
+        "rows": 2000,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3D_PIPAL\\03_prf\\PIPAL_D1_challenge1000_b_pair_review_v3.jsonl",
+        "sha256": "62f0088ce288d0a5a5aedf5f220b3ba18f63cd9669e27760fdb3599118eefd97",
+        "keys": [
+          "b",
+          "candidate_path",
+          "pair_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS"
+        ]
+      }
+    ],
+    "IMD2020": [
+      {
+        "score": 855,
+        "rows": 828,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3L_IMD2020\\01_manifest\\IMD2020_pairs_828_v1.csv",
+        "sha256": "965cc6e8826ef95085e7da0673fca845daad79e1681d4431d665ada0c9890d80",
+        "keys": [
+          "A_decision",
+          "A_vote",
+          "candidate_id",
+          "candidate_path",
+          "case_id",
+          "clip_similarity",
+          "dataset",
+          "gold_label",
+          "mask_path",
+          "pair_id",
+          "pair_type",
+          "query_id",
+          "query_path",
+          "source_manipulation_count"
+        ],
+        "score_reasons": [
+          "EXACT_MANIFEST_SHA",
+          "EXACT_N",
+          "TOKENS=imd2020|g3l|G3L_IMD2020",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 337,
+        "rows": 828,
+        "role_guess": "FINAL_RESULT",
+        "relative": "G3L_IMD2020\\99_final_closure\\final_results_v1.csv",
+        "sha256": "9cd5e51eb131ad537cb0c7e652b5802446b0cb7a37260e53e1e9ae5221c78caa",
+        "keys": [
+          "A_vote",
+          "B_final",
+          "C_decision",
+          "C_delta",
+          "candidate_path",
+          "dataset",
+          "final_decision",
+          "final_source",
+          "force_dispute",
+          "gold_label",
+          "pair_id",
+          "query_path",
+          "schema",
+          "teacher_decision",
+          "teacher_routed"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=imd2020|g3l|G3L_IMD2020",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_PRED_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 337,
+        "rows": 828,
+        "role_guess": "FINAL_RESULT",
+        "relative": "G3L_IMD2020\\99_final_closure\\full_prf_final_v1.jsonl",
+        "sha256": "ad759342e38e8abc1793590615bbebfd45c4eb833f8a34526ed741726e7b4ad1",
+        "keys": [
+          "A_vote",
+          "B_final",
+          "C_decision",
+          "C_delta",
+          "candidate_path",
+          "dataset",
+          "final_decision",
+          "final_source",
+          "force_dispute",
+          "gold_label",
+          "pair_id",
+          "query_path",
+          "schema",
+          "teacher_decision",
+          "teacher_routed"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=imd2020|g3l|G3L_IMD2020",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_PRED_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 332,
+        "rows": 828,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3L_IMD2020\\99_final_closure\\B_pair_review_v3.jsonl",
+        "sha256": "48ccacd073b96e94001d275a078e79d2cb8c8dc0b266e7dac1759d98b7db156c",
+        "keys": [
+          "b",
+          "candidate_path",
+          "pair_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=imd2020|g3l|G3L_IMD2020",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 322,
+        "rows": 828,
+        "role_guess": "OTHER",
+        "relative": "G3L_IMD2020\\99_final_closure\\merged_abc_votes_v1.jsonl",
+        "sha256": "e19009c09f83843cba24b2694de39c5caf26d5be4b16cf4ec3546848c2e7b436",
+        "keys": [
+          "A",
+          "B",
+          "C",
+          "auto_final",
+          "candidate_path",
+          "force_dispute",
+          "gold_label",
+          "pair_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=imd2020|g3l|G3L_IMD2020",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 310,
+        "rows": 828,
+        "role_guess": "OTHER",
+        "relative": "G3L_IMD2020\\02_A\\IMD2020_A_v1.jsonl",
+        "sha256": "0a110f149d2ce123a7acb6a0e765d30999b8fd68d89ff173af957e9951c187d7",
+        "keys": [
+          "A_decision",
+          "A_vote",
+          "candidate_id",
+          "candidate_path",
+          "case_id",
+          "clip_similarity",
+          "dataset",
+          "gold_label",
+          "mask_path",
+          "pair_id",
+          "pair_type",
+          "query_id",
+          "query_path",
+          "schema",
+          "source_manipulation_count"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=imd2020|g3l|G3L_IMD2020",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 287,
+        "rows": 828,
+        "role_guess": "OTHER",
+        "relative": "G3L_IMD2020\\99_final_closure\\C_noise_maskclip_v4.jsonl",
+        "sha256": "82a452be9ec53518fbea261e0680e41583bcaae08c8f17babd81499ea9e153a4",
+        "keys": [
+          "C_decision",
+          "C_explain",
+          "candidate_path",
+          "cover_frac_capped",
+          "cover_frac_raw",
+          "mask_clip_delta",
+          "mask_clip_masked",
+          "mask_clip_raw",
+          "pair_id",
+          "polygon",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=imd2020|g3l|G3L_IMD2020",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 222,
+        "rows": 129,
+        "role_guess": "TEACHER",
+        "relative": "G3L_IMD2020\\99_final_closure\\dispute_for_teacher_v1.jsonl",
+        "sha256": "0c3805bb54972e24f2bf84aa9dc111cff917e1a200b915107ee0400fdbdc498c",
+        "keys": [
+          "A",
+          "B",
+          "C",
+          "auto_final",
+          "candidate_path",
+          "force_dispute",
+          "gold_label",
+          "pair_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "TOKENS=imd2020|g3l|G3L_IMD2020",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 165,
+        "rows": 4000,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3E_Waterloo\\01_benchmark\\metadata\\waterloo_pairs_4000_v1.jsonl",
+        "sha256": "2384dc2167d5e5d47140ded381b7f122a942c42b792a41281e57b8bb9d4682ea",
+        "keys": [
+          "candidate_path",
+          "candidate_source_id",
+          "distortion_type",
+          "distortion_type_id",
+          "expected_decision",
+          "ground_truth",
+          "level",
+          "matlab_seed",
+          "negative_control",
+          "pair_id",
+          "query_path",
+          "query_source_id",
+          "schema",
+          "seed_index0"
+        ],
+        "score_reasons": [
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 165,
+        "rows": 4000,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3E_Waterloo\\02_prf_full\\waterloo_B_pair_review_v3.jsonl",
+        "sha256": "538e0a196262acd9e3c7f38fbbb7e68f1d61cd60cccf7c6e150fdb6666963cf9",
+        "keys": [
+          "b",
+          "candidate_path",
+          "candidate_source_id",
+          "distortion_type",
+          "distortion_type_id",
+          "expected_decision",
+          "ground_truth",
+          "latency_sec",
+          "level",
+          "matlab_seed",
+          "negative_control",
+          "pair_id",
+          "query_path",
+          "query_source_id",
+          "schema",
+          "seed_index0",
+          "timestamp"
+        ],
+        "score_reasons": [
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      }
+    ],
+    "COVERAGE200": [
+      {
+        "score": 1155,
+        "rows": 200,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3G_INRIA_COVERAGE\\01_manifest\\COVERAGE_pairs_v1.csv",
+        "sha256": "3ed9558c123bfd0c1ebd96765248aad10d7d5c5005af07dae7af50c1331d5c91",
+        "keys": [
+          "candidate_clip_similarity",
+          "candidate_id",
+          "candidate_path",
+          "coverage_id",
+          "dataset",
+          "gold_label",
+          "negative_strategy",
+          "pair_id",
+          "query_id",
+          "query_path",
+          "same_source",
+          "subset"
+        ],
+        "score_reasons": [
+          "EXACT_MANIFEST_SHA",
+          "EXACT_N",
+          "TOKENS=coverage|g3g_inria_coverage|G3G_INRIA_COVERAGE",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "KNOWN_REPORT_PATH"
+        ]
+      },
+      {
+        "score": 355,
+        "rows": 200,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3G_INRIA_COVERAGE\\03_prf_coverage\\COVERAGE_A_clip_pairs_v1.jsonl",
+        "sha256": "40d358b94fe2b1318921697ea0cf0d0d6c4d3ebe240f2b6305b900dc2e721c12",
+        "keys": [
+          "A_decision",
+          "A_rank",
+          "A_vote",
+          "candidate_id",
+          "candidate_path",
+          "clip_similarity",
+          "coverage_id",
+          "dataset",
+          "gold_label",
+          "pair_id",
+          "query_id",
+          "query_path",
+          "schema",
+          "subset"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=coverage|g3g_inria_coverage|G3G_INRIA_COVERAGE",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 355,
+        "rows": 200,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3G_INRIA_COVERAGE\\03_prf_coverage\\COVERAGE_B_pair_review_v3.jsonl",
+        "sha256": "dec9465a853d9c6d23b3ba444910fba31a54d576fd2ddc446f22ab1b5ac0e153",
+        "keys": [
+          "candidate_id",
+          "candidate_path",
+          "confidence",
+          "criteria",
+          "dataset",
+          "final_reason",
+          "final_recommendation",
+          "gold_label",
+          "pair_id",
+          "query_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=coverage|g3g_inria_coverage|G3G_INRIA_COVERAGE",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 337,
+        "rows": 200,
+        "role_guess": "FINAL_RESULT",
+        "relative": "G3G_INRIA_COVERAGE\\99_final_closure\\final_results_v1.csv",
+        "sha256": "ccbd9164e73f11990db3f3898e9247c615c4fc8d20b8e0e9d014ef19a9824345",
+        "keys": [
+          "A_vote",
+          "B_final",
+          "C_decision",
+          "C_delta",
+          "candidate_path",
+          "dataset",
+          "final_decision",
+          "final_source",
+          "force_dispute",
+          "gold_label",
+          "pair_id",
+          "query_path",
+          "schema",
+          "teacher_decision",
+          "teacher_routed"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=coverage|g3g_inria_coverage|G3G_INRIA_COVERAGE",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_PRED_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 337,
+        "rows": 200,
+        "role_guess": "FINAL_RESULT",
+        "relative": "G3G_INRIA_COVERAGE\\99_final_closure\\full_prf_final_v1.jsonl",
+        "sha256": "0b23195dfd7079138bc5321ac1ded998632604e3531d7f06b5a39adeb8f01890",
+        "keys": [
+          "A_vote",
+          "B_final",
+          "C_decision",
+          "C_delta",
+          "candidate_path",
+          "dataset",
+          "final_decision",
+          "final_source",
+          "force_dispute",
+          "gold_label",
+          "pair_id",
+          "query_path",
+          "schema",
+          "teacher_decision",
+          "teacher_routed"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=coverage|g3g_inria_coverage|G3G_INRIA_COVERAGE",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_PRED_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 332,
+        "rows": 200,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3G_INRIA_COVERAGE\\99_final_closure\\B_pair_review_v3.jsonl",
+        "sha256": "526c9f776134bca0851257073a06d27a7d5d3d6b2026e728c177da68a9746243",
+        "keys": [
+          "b",
+          "candidate_path",
+          "pair_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=coverage|g3g_inria_coverage|G3G_INRIA_COVERAGE",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 322,
+        "rows": 200,
+        "role_guess": "OTHER",
+        "relative": "G3G_INRIA_COVERAGE\\99_final_closure\\merged_abc_votes_v1.jsonl",
+        "sha256": "49c9d84aa6712af0b67ce8c62262c1fa62ca8e4a63c417127c6427544d6457a0",
+        "keys": [
+          "A",
+          "B",
+          "C",
+          "auto_final",
+          "candidate_path",
+          "force_dispute",
+          "gold_label",
+          "pair_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=coverage|g3g_inria_coverage|G3G_INRIA_COVERAGE",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 310,
+        "rows": 200,
+        "role_guess": "OTHER",
+        "relative": "G3G_INRIA_COVERAGE\\03_prf_coverage\\COVERAGE_C_noise_maskclip_v4.jsonl",
+        "sha256": "f19b6c6aee11a5ccd7dd0c31437ac40cb8745cbefeeb3cd9577f2c1615b510e9",
+        "keys": [
+          "C_decision",
+          "C_explain",
+          "candidate_id",
+          "candidate_path",
+          "cover_frac_capped",
+          "cover_frac_raw",
+          "coverage_id",
+          "dataset",
+          "gold_label",
+          "mask_clip_delta",
+          "mask_clip_masked",
+          "mask_clip_raw",
+          "pair_id",
+          "polygon",
+          "query_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=coverage|g3g_inria_coverage|G3G_INRIA_COVERAGE",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 310,
+        "rows": 200,
+        "role_guess": "OTHER",
+        "relative": "G3G_INRIA_COVERAGE\\03_prf_coverage\\COVERAGE_C_polygon_v4.jsonl",
+        "sha256": "97dc79be3aad9cd64074f06bf1e8d7a724225afdaa12b2516426c03dc894a6aa",
+        "keys": [
+          "candidate_id",
+          "candidate_path",
+          "coverage_id",
+          "dataset",
+          "gold_label",
+          "pair_id",
+          "polygon",
+          "query_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=coverage|g3g_inria_coverage|G3G_INRIA_COVERAGE",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 287,
+        "rows": 200,
+        "role_guess": "OTHER",
+        "relative": "G3G_INRIA_COVERAGE\\99_final_closure\\A_clip_recomputed_v1.jsonl",
+        "sha256": "4ac0ddcfbd63132da869705fb05f2a24a1a1b0fb234533a061425303ca1ffd3b",
+        "keys": [
+          "A_decision",
+          "A_rank",
+          "A_vote",
+          "candidate_path",
+          "clip_similarity",
+          "pair_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=coverage|g3g_inria_coverage|G3G_INRIA_COVERAGE",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "FINAL_CLOSURE"
+        ]
+      }
+    ],
+    "COVERAGE1000": [
+      {
+        "score": 1155,
+        "rows": 1000,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3G_COVERAGE1000_CONFIRMATORY\\01_manifest\\COVERAGE1000_pairs_v1.csv",
+        "sha256": "ec16c828ae04f5892a1c0337db0e6072fbb5f611b6c8fdb906b58fa6996ae08e",
+        "keys": [
+          "A_decision",
+          "A_vote",
+          "candidate_case_id",
+          "candidate_id",
+          "candidate_path",
+          "case_id",
+          "clip_similarity",
+          "dataset",
+          "gold_label",
+          "negative_rank",
+          "pair_id",
+          "pair_type",
+          "query_id",
+          "query_index",
+          "query_path",
+          "source_case",
+          "source_manifest"
+        ],
+        "score_reasons": [
+          "EXACT_MANIFEST_SHA",
+          "EXACT_N",
+          "TOKENS=coverage1000|g3g_coverage1000_confirmatory|G3G_COVERAGE1000_CONFIRMATORY",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "KNOWN_REPORT_PATH"
+        ]
+      },
+      {
+        "score": 337,
+        "rows": 1000,
+        "role_guess": "FINAL_RESULT",
+        "relative": "G3G_COVERAGE1000_CONFIRMATORY\\99_final_closure\\final_results_v1.csv",
+        "sha256": "258e4df53212d600e0225fd7b59b3acf260c7029f53244e68e605dfe18ad9fdd",
+        "keys": [
+          "A_vote",
+          "B_final",
+          "C_decision",
+          "C_delta",
+          "candidate_path",
+          "case_id",
+          "final_decision",
+          "final_source",
+          "force_dispute",
+          "gold_label",
+          "negative_rank",
+          "pair_id",
+          "query_path",
+          "schema",
+          "teacher_decision",
+          "teacher_routed"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=coverage1000|g3g_coverage1000_confirmatory|G3G_COVERAGE1000_CONFIRMATORY",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_PRED_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 337,
+        "rows": 1000,
+        "role_guess": "FINAL_RESULT",
+        "relative": "G3G_COVERAGE1000_CONFIRMATORY\\99_final_closure\\full_prf_final_v1.jsonl",
+        "sha256": "3727f207c7eae39f976a1e8956ae396fa40f0034182aaa3a8e873765df58f55b",
+        "keys": [
+          "A_vote",
+          "B_final",
+          "C_decision",
+          "C_delta",
+          "candidate_path",
+          "case_id",
+          "final_decision",
+          "final_source",
+          "force_dispute",
+          "gold_label",
+          "negative_rank",
+          "pair_id",
+          "query_path",
+          "schema",
+          "teacher_decision",
+          "teacher_routed"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=coverage1000|g3g_coverage1000_confirmatory|G3G_COVERAGE1000_CONFIRMATORY",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_PRED_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 332,
+        "rows": 1000,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3G_COVERAGE1000_CONFIRMATORY\\99_final_closure\\B_pair_review_v3.jsonl",
+        "sha256": "84db7687d6881ae8936d185375ce865f6fd89853c6e2388d166555f5f85d8c61",
+        "keys": [
+          "b",
+          "candidate_path",
+          "pair_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=coverage1000|g3g_coverage1000_confirmatory|G3G_COVERAGE1000_CONFIRMATORY",
+          "PAIR_OR_MANIFEST",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 322,
+        "rows": 1000,
+        "role_guess": "OTHER",
+        "relative": "G3G_COVERAGE1000_CONFIRMATORY\\99_final_closure\\merged_abc_votes_v1.jsonl",
+        "sha256": "e73b2418bb1bd2458483a004db69c4d317c972b622c2f48db2d9933708053b79",
+        "keys": [
+          "A",
+          "B",
+          "C",
+          "auto_final",
+          "candidate_path",
+          "case_id",
+          "force_dispute",
+          "gold_label",
+          "negative_rank",
+          "pair_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=coverage1000|g3g_coverage1000_confirmatory|G3G_COVERAGE1000_CONFIRMATORY",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 310,
+        "rows": 1000,
+        "role_guess": "OTHER",
+        "relative": "G3G_COVERAGE1000_CONFIRMATORY\\02_A\\COVERAGE1000_A_clip_v1.jsonl",
+        "sha256": "7d184734d9ddab7646274488e216fc7c3738b698e60faf4991dcb35fc7ed1258",
+        "keys": [
+          "A_decision",
+          "A_vote",
+          "candidate_path",
+          "case_id",
+          "clip_similarity",
+          "dataset",
+          "gold_label",
+          "negative_rank",
+          "pair_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=coverage1000|g3g_coverage1000_confirmatory|G3G_COVERAGE1000_CONFIRMATORY",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD"
+        ]
+      },
+      {
+        "score": 287,
+        "rows": 1000,
+        "role_guess": "OTHER",
+        "relative": "G3G_COVERAGE1000_CONFIRMATORY\\99_final_closure\\C_noise_maskclip_v4.jsonl",
+        "sha256": "1af19c38d0d11418741e82d8d77f5d1e1c24e469a29371335bfda800c0f2ee7e",
+        "keys": [
+          "C_decision",
+          "C_explain",
+          "candidate_path",
+          "cover_frac_capped",
+          "cover_frac_raw",
+          "mask_clip_delta",
+          "mask_clip_masked",
+          "mask_clip_raw",
+          "pair_id",
+          "polygon",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "TOKENS=coverage1000|g3g_coverage1000_confirmatory|G3G_COVERAGE1000_CONFIRMATORY",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 237,
+        "rows": 800,
+        "role_guess": "OTHER",
+        "relative": "G3G_COVERAGE1000_CONFIRMATORY\\99_final_closure\\new800_results_v1.csv",
+        "sha256": "93c0cef58e59ed4259b61279956e625b0f94ed619f120c4340793a977cf09fe1",
+        "keys": [
+          "A_vote",
+          "B_final",
+          "C_decision",
+          "C_delta",
+          "candidate_path",
+          "case_id",
+          "final_decision",
+          "final_source",
+          "force_dispute",
+          "gold_label",
+          "negative_rank",
+          "pair_id",
+          "query_path",
+          "schema",
+          "teacher_decision",
+          "teacher_routed"
+        ],
+        "score_reasons": [
+          "TOKENS=coverage1000|g3g_coverage1000_confirmatory|G3G_COVERAGE1000_CONFIRMATORY",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_PRED_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 222,
+        "rows": 52,
+        "role_guess": "TEACHER",
+        "relative": "G3G_COVERAGE1000_CONFIRMATORY\\99_final_closure\\dispute_for_teacher_v1.jsonl",
+        "sha256": "aa6bebf21d7d219dba3fc7bc7e51dd80b16d2670221b411aaa88113b8aede01e",
+        "keys": [
+          "A",
+          "B",
+          "C",
+          "auto_final",
+          "candidate_path",
+          "case_id",
+          "force_dispute",
+          "gold_label",
+          "negative_rank",
+          "pair_id",
+          "query_path",
+          "schema"
+        ],
+        "score_reasons": [
+          "TOKENS=coverage1000|g3g_coverage1000_confirmatory|G3G_COVERAGE1000_CONFIRMATORY",
+          "PAIR_ID",
+          "QUERY_CANDIDATE_PATHS",
+          "GT_FIELD",
+          "FINAL_CLOSURE"
+        ]
+      },
+      {
+        "score": 170,
+        "rows": 1000,
+        "role_guess": "PAIR_OR_MANIFEST",
+        "relative": "G3D_PIPAL\\01_manifest\\PIPAL_D1_challenge1000_queries_v1.csv",
+        "sha256": "94df0d0ec05399599611472a98ea9588faf5bb49c1797c79bdf98ee7f8da41a0",
+        "keys": [
+          "cell_hard_rank",
+          "challenge_query_id",
+          "dataset",
+          "gallery_size",
+          "ground_truth_relation",
+          "group_1",
+          "group_2",
+          "hard_negative_filename",
+          "hard_negative_path",
+          "hard_negative_rank",
+          "hard_negative_similarity",
+          "hardneg_A_decision",
+          "margin",
+          "quality_score_raw",
+          "query_filename",
+          "query_path",
+          "reference_filename",
+          "reference_id",
+          "reference_path",
+          "selection_cell",
+          "true_A_decision",
+          "true_reference_rank",
+          "true_similarity"
+        ],
+        "score_reasons": [
+          "EXACT_N",
+          "PAIR_OR_MANIFEST",
+          "IMAGE_PATH_KEYS"
+        ]
+      }
+    ]
+  }
+}

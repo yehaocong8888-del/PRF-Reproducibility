@@ -1,0 +1,14 @@
+{
+  "schema": "IMD2020_pairs_828_freeze_v1",
+  "seed": 20260922,
+  "source_group_n": 414,
+  "selected_manipulation_per_group": 1,
+  "pair_n": 828,
+  "positive_n": 414,
+  "negative_n": 414,
+  "manipulation_selection": "one deterministic seed-based choice per source group before PRF",
+  "negative_mining": "CLIP ViT-L/14 top1 wrong original over all 414 source originals",
+  "manifest_sha256": "965cc6e8826ef95085e7da0673fca845daad79e1681d4431d665ada0c9890d80",
+  "A_sha256": "0a110f149d2ce123a7acb6a0e765d30999b8fd68d89ff173af957e9951c187d7",
+  "source_mutation": false
+}

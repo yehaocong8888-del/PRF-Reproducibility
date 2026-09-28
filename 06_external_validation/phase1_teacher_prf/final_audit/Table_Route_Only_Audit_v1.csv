@@ -1,0 +1,2 @@
+﻿Dataset,Role,N,A_ne_B,Teacher_Routed,Teacher_eq_B,Teacher_ne_B,Strong_C,Accuracy_Reported,Reason
+KADID-10k / TID2013,Mechanism / routing audit,3198,824,842,842,0,0,False,"Original datasets contain reference/quality ground truth, but a verified frozen mapping from the 3198 constructed PRF pairs to pair-level ACCEPT/REJECT gold labels is not currently available."

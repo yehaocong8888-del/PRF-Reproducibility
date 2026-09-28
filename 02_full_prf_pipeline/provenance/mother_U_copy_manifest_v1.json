@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-07-07T20:53:23.773027",
+  "source": "<FULL_PRF_ROOT>\\abcpipeline_full\\mother_U_v1.jsonl",
+  "copied_to": "<FULL_PRF_ROOT>\\YL\\SOTA\\raw_inputs\\mother_U_v1.jsonl",
+  "size_bytes": 58579683,
+  "sha256": "7bd8a98945adcf3cd6937120f74956f88de3f839e59d78724f1daf7030088ccc",
+  "note": "mother_U copied into SOTA/raw_inputs for read-only baseline construction. Original mother_U is not modified."
+}

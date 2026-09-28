@@ -1,0 +1,7 @@
+﻿stage,invocation_rate,mean_sec_per_invocation,median_sec_per_invocation,p95_sec_per_invocation,expected_sec_per_input_pair,notes
+A_CLIP_uncached_upper_bound,1.0,0.05062068416668429,0.029943900000262147,0.13903611999983237,0.05062068416668429,Conservative pairwise re-encoding upper-bound
+A_CLIP_cached_amortized_main,1.0,0.03880586164483349,,,0.03880586164483349,Main deployment estimate; unique images encoded once and embeddings reused
+A_cached_dot_threshold_only,1.0,9.883114999994784e-07,,,9.883114999994784e-07,Similarity plus 0.80/0.90 decision after embeddings exist
+B_Qwen3VL8B_pair_review,1.0,1.5634681391666656,1.5377817500001356,1.8282272350000084,1.5634681391666656,Five-dimensional structured pair review
+C_Qwen3VL8B_polygon_plus_CLIP,1.0,0.7427546066666745,0.6583686500000567,1.1544805199999018,0.7427546066666745,Noise polygon inference plus raw/masked CLIP computation
+D_Qwen3VL30B_evidence_only,0.30788747108424747,0.5534315225000038,0.554575899999918,0.6427197950000675,0.17039463188083098,Conditional evidence-only arbitration; 30B does not reread images

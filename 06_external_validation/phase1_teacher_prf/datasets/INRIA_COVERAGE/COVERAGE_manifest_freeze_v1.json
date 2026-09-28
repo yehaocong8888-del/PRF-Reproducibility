@@ -1,0 +1,18 @@
+{
+  "schema": "COVERAGE_manifest_freeze_v1",
+  "query_n": 100,
+  "positive_n": 100,
+  "negative_n": 100,
+  "pair_n": 200,
+  "gold_definition": {
+    "ACCEPT": "tampered query and candidate share source identity",
+    "REJECT": "tampered query paired with a different source image"
+  },
+  "negative_strategy": "CLIP_HARD_TOP1",
+  "positive_similarity_mean": 0.9904223716259003,
+  "negative_similarity_mean": 0.7515871828794479,
+  "hard_negative_ge_positive": 0,
+  "manifest_sha256": "3ed9558c123bfd0c1ebd96765248aad10d7d5c5005af07dae7af50c1331d5c91",
+  "png_cache_only": true,
+  "source_tiff_used_directly": false
+}

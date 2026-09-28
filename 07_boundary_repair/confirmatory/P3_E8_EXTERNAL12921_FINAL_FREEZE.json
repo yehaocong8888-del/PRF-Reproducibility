@@ -1,0 +1,18 @@
+{
+  "schema": "P3_E8_EXTERNAL12921_FINAL_FREEZE_V2",
+  "created_at": "2026-09-24T08:44:43",
+  "status": "COMPLETE_FROZEN",
+  "recovery_status": "STATISTICAL_ONLY_AFTER_MCNEMAR_NUMERIC_FIX",
+  "final_student": "PU050",
+  "final_student_sha256": "7bf6aba86db71680a9461e7e2c4ffcd93f25c54af10239db223fbdf911079d82",
+  "parent_E7_freeze_sha256": "d41934f672653538f8a5bc7821574749629115020af911f9cb9881a1c331cd73",
+  "confirmatory_n": 12921,
+  "excluded_development_n": 480,
+  "PU050_prediction_sha256": "078a0db59602e792f17b3cade3741ff0f401780076dc449a0a240e3851e0e085",
+  "paired_sha256": "3cdb3ab01029911d1944b2be55590c8233205d1a909b79f005c7da180c72d0cf",
+  "summary_sha256": "74368f848f137a9c0dfdca04b5d837bbd97f4800921468169a45e2b2fe851f8c",
+  "model_rerun": false,
+  "prediction_mutation": false,
+  "model_selection_after_external": false,
+  "retraining_after_external": false
+}

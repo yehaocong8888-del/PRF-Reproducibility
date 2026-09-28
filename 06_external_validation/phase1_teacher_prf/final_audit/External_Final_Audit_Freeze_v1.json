@@ -1,0 +1,26 @@
+{
+  "schema": "PRF_external_final_audit_freeze_v2",
+  "complete": true,
+  "source_policy": {
+    "main_accuracy_settings": 9,
+    "main_pair_observations": 13401,
+    "route_only": "KADID-10k/TID2013",
+    "supplementary": "COVERAGE-1000",
+    "COVERAGE1000_counted_as_independent_benchmark": false
+  },
+  "main_mechanism_totals": {
+    "teacher_routed": 4126,
+    "teacher_ne_B": 2,
+    "correction": 2,
+    "harm": 0,
+    "strong_C": 0
+  },
+  "files": {
+    "Table_Main_External_Validation_v1.csv": "b7723bddd2272eb8f9eceacd848934d001c1e367d6d4d99ce8d4d07c8e505237",
+    "Table_Route_Only_Audit_v1.csv": "e3c3a057cab050428202149e3ffbfb7d469f3b3ff4babfbc916043ebd11e1f7e",
+    "Table_Supp_COVERAGE1000_v1.csv": "19300034e419cd8ebb0c917242ae3fc85662af73d3ec255b8afd051318c21f13",
+    "COVERAGE200_Teacher_Correction_Cases_v1.csv": "97571c318504b3f6e9b984b8cdcd8f006432b3667eb91c42a7cd33470927c48a",
+    "External_Final_Audit_Summary_v1.json": "dfc427ab6229860b0dc93defee33e4f80103a575c94ba1474b65c63857304806",
+    "External_Final_Audit_Report_v1.md": "e85d3738147471f89d5e0f8546b6dfa04b0632ca38d61fd8c4c5d75ff5ad5537"
+  }
+}

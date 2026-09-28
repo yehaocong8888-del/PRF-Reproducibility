@@ -1,0 +1,20 @@
+{
+  "phase": "P4-A2R1",
+  "status": "COMPLETE",
+  "canonical_thresholds": [
+    0.8,
+    0.9
+  ],
+  "canonical_thresholds_changed": false,
+  "adaptive_comparator_adopted": false,
+  "prototype_labels_used": false,
+  "external_labels_used_for_threshold_derivation": false,
+  "model_execution": false,
+  "source_mutation": false,
+  "prototype_A_sha256": "7282c724bf32bbdee17e5ec2042c0b4dc0f2b78b5b3dfd883a8827fc1c89cf14",
+  "external_A_master_sha256": "b9934c75a54e30173b323090d7deed50885371aac10866a7a740919d3d24bdbf",
+  "threshold_freeze_sha256": "3a3d80d677e75cacff7dc2a9de0ba1762b16a34defc4668f77d2562e524db7d1",
+  "threshold_csv_sha256": "4789915510370dc9d26d9e8a0eed119f93e532ef206aab28b1c19cfc47948f60",
+  "comparison_csv_sha256": "243c82760ec2d9afd0a53a6541968d16051b805faf776596a0af22747d0894e8",
+  "summary_sha256": "90c450dab946891387ce14303986aed58abb391639f778551dc62de4c7d3d9b2"
+}

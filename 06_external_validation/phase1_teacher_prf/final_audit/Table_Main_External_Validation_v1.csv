@@ -1,0 +1,10 @@
+﻿Dataset,Role,N,B_Accuracy,PRF_Accuracy,Delta_Accuracy,B_Coverage,PRF_Coverage,PRF_Selective_Accuracy,Teacher_Routed,Teacher_ne_B,Intervention,Correction,Harm,Net_Correction,Strong_C,Notes
+PIPAL,IQA/generalization,2000,0.9105,0.9105,0.0,,,,1165,0,0,0,0,0,0,Full PRF decision-equivalent to B.
+LIVE,IQA/generalization,810,1.0,1.0,0.0,,,,74,0,0,0,0,0,0,Full PRF decision-equivalent to B.
+Waterloo,IQA/generalization,3999,0.79945,0.79945,0.0,,,,752,0,0,0,0,0,0,3999 common valid pairs; one invalid pair excluded.
+INRIA Copydays,Copy/manipulation stress,3284,0.905907,0.905907,0.0,0.946407,0.946407,0.957207,1133,0,0,0,0,0,0,1642 matched positive + 1642 hard-negative pairs.
+COVERAGE-200,Copy/manipulation stress,200,0.95,0.96,0.010000000000000009,0.965,0.975,0.9846153846153847,29,2,2,2,0,2,0,100 ACCEPT + 100 REJECT; 2 corrections and 0 harms.
+ISC2021,Copy/manipulation stress,200,0.765,0.765,0.0,,,,76,0,0,0,0,0,0,200 frozen balanced pilot pairs.
+CLWD-controlled,Controlled watermark stress,80,0.925,0.925,0.0,,,,24,0,0,0,0,0,0,CLWD-derived controlled shared-watermark stress test; not native CLWD benchmark.
+LVW,Watermark generalization,2000,0.983,0.983,0.0,,,,744,0,0,0,0,0,0,1000 source cases expanded to 2000 balanced pairs.
+IMD2020,Manipulation generalization,828,0.672705314,0.672705314,0.0,,,,129,0,0,0,0,0,0,414 manipulation cases expanded to 828 balanced pairs.

@@ -1,0 +1,10 @@
+{
+  "phase": "P4-E1-BC",
+  "status": "COMPLETE",
+  "sample_sha256": "6f3581a259da84d6ac87e0e20c97dd87a84943a490b7d49167e3d8d4d6b5c30b",
+  "B_raw_sha256": "050a4aadd57cb200a0e8a5598c80bf390cac72ee221a2ccd922bd94284694267",
+  "C_raw_sha256": "73e07a2d54d643648dc83643c6d735c0bc164e3b3d2269b4fd7c28c11b8b87a7",
+  "summary_csv_sha256": "fc8d51dd7a6266c73d775a900a8dc11321481ca95f9833709bbe25fae94e7a9b",
+  "summary_json_sha256": "2f66f2cd0532c5e330a5087d3e140c1a4ee42bd9ca5c54d8841c826a912b6477",
+  "source_mutation": false
+}

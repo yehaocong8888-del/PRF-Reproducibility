@@ -1,0 +1,94 @@
+{
+  "schema": "PRF_external_final_canonical_audit_v2",
+  "main_accuracy_evaluable": {
+    "dataset_setting_n": 9,
+    "pair_observations_n": 13401,
+    "teacher_routed_n": 4126,
+    "teacher_ne_B_n": 2,
+    "correction_n": 2,
+    "harm_n": 0,
+    "net_correction_n": 2,
+    "strong_C_n": 0,
+    "positive_delta_datasets": [
+      "COVERAGE-200"
+    ],
+    "zero_delta_datasets": [
+      "PIPAL",
+      "LIVE",
+      "Waterloo",
+      "INRIA Copydays",
+      "ISC2021",
+      "CLWD-controlled",
+      "LVW",
+      "IMD2020"
+    ],
+    "negative_delta_datasets": []
+  },
+  "KADID_TID_route_only": {
+    "pair_observations_n": 3198,
+    "A_ne_B_n": 824,
+    "teacher_routed_n": 842,
+    "teacher_ne_B_n": 0,
+    "strong_C_n": 0,
+    "accuracy_excluded": true,
+    "reason": "KADID-10k and TID2013 do contain original quality/reference ground truth. However, the current 3198 constructed PRF pairs do not yet have a verified frozen pair-level ACCEPT/REJECT gold mapping."
+  },
+  "all_external_descriptive": {
+    "pair_observations_n": 16599,
+    "teacher_routed_n": 4968,
+    "teacher_ne_B_n": 2,
+    "interpretation": "Descriptive mechanism totals only; not a pooled benchmark accuracy."
+  },
+  "COVERAGE200": {
+    "N": 200,
+    "B_accuracy": 0.95,
+    "PRF_accuracy": 0.96,
+    "delta_accuracy": 0.010000000000000009,
+    "B_coverage": 0.965,
+    "PRF_coverage": 0.975,
+    "PRF_selective_accuracy": 0.9846153846153847,
+    "teacher_routed": 29,
+    "teacher_ne_B": 2,
+    "correction": 2,
+    "harm": 0,
+    "net": 2,
+    "strong_C": 0,
+    "exact_McNemar_two_sided_p": 0.5,
+    "statistical_interpretation": "Observed positive point estimate and two non-destructive corrections, but the number of discordant pairs is too small to establish statistically significant overall superiority."
+  },
+  "COVERAGE1000_supplementary": {
+    "independent_query_groups": 100,
+    "full_pair_observations": 1000,
+    "nested200": {
+      "N": 200,
+      "B_accuracy": 0.95,
+      "PRF_accuracy": 0.96,
+      "correction": 2,
+      "harm": 0,
+      "net": 2
+    },
+    "new800": {
+      "N": 800,
+      "B_accuracy": 0.995,
+      "PRF_accuracy": 0.995,
+      "teacher_routed": 23,
+      "teacher_ne_B": 0,
+      "correction": 0,
+      "harm": 0,
+      "net": 0
+    },
+    "full1000": {
+      "B_accuracy": 0.986,
+      "PRF_accuracy": 0.988,
+      "B_balanced_accuracy": 0.9788888888888889,
+      "PRF_balanced_accuracy": 0.9888888888888889,
+      "teacher_routed": 52,
+      "teacher_ne_B": 2,
+      "correction": 2,
+      "harm": 0,
+      "net": 2,
+      "strong_C": 0
+    },
+    "paper_role": "Supplementary robustness and mechanism-boundary analysis; not an independent benchmark."
+  }
+}

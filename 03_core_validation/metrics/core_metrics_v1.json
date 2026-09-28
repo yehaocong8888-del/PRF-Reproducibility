@@ -1,0 +1,76 @@
+{
+  "schema": "core_metrics_v1",
+  "timestamp": "2026-02-25T18:47:08",
+  "inputs": {
+    "mother_U": "<FULL_PRF_ROOT>\\abcpipeline_full\\mother_U_v1.jsonl",
+    "sample_jsonl": "<FULL_PRF_ROOT>\\YL\\HXYZ\\sample_pairs_stratified_v1.jsonl",
+    "pred_jsonl": "<FULL_PRF_ROOT>\\YL\\HXYZ\\direct30b_pred_v1.jsonl",
+    "seed": 20260206,
+    "N_AUTO": 2000,
+    "N_DISPUTE": 2000,
+    "INCLUDE_STRONGC_ALL": true,
+    "DELTA_STRONG": -0.2
+  },
+  "overall": {
+    "n": 4294,
+    "agree": 2908,
+    "agree_rate": 0.6772240335351654,
+    "dist_prf": {
+      "ACCEPT": 1442,
+      "REJECT": 2268,
+      "AMBIGUOUS": 584
+    },
+    "dist_direct": {
+      "ACCEPT": 2596,
+      "REJECT": 1698,
+      "AMBIGUOUS": 0
+    }
+  },
+  "by_subset": {
+    "AUTO": {
+      "n": 2000,
+      "agree": 1709,
+      "agree_rate": 0.8545,
+      "dist_prf": {
+        "ACCEPT": 926,
+        "REJECT": 1074,
+        "AMBIGUOUS": 0
+      },
+      "dist_direct": {
+        "ACCEPT": 1215,
+        "REJECT": 785,
+        "AMBIGUOUS": 0
+      }
+    },
+    "DISPUTE": {
+      "n": 2294,
+      "agree": 1199,
+      "agree_rate": 0.522667829119442,
+      "dist_prf": {
+        "ACCEPT": 516,
+        "REJECT": 1194,
+        "AMBIGUOUS": 584
+      },
+      "dist_direct": {
+        "ACCEPT": 1381,
+        "REJECT": 913,
+        "AMBIGUOUS": 0
+      }
+    },
+    "STRONGC": {
+      "n": 313,
+      "agree": 270,
+      "agree_rate": 0.8626198083067093,
+      "dist_prf": {
+        "ACCEPT": 0,
+        "REJECT": 313,
+        "AMBIGUOUS": 0
+      },
+      "dist_direct": {
+        "ACCEPT": 43,
+        "REJECT": 270,
+        "AMBIGUOUS": 0
+      }
+    }
+  }
+}

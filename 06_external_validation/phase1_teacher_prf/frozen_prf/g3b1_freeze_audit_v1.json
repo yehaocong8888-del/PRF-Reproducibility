@@ -1,0 +1,15 @@
+{
+  "schema": "prf_g3b1_freeze_audit_v1",
+  "planned_pairs": 3200,
+  "b_valid": 3200,
+  "c_valid": 3198,
+  "abc_ready_pairs": 3198,
+  "prediction_coverage": 0.999375,
+  "prediction_coverage_percent": 99.9375,
+  "missing_c_pairs": [
+    "TID2013-0368_POS",
+    "TID2013-0375_POS"
+  ],
+  "handling_policy": "No manual repair. Deterministic malformed C outputs are retained in failure logs and excluded by the original A/B/C intersection merge policy.",
+  "c_failure_count_initial": 2
+}

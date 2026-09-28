@@ -1,0 +1,22 @@
+{
+  "phase": "P4-A1R1",
+  "status": "COMPLETE",
+  "canonical_thresholds": [
+    0.8,
+    0.9
+  ],
+  "canonical_universe_n": 13401,
+  "threshold_optimization": false,
+  "replacement_threshold_selected": false,
+  "model_execution": false,
+  "source_mutation": false,
+  "master_sha256": "942ebcc3c92a6c4ccd480a4573bf4240360e2a33d37fd180991734b78e54766f",
+  "canonical_similarity_master_sha256": "b9934c75a54e30173b323090d7deed50885371aac10866a7a740919d3d24bdbf",
+  "source_audit_sha256": "d6b43f93d45d9af9db56237a708ca88441ba7fc7329a48f664ee4e15ff5a5aa1",
+  "detail_sha256": "d055b9e50b4ae9adefed72ae506bb88df7174f750e1c64d4633097dd87b541f1",
+  "macro_sha256": "4696afabbd95fc6f80fac2323446375961c80e26bf9cedf08c195af9d4b35e11",
+  "envelope_sha256": "b4fb395ad378d684cbb323554342200916c8fdabec00d66e2873b2034b9c114c",
+  "distribution_sha256": "3a32b48f7bb5048e5506e45adfd63caa44f502db39d00acf85649abb42af41a5",
+  "supersession_sha256": "906de3f6871a1793ed0b6fff8e129f787641fe6b03997f1d307db93d30c9680f",
+  "audit_sha256": "20a16f9ea5e97d9b4d619a61cad1d5905fa1a7ac59f18a67a5fd69bbb2f5abc3"
+}

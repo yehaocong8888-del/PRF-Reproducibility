@@ -1,0 +1,111 @@
+{
+  "schema": "prompt_sensitivity_metrics_v1v2",
+  "timestamp": "2026-02-25T19:33:31",
+  "sample": "<FULL_PRF_ROOT>\\YL\\HXYZ\\prompt_sensitivity_sample_v1.jsonl",
+  "pred_v2": "<FULL_PRF_ROOT>\\YL\\HXYZ\\direct30b_prompt_sensitivity_v2.jsonl",
+  "overall": {
+    "n": 250,
+    "agree": 199,
+    "agree_rate": 0.796,
+    "mat_top": [
+      [
+        [
+          "ACCEPT",
+          "ACCEPT"
+        ],
+        112
+      ],
+      [
+        [
+          "REJECT",
+          "REJECT"
+        ],
+        87
+      ],
+      [
+        [
+          "ACCEPT",
+          "REJECT"
+        ],
+        30
+      ],
+      [
+        [
+          "REJECT",
+          "ACCEPT"
+        ],
+        21
+      ]
+    ]
+  },
+  "AUTO": {
+    "n": 50,
+    "agree": 42,
+    "agree_rate": 0.84,
+    "mat_top": [
+      [
+        [
+          "ACCEPT",
+          "ACCEPT"
+        ],
+        22
+      ],
+      [
+        [
+          "REJECT",
+          "REJECT"
+        ],
+        20
+      ],
+      [
+        [
+          "ACCEPT",
+          "REJECT"
+        ],
+        7
+      ],
+      [
+        [
+          "REJECT",
+          "ACCEPT"
+        ],
+        1
+      ]
+    ]
+  },
+  "DISPUTE": {
+    "n": 200,
+    "agree": 157,
+    "agree_rate": 0.785,
+    "mat_top": [
+      [
+        [
+          "ACCEPT",
+          "ACCEPT"
+        ],
+        90
+      ],
+      [
+        [
+          "REJECT",
+          "REJECT"
+        ],
+        67
+      ],
+      [
+        [
+          "ACCEPT",
+          "REJECT"
+        ],
+        23
+      ],
+      [
+        [
+          "REJECT",
+          "ACCEPT"
+        ],
+        20
+      ]
+    ]
+  }
+}

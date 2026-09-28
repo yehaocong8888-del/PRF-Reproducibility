@@ -1,0 +1,47 @@
+{
+  "schema": "external_final_summary_v1",
+  "dataset": "ISC2021",
+  "expected_n": 200,
+  "final_n": 200,
+  "complete": true,
+  "manifest_sha256": "424c0a9fba3431308468d963f6fb9e3e01f52449228d504c20cc639d0612602d",
+  "final_jsonl_sha256": "e25c9cb44c938680a9388c85e68bb1712cd6da0f5dda1e1303996a869fe90ba7",
+  "final_csv_sha256": "c94938dfbbf2c4d85d1f2a9645e2c839849c685a6fb95ec012ce3008c7a98e1f",
+  "A": {
+    "accuracy": 0.435,
+    "macro_f1_3class": 0.26089543358619666,
+    "coverage": 0.785,
+    "selective_accuracy": 0.554140127388535
+  },
+  "B": {
+    "accuracy": 0.765,
+    "macro_f1_3class": 0.5075619920628464,
+    "coverage": 0.97,
+    "selective_accuracy": 0.788659793814433
+  },
+  "PRF": {
+    "accuracy": 0.765,
+    "macro_f1_3class": 0.5075619920628464,
+    "coverage": 0.97,
+    "selective_accuracy": 0.788659793814433
+  },
+  "A_ne_B_n": 75,
+  "strong_C_n": 0,
+  "teacher_routed_n": 76,
+  "teacher_routed_rate": 0.38,
+  "teacher_ne_B_n": 0,
+  "teacher_ne_B_rate": 0.0,
+  "intervention_n": 0,
+  "correction_n": 0,
+  "harm_n": 0,
+  "net_correction": 0,
+  "final_source_dist": {
+    "TEACHER_30B": 76,
+    "AUTO_2OF3": 124
+  },
+  "final_dist": {
+    "ACCEPT": 53,
+    "REJECT": 141,
+    "AMBIGUOUS": 6
+  }
+}

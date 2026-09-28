@@ -1,0 +1,36 @@
+{
+  "schema": "prf_external_g3b2a_merge_summary_v1",
+  "planned_pairs": 3200,
+  "abc_valid_pairs": 3198,
+  "abc_coverage": 0.999375,
+  "primary_paired_complete_pairs": 3196,
+  "primary_queries": 1598,
+  "excluded_incomplete_queries": [
+    "TID2013-0368",
+    "TID2013-0375"
+  ],
+  "auto_pairs": 2356,
+  "dispute_pairs": 842,
+  "teacher_fraction": 0.2632895559724828,
+  "force_dispute_pairs": 0,
+  "auto_distribution": {
+    "ACCEPT": 1224,
+    "REJECT": 1132
+  },
+  "dispute_by_dataset": {
+    "KADID-10k": 576,
+    "TID2013": 266
+  },
+  "dispute_by_pair_type": {
+    "HARD_NEGATIVE": 488,
+    "POSITIVE_TRUE_REFERENCE": 354
+  },
+  "auto_by_dataset": {
+    "KADID-10k": 1424,
+    "TID2013": 932
+  },
+  "auto_by_pair_type": {
+    "POSITIVE_TRUE_REFERENCE": 1244,
+    "HARD_NEGATIVE": 1112
+  }
+}

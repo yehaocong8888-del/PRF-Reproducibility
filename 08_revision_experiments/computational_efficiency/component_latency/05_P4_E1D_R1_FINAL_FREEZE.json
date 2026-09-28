@@ -1,0 +1,11 @@
+{
+  "phase": "P4-E1-D-R1",
+  "status": "COMPLETE",
+  "sample_sha256": "ca3c1dda2628813b0f8072872b2f287ddc5e28312755f8ad923b691a8b2187e1",
+  "schema_audit_sha256": "e9cb4b6a26f6c5af335f5ba584b78df36bb9d9545da0aa508203452465aaad2a",
+  "supersession_sha256": "a1cf46de9a89ad15c158b29d99b81ec77c63a588212498648cfab5716c1f0492",
+  "raw_sha256": "8c30e57357a80ff6d20b6348d4d9c835c60e897e352df4618b0e6fc218ace0ab",
+  "summary_csv_sha256": "2a58cd93ecb59a00bbe4ec942e253c5c3854404a9f912c0f80bb50447ec1e486",
+  "summary_json_sha256": "84f844cb1ad7d78c9d4ac9787a6c28e5e0617d2062d777e342856e829da2a8e1",
+  "source_mutation": false
+}

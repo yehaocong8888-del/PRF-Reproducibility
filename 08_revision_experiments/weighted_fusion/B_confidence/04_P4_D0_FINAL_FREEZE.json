@@ -1,0 +1,10 @@
+{
+  "phase": "P4-D0",
+  "status": "COMPLETE",
+  "master_sha256": "942ebcc3c92a6c4ccd480a4573bf4240360e2a33d37fd180991734b78e54766f",
+  "source_audit_sha256": "00679971abed671183e164f6543cafbd82196d5d58ff314192c63eb7c3779530",
+  "B_master_sha256": "d5c427a65e257d7f231b8b065d9feb4309168262cfedd86db266d204956fecab",
+  "summary_sha256": "7404e1007280e0f541b2d6467ff05276e596417f8302588931e8da3cef9cc5c6",
+  "model_execution": false,
+  "source_mutation": false
+}

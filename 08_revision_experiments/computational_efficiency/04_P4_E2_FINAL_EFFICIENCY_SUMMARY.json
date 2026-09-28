@@ -1,0 +1,77 @@
+{
+  "phase": "P4-E2",
+  "status": "COMPLETE",
+  "canonical_universe_N": 13401,
+  "teacher_routed_N": 4126,
+  "teacher_route_rate": 0.30788747108424747,
+  "stage_costs": {
+    "A_uncached_mean_sec": 0.05062068416668429,
+    "A_cached_amortized_main_mean_sec": 0.03880586164483349,
+    "A_cached_dot_threshold_sec": 9.883114999994784e-07,
+    "B_mean_sec": 1.5634681391666656,
+    "C_mean_sec": 0.7427546066666745,
+    "D_mean_sec_per_invocation": 0.5534315225000038,
+    "D_expected_sec_per_input_pair": 0.17039463188083098
+  },
+  "expected_pipeline": {
+    "deployment_main_mean_sec_per_pair": 2.515423239359005,
+    "conservative_uncached_A_mean_sec_per_pair": 2.5272380618808556,
+    "sequential_pairs_per_sec_approx": 0.39754741244055053
+  },
+  "conditional_teacher_savings": {
+    "D_call_reduction_fraction_vs_all_pair_D": 0.6921125289157526,
+    "D_call_reduction_percent": 69.21125289157526,
+    "D_time_saved_sec_per_pair": 0.38303689061917284,
+    "same_evidence_only_D_on_all_pairs_mean_sec": 2.8984601299781776,
+    "conditional_PRF_mean_sec": 2.515423239359005,
+    "whole_pipeline_time_reduction_fraction": 0.13215185769074445,
+    "whole_pipeline_time_reduction_percent": 13.215185769074445,
+    "comparison_guard": "This comparison invokes the same evidence-only D on every pair. It is NOT a latency comparison against Direct30B image-based inference."
+  },
+  "component_cost_shares": [
+    {
+      "component": "A_amortized",
+      "expected_sec_per_pair": 0.03880586164483349,
+      "share_of_expected_total": 0.01542716988442956,
+      "share_percent": 1.542716988442956
+    },
+    {
+      "component": "B_8B",
+      "expected_sec_per_pair": 1.5634681391666656,
+      "share_of_expected_total": 0.6215527131589506,
+      "share_percent": 62.15527131589506
+    },
+    {
+      "component": "C_8B_plus_CLIP",
+      "expected_sec_per_pair": 0.7427546066666745,
+      "share_of_expected_total": 0.2952801719586353,
+      "share_percent": 29.528017195863534
+    },
+    {
+      "component": "D_30B_expected",
+      "expected_sec_per_pair": 0.17039463188083098,
+      "share_of_expected_total": 0.0677399449979845,
+      "share_percent": 6.77399449979845
+    }
+  ],
+  "A_numerical_boundary_audit": {
+    "phase": "P4-E2",
+    "uncached_recomputed_decision_flips": 0,
+    "cached_recomputed_decision_flips": 0,
+    "uncached_flip_rows": [],
+    "cached_flip_rows": [],
+    "uncached_max_abs_similarity_diff": 0.0026526451110839844,
+    "cached_max_abs_similarity_diff": 0.0019359588623046875,
+    "interpretation": "The latency benchmark recomputes CLIP values under the current runtime only to measure cost. Frozen Phase-1/P4-A1R1 similarities remain authoritative for scientific results."
+  },
+  "GPU_observations": {
+    "A_CLIP_post": "NVIDIA GeForce RTX 5090, 616.64, 32607, 4035, 28153, 0",
+    "BC_8B_post": "NVIDIA GeForce RTX 5090, 616.64, 32607, 10550, 21638, 83",
+    "D_30B_post": "NVIDIA GeForce RTX 5090, 616.64, 32607, 21679, 10509, 69",
+    "interpretation": "nvidia-smi process-state snapshots from isolated sequential benchmarks; not controlled incremental model-only allocation."
+  },
+  "reporting_guard": "Do not sum isolated p95 values and call the result end-to-end p95. Only additive expected mean latency is reported for the full pipeline.",
+  "model_execution": false,
+  "Gold_used_for_efficiency_selection": false,
+  "source_mutation": false
+}

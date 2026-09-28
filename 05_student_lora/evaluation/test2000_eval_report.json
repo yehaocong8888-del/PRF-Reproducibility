@@ -1,0 +1,66 @@
+{
+  "total_samples": 2000,
+  "gold_distribution": {
+    "A": 719,
+    "R": 939,
+    "U": 342
+  },
+  "pred_distribution": {
+    "A": 565,
+    "R": 640,
+    "U": 795
+  },
+  "confusion_matrix": {
+    "A": {
+      "A": 545,
+      "R": 2,
+      "U": 172
+    },
+    "R": {
+      "A": 4,
+      "R": 617,
+      "U": 318
+    },
+    "U": {
+      "A": 16,
+      "R": 21,
+      "U": 305
+    }
+  },
+  "metrics": {
+    "A": {
+      "precision": 0.9646017699115044,
+      "recall": 0.7579972183588317,
+      "f1": 0.8489096573208723,
+      "tp": 545,
+      "fp": 20,
+      "fn": 174
+    },
+    "R": {
+      "precision": 0.9640625,
+      "recall": 0.6570820021299254,
+      "f1": 0.7815072830905636,
+      "tp": 617,
+      "fp": 23,
+      "fn": 322
+    },
+    "U": {
+      "precision": 0.3836477987421384,
+      "recall": 0.8918128654970761,
+      "f1": 0.5364995602462621,
+      "tp": 305,
+      "fp": 490,
+      "fn": 37
+    }
+  },
+  "macro_f1": 0.7223055002192327,
+  "error_distribution": {
+    "R->U": 318,
+    "A->U": 172,
+    "U->R": 21,
+    "R->A": 4,
+    "U->A": 16,
+    "A->R": 2
+  },
+  "disagreement_samples_file": "/mnt/f/PRF/loraUbuntu/GCSJ/prf_vl_student_v1/eval_results/test2000_disagreements_sample100.jsonl"
+}

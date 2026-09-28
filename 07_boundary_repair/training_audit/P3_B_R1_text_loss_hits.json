@@ -1,0 +1,38 @@
+[
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\00_核心代码\\12_train_lora_from_cache_keepidx_trainA_fast100.py",
+    "patterns": [
+      "\\bloss\\s*[:=]"
+    ],
+    "size_mb": 0.0053
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\00_核心代码\\13_train_lora_full_keepidx_trainA.py",
+    "patterns": [
+      "\\bloss\\s*[:=]"
+    ],
+    "size_mb": 0.0061
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\00_核心代码\\14_resume_from_ckpt020000_nan_safe.py",
+    "patterns": [
+      "\\bloss\\s*[:=]",
+      "global_step"
+    ],
+    "size_mb": 0.0085
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\03_训练结果_恢复final_run\\train_log.jsonl",
+    "patterns": [
+      "global_step"
+    ],
+    "size_mb": 0.0537
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\final Lora adapter\\train_log.jsonl",
+    "patterns": [
+      "global_step"
+    ],
+    "size_mb": 0.0537
+  }
+]

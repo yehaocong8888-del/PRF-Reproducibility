@@ -1,0 +1,30 @@
+{
+  "schema": "external_final_freeze_v1",
+  "dataset": "COVERAGE",
+  "created_at": "2026-09-22T16:04:45",
+  "complete": true,
+  "manifest_sha256": "3ed9558c123bfd0c1ebd96765248aad10d7d5c5005af07dae7af50c1331d5c91",
+  "params": {
+    "TAU_NOISE": 0.7,
+    "MAX_POLY": 3,
+    "COVER_CAP": 0.2,
+    "DELTA_STRONG": -0.2,
+    "A_SUPPORT": 0.9,
+    "A_WEAK": 0.8
+  },
+  "services": {
+    "8B": "127.0.0.1:8082",
+    "30B": "127.0.0.1:8081"
+  },
+  "files": {
+    "A_clip_recomputed_v1.jsonl": "4ac0ddcfbd63132da869705fb05f2a24a1a1b0fb234533a061425303ca1ffd3b",
+    "B_pair_review_v3.jsonl": "526c9f776134bca0851257073a06d27a7d5d3d6b2026e728c177da68a9746243",
+    "C_noise_maskclip_v4.jsonl": "cb749ce004f704878a69f2a31f3fcc3d1854cd38bc75ecb1e7ac34793c068c75",
+    "merged_abc_votes_v1.jsonl": "49c9d84aa6712af0b67ce8c62262c1fa62ca8e4a63c417127c6427544d6457a0",
+    "dispute_for_teacher_v1.jsonl": "2d043d1771c56939c271203147eda1e3d66458b692908073f5a9aaf831dfc782",
+    "teacher_30b_full_v1.jsonl": "81e1c00f399393d692bb9179b32db0b38a41b9103b31247e863cb974886d228a",
+    "full_prf_final_v1.jsonl": "0b23195dfd7079138bc5321ac1ded998632604e3531d7f06b5a39adeb8f01890",
+    "final_results_v1.csv": "ccbd9164e73f11990db3f3898e9247c615c4fc8d20b8e0e9d014ef19a9824345",
+    "final_summary_v1.json": "5d42070be42736c3e94a24e0c64e31c334a117fdf884291a7b896314591117cf"
+  }
+}

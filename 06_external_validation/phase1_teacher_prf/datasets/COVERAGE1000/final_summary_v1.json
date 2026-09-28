@@ -1,0 +1,105 @@
+{
+  "schema": "COVERAGE1000_final_summary_v2",
+  "dataset": "COVERAGE1000_CONFIRMATORY",
+  "role": "within_query_confirmatory_pair_expansion",
+  "manifest_sha256": "ec16c828ae04f5892a1c0337db0e6072fbb5f611b6c8fdb906b58fa6996ae08e",
+  "pair_n": 1000,
+  "query_group_n": 100,
+  "positive_n": 100,
+  "negative_n": 900,
+  "nested_original_COVERAGE200": true,
+  "nested200": {
+    "n": 200,
+    "B_accuracy": 0.95,
+    "PRF_accuracy": 0.96,
+    "teacher_routed": 29,
+    "teacher_ne_B": 2,
+    "correction": 2,
+    "harm": 0,
+    "net": 2,
+    "continuity_pass": true
+  },
+  "new800": {
+    "n": 800,
+    "definition": "Negative ranks 2-9 only; excludes all original COVERAGE-200 pairs.",
+    "B_accuracy": 0.995,
+    "PRF_accuracy": 0.995,
+    "delta_accuracy": 0.0,
+    "B_coverage": 0.99625,
+    "PRF_coverage": 0.99625,
+    "teacher_routed": 23,
+    "teacher_ne_B": 0,
+    "intervention": 0,
+    "correction": 0,
+    "harm": 0,
+    "net": 0,
+    "strong_C": 0,
+    "delta_accuracy_cluster_ci95": [
+      0.0,
+      0.0
+    ],
+    "net_correction_rate_cluster_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  "overall1000": {
+    "B_accuracy": 0.986,
+    "PRF_accuracy": 0.988,
+    "delta_accuracy": 0.0020000000000000018,
+    "B_balanced_accuracy": 0.9788888888888889,
+    "PRF_balanced_accuracy": 0.9888888888888889,
+    "delta_balanced_accuracy": 0.010000000000000009,
+    "B_coverage": 0.99,
+    "PRF_coverage": 0.992,
+    "B_selective_accuracy": 0.9959595959595959,
+    "PRF_selective_accuracy": 0.9959677419354839,
+    "noise_yes": 1,
+    "strong_C": 0,
+    "teacher_routed": 52,
+    "teacher_ne_B": 2,
+    "P_teacher_ne_B_given_routed": 0.038461538461538464,
+    "intervention": 2,
+    "correction": 2,
+    "harm": 0,
+    "net": 2
+  },
+  "cluster_bootstrap": {
+    "bootstrap_n": 20000,
+    "cluster_n": 100,
+    "seed": 20260922,
+    "full_delta_accuracy_ci95": [
+      0.0,
+      0.004999999999999999
+    ],
+    "full_delta_balanced_accuracy_ci95": [
+      0.0,
+      0.025
+    ],
+    "full_net_correction_rate_ci95": [
+      0.0,
+      0.005
+    ],
+    "new800_delta_accuracy_ci95": [
+      0.0,
+      0.0
+    ],
+    "new800_net_correction_rate_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  "historical_exact_overlap_available": {
+    "B": 200,
+    "C": 200
+  },
+  "files": {
+    "B_sha256": "84db7687d6881ae8936d185375ce865f6fd89853c6e2388d166555f5f85d8c61",
+    "C_sha256": "1af19c38d0d11418741e82d8d77f5d1e1c24e469a29371335bfda800c0f2ee7e",
+    "teacher_sha256": "27ffa1a902c04813478f1f85ff7273dfac522727f8c74d93dd47a75183e7a1bf",
+    "final_sha256": "3727f207c7eae39f976a1e8956ae396fa40f0034182aaa3a8e873765df58f55b",
+    "rank_sha256": "2fdd7f780e73e73f7adc2d707d5a0b21538406f73615fd2064f09412f84848ac",
+    "new800_sha256": "93c0cef58e59ed4259b61279956e625b0f94ed619f120c4340793a977cf09fe1",
+    "bootstrap_sha256": "5b9e14d6ff6714009977bee5c3faeaaf7178e103b3ba8b65f88a185923cc7069"
+  }
+}

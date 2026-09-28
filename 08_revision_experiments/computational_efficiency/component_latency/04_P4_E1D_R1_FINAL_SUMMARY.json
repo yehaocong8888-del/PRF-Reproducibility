@@ -1,0 +1,172 @@
+{
+  "phase": "P4-E1-D-R1",
+  "status": "COMPLETE",
+  "stage": "D_30B_evidence_only",
+  "hardware": "NVIDIA GeForce RTX 5090",
+  "sample_N": 120,
+  "sample_sha256": "ca3c1dda2628813b0f8072872b2f287ddc5e28312755f8ad923b691a8b2187e1",
+  "temperature": 0.0,
+  "warmup_calls_excluded": 3,
+  "schema_normalization": {
+    "phase": "P4-E1-D-R1",
+    "sample_N": 120,
+    "alias_counts": [
+      {
+        "dataset": "IMD2020",
+        "raw_field": "raw",
+        "masked_field": "masked",
+        "N": 20
+      },
+      {
+        "dataset": "INRIA_Copydays",
+        "raw_field": "raw",
+        "masked_field": "masked",
+        "N": 20
+      },
+      {
+        "dataset": "LIVE",
+        "raw_field": "clip_raw",
+        "masked_field": "clip_masked",
+        "N": 20
+      },
+      {
+        "dataset": "LVW",
+        "raw_field": "raw",
+        "masked_field": "masked",
+        "N": 20
+      },
+      {
+        "dataset": "PIPAL",
+        "raw_field": "clip_raw",
+        "masked_field": "clip_masked",
+        "N": 20
+      },
+      {
+        "dataset": "Waterloo",
+        "raw_field": "raw",
+        "masked_field": "masked",
+        "N": 20
+      }
+    ],
+    "all_120_prompts_reconstructed": true,
+    "inference_before_schema_validation": false
+  },
+  "overall": {
+    "wall_sec": {
+      "N": 120,
+      "mean": 0.5534315225000038,
+      "median": 0.554575899999918,
+      "p95": 0.6427197950000675,
+      "min": 0.42041569999992134,
+      "max": 0.6828018999999586
+    },
+    "prompt_tokens": {
+      "N": 120,
+      "mean": 627.1083333333333,
+      "median": 627.0,
+      "p95": 631.0,
+      "min": 625.0,
+      "max": 631.0
+    },
+    "completion_tokens": {
+      "N": 120,
+      "mean": 106.75833333333334,
+      "median": 107.5,
+      "p95": 122.05,
+      "min": 81.0,
+      "max": 130.0
+    },
+    "total_tokens": {
+      "N": 120,
+      "mean": 733.8666666666667,
+      "median": 735.5,
+      "p95": 752.0,
+      "min": 706.0,
+      "max": 760.0
+    },
+    "prompt_ms": {
+      "N": 120,
+      "mean": 35.769125000000024,
+      "median": 34.695499999999996,
+      "p95": 42.807399999999994,
+      "min": 1.346,
+      "max": 44.596
+    },
+    "predicted_ms": {
+      "N": 120,
+      "mean": 503.26256666666666,
+      "median": 505.15250000000003,
+      "p95": 586.70865,
+      "min": 372.315,
+      "max": 637.08
+    },
+    "prompt_per_second": {
+      "N": 120,
+      "mean": 12328.937464747281,
+      "median": 12858.424777762975,
+      "p95": 13859.368782013466,
+      "min": 742.9420505200594,
+      "max": 14342.655514898064
+    },
+    "predicted_per_second": {
+      "N": 120,
+      "mean": 212.34080263977427,
+      "median": 213.51303578157857,
+      "p95": 219.80586497367767,
+      "min": 186.78972813461417,
+      "max": 225.47596567128423
+    }
+  },
+  "sequential_requests_per_second": 1.8069082792442368,
+  "per_dataset": [
+    {
+      "dataset": "IMD2020",
+      "N": 20,
+      "wall_mean_sec": 0.527196110000034,
+      "wall_median_sec": 0.520363750000115,
+      "wall_p95_sec": 0.6174934700001244
+    },
+    {
+      "dataset": "INRIA_Copydays",
+      "N": 20,
+      "wall_mean_sec": 0.567563789999997,
+      "wall_median_sec": 0.5669775999998592,
+      "wall_p95_sec": 0.6085029300000088
+    },
+    {
+      "dataset": "LIVE",
+      "N": 20,
+      "wall_mean_sec": 0.5611490599999854,
+      "wall_median_sec": 0.5546601500000179,
+      "wall_p95_sec": 0.6776118599999505
+    },
+    {
+      "dataset": "LVW",
+      "N": 20,
+      "wall_mean_sec": 0.5461778699999968,
+      "wall_median_sec": 0.5529889499999854,
+      "wall_p95_sec": 0.6505992699999184
+    },
+    {
+      "dataset": "PIPAL",
+      "N": 20,
+      "wall_mean_sec": 0.549774455000005,
+      "wall_median_sec": 0.5462828999999942,
+      "wall_p95_sec": 0.6155150250000418
+    },
+    {
+      "dataset": "Waterloo",
+      "N": 20,
+      "wall_mean_sec": 0.5687278500000048,
+      "wall_median_sec": 0.5598870499999862,
+      "wall_p95_sec": 0.6286945300001151
+    }
+  ],
+  "formal_loop_elapsed_sec": 66.58238790000007,
+  "gpu_snapshot_pre": "NVIDIA GeForce RTX 5090, 616.64, 32607, 21693, 10495, 1",
+  "gpu_snapshot_after_warmup": "NVIDIA GeForce RTX 5090, 616.64, 32607, 21668, 10520, 68",
+  "gpu_snapshot_post": "NVIDIA GeForce RTX 5090, 616.64, 32607, 21679, 10509, 69",
+  "interpretation": "Isolated latency of the frozen evidence-only Qwen3-VL-30B Teacher. The Teacher receives structured A/B/C evidence and does not reread images.",
+  "gold_used": false,
+  "source_mutation": false
+}

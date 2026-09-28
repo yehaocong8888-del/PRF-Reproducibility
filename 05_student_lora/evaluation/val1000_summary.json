@@ -1,0 +1,20 @@
+{
+  "input_jsonl": "/mnt/f/PRF/loraUbuntu/GCSJ/prf_vl_student_v1/eval_results/val_stratified_1000.jsonl",
+  "n": 1000,
+  "bad": 0,
+  "agree": 711,
+  "agreement": 0.711,
+  "pred_dist": {
+    "U": 416,
+    "A": 261,
+    "R": 323
+  },
+  "gold_dist": {
+    "R": 495,
+    "A": 345,
+    "U": 160
+  },
+  "pred_file": "/mnt/f/PRF/loraUbuntu/GCSJ/prf_vl_student_v1/eval_results/val1000_predictions.jsonl",
+  "resume_mode": true,
+  "resume_stage_seconds": 5550.461316585541
+}

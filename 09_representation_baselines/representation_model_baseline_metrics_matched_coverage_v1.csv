@@ -1,0 +1,4 @@
+﻿method_raw,method,protocol,target_coverage,tau_reject,tau_accept,n,agreement_pct,coverage_pct,u_rate_pct,covered_agreement_pct,det_conflict_pct,A_to_R,R_to_A,pred_ACCEPT,pred_REJECT,pred_AMBIGUOUS
+siglip2_base_patch16_224,SigLIP2,coverage-matched,0.864,0.916333,0.9625,3006,54.36,84.66,15.34,64.2,30.31,0,911,480,2065,461
+dinov2_base,DINOv2,coverage-matched,0.864,0.855884,1.0,3006,50.6,87.36,12.64,57.92,36.76,0,1105,389,2237,380
+eva02_base_clip_224,EVA-CLIP,coverage-matched,0.864,0.885331,0.953147,3006,55.22,87.26,12.74,63.29,32.04,0,963,503,2120,383

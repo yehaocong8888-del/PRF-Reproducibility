@@ -1,0 +1,45 @@
+{
+  "schema": "external_final_summary_v1",
+  "dataset": "COVERAGE",
+  "expected_n": 200,
+  "final_n": 200,
+  "complete": true,
+  "manifest_sha256": "3ed9558c123bfd0c1ebd96765248aad10d7d5c5005af07dae7af50c1331d5c91",
+  "A": {
+    "accuracy": 0.86,
+    "coverage": 0.9,
+    "selective_accuracy": 0.9555555555555556
+  },
+  "B": {
+    "accuracy": 0.95,
+    "coverage": 0.965,
+    "selective_accuracy": 0.9844559585492227
+  },
+  "PRF": {
+    "accuracy": 0.96,
+    "coverage": 0.975,
+    "selective_accuracy": 0.9846153846153847
+  },
+  "A_ne_B_n": 25,
+  "noise_yes_n": 1,
+  "strong_C_n": 0,
+  "teacher_routed_n": 29,
+  "teacher_routed_rate": 0.145,
+  "teacher_ne_B_n": 2,
+  "teacher_ne_B_rate": 0.06896551724137931,
+  "intervention_n": 2,
+  "correction_n": 2,
+  "harm_n": 0,
+  "net_correction": 2,
+  "final_source_dist": {
+    "AUTO_2OF3": 171,
+    "TEACHER_30B": 29
+  },
+  "final_dist": {
+    "ACCEPT": 102,
+    "REJECT": 93,
+    "AMBIGUOUS": 5
+  },
+  "final_jsonl_sha256": "0b23195dfd7079138bc5321ac1ded998632604e3531d7f06b5a39adeb8f01890",
+  "final_csv_sha256": "ccbd9164e73f11990db3f3898e9247c615c4fc8d20b8e0e9d014ef19a9824345"
+}

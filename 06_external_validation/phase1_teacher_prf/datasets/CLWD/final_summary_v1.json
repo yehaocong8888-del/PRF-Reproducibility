@@ -1,0 +1,47 @@
+{
+  "schema": "external_final_summary_v1",
+  "dataset": "CLWD",
+  "expected_n": 80,
+  "final_n": 80,
+  "complete": true,
+  "manifest_sha256": "7d74182a724d07050552ffbd2f00679402ed49e33996b02b9126a6b199ef60bd",
+  "final_jsonl_sha256": "fc79eef9c02306eab04ded41855146b87dd38f16b4cee9af2412dfc80f3c88e0",
+  "final_csv_sha256": "27161a518f7a791f37f544e3999a762bf09dc26540f56578836c62f8a387af04",
+  "A": {
+    "accuracy": 0.675,
+    "macro_f1_3class": 0.45957785742731977,
+    "coverage": 0.8375,
+    "selective_accuracy": 0.8059701492537313
+  },
+  "B": {
+    "accuracy": 0.925,
+    "macro_f1_3class": 0.6315095583388266,
+    "coverage": 0.95,
+    "selective_accuracy": 0.9736842105263158
+  },
+  "PRF": {
+    "accuracy": 0.925,
+    "macro_f1_3class": 0.6315095583388266,
+    "coverage": 0.95,
+    "selective_accuracy": 0.9736842105263158
+  },
+  "A_ne_B_n": 22,
+  "strong_C_n": 0,
+  "teacher_routed_n": 24,
+  "teacher_routed_rate": 0.3,
+  "teacher_ne_B_n": 0,
+  "teacher_ne_B_rate": 0.0,
+  "intervention_n": 0,
+  "correction_n": 0,
+  "harm_n": 0,
+  "net_correction": 0,
+  "final_source_dist": {
+    "AUTO_2OF3": 56,
+    "TEACHER_30B": 24
+  },
+  "final_dist": {
+    "ACCEPT": 34,
+    "REJECT": 42,
+    "AMBIGUOUS": 4
+  }
+}

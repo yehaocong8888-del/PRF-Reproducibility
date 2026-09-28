@@ -1,0 +1,2 @@
+﻿stage,N,mean_sec,median_sec,p95_sec,requests_per_sec_sequential,mean_prompt_tokens,mean_completion_tokens,mean_server_prompt_ms,mean_server_decode_ms,failure_rate
+D_30B_evidence_only,120,0.5534315225000038,0.554575899999918,0.6427197950000675,1.8069082792442368,627.1083333333333,106.75833333333334,35.769125000000024,503.26256666666666,0.0

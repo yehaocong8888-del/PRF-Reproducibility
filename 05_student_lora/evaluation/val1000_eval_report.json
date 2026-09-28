@@ -1,0 +1,58 @@
+{
+  "total_samples": 1000,
+  "gold_distribution": {
+    "R": 495,
+    "A": 345,
+    "U": 160
+  },
+  "pred_distribution": {
+    "U": 416,
+    "A": 261,
+    "R": 323
+  },
+  "confusion_matrix": {
+    "A": {
+      "A": 250,
+      "R": 0,
+      "U": 95
+    },
+    "R": {
+      "A": 5,
+      "R": 315,
+      "U": 175
+    },
+    "U": {
+      "A": 6,
+      "R": 8,
+      "U": 146
+    }
+  },
+  "metrics": {
+    "A": {
+      "precision": 0.9578544061302682,
+      "recall": 0.7246376811594203,
+      "f1": 0.8250825082508251,
+      "tp": 250,
+      "fp": 11,
+      "fn": 95
+    },
+    "R": {
+      "precision": 0.9752321981424149,
+      "recall": 0.6363636363636364,
+      "f1": 0.7701711491442542,
+      "tp": 315,
+      "fp": 8,
+      "fn": 180
+    },
+    "U": {
+      "precision": 0.35096153846153844,
+      "recall": 0.9125,
+      "f1": 0.5069444444444444,
+      "tp": 146,
+      "fp": 270,
+      "fn": 14
+    }
+  },
+  "macro_f1": 0.7007327006131746,
+  "disagreement_samples_file": "/mnt/f/PRF/loraUbuntu/GCSJ/prf_vl_student_v1/eval_results/val1000_disagreements_sample50.jsonl"
+}

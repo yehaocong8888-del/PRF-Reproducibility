@@ -1,0 +1,986 @@
+[
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\00_核心代码\\11_make_keep_indices_from_trainA_v2.py",
+    "relative_path": "00_核心代码\\11_make_keep_indices_from_trainA_v2.py",
+    "filename": "11_make_keep_indices_from_trainA_v2.py",
+    "suffix": ".py",
+    "size_bytes": 2806,
+    "size_mb": 0.0027,
+    "mtime": "2026-02-27T22:18:01",
+    "exact_key_file": false,
+    "term_hits": [
+      "train"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\00_核心代码\\12_train_lora_from_cache_keepidx_trainA_fast100.py",
+    "relative_path": "00_核心代码\\12_train_lora_from_cache_keepidx_trainA_fast100.py",
+    "filename": "12_train_lora_from_cache_keepidx_trainA_fast100.py",
+    "suffix": ".py",
+    "size_bytes": 5556,
+    "size_mb": 0.0053,
+    "mtime": "2026-02-27T22:24:24",
+    "exact_key_file": false,
+    "term_hits": [
+      "train",
+      "lora"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\00_核心代码\\13_train_lora_full_keepidx_trainA.py",
+    "relative_path": "00_核心代码\\13_train_lora_full_keepidx_trainA.py",
+    "filename": "13_train_lora_full_keepidx_trainA.py",
+    "suffix": ".py",
+    "size_bytes": 6419,
+    "size_mb": 0.0061,
+    "mtime": "2026-02-27T23:42:15",
+    "exact_key_file": false,
+    "term_hits": [
+      "train",
+      "lora"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\00_核心代码\\14_resume_from_ckpt020000_nan_safe.py",
+    "relative_path": "00_核心代码\\14_resume_from_ckpt020000_nan_safe.py",
+    "filename": "14_resume_from_ckpt020000_nan_safe.py",
+    "suffix": ".py",
+    "size_bytes": 8862,
+    "size_mb": 0.0085,
+    "mtime": "2026-03-08T11:00:36",
+    "exact_key_file": false,
+    "term_hits": [
+      "resume"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\01_关键输入\\keep_indices_trainA_v2.json",
+    "relative_path": "01_关键输入\\keep_indices_trainA_v2.json",
+    "filename": "keep_indices_trainA_v2.json",
+    "suffix": ".json",
+    "size_bytes": 182061,
+    "size_mb": 0.1736,
+    "mtime": "2026-02-27T22:18:05",
+    "exact_key_file": false,
+    "term_hits": [
+      "train"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\01_关键输入\\train.jsonl",
+    "relative_path": "01_关键输入\\train.jsonl",
+    "filename": "train.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 19765371,
+    "size_mb": 18.8497,
+    "mtime": "2026-02-26T23:58:37",
+    "exact_key_file": false,
+    "term_hits": [
+      "train"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\02_训练结果_原始full_run\\train_log.jsonl",
+    "relative_path": "02_训练结果_原始full_run\\train_log.jsonl",
+    "filename": "train_log.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 102034,
+    "size_mb": 0.0973,
+    "mtime": "2026-03-08T10:01:29",
+    "exact_key_file": false,
+    "term_hits": [
+      "train",
+      "log"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\02_训练结果_原始full_run\\train_log_nanrun_backup.jsonl",
+    "relative_path": "02_训练结果_原始full_run\\train_log_nanrun_backup.jsonl",
+    "filename": "train_log_nanrun_backup.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 102034,
+    "size_mb": 0.0973,
+    "mtime": "2026-03-08T10:36:22",
+    "exact_key_file": false,
+    "term_hits": [
+      "train",
+      "log"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\02_训练结果_原始full_run\\ckpt_step020000\\adapter_config.json",
+    "relative_path": "02_训练结果_原始full_run\\ckpt_step020000\\adapter_config.json",
+    "filename": "adapter_config.json",
+    "suffix": ".json",
+    "size_bytes": 1042,
+    "size_mb": 0.001,
+    "mtime": "2026-03-06T19:41:21",
+    "exact_key_file": true,
+    "term_hits": [
+      "adapter"
+    ],
+    "sha256": "deeb8e8f4728495dcd9d16ba3e0314f8ca5fe383c15f943e8e794834ef364807"
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\02_训练结果_原始full_run\\ckpt_step020000\\adapter_model.safetensors",
+    "relative_path": "02_训练结果_原始full_run\\ckpt_step020000\\adapter_model.safetensors",
+    "filename": "adapter_model.safetensors",
+    "suffix": ".safetensors",
+    "size_bytes": 30713512,
+    "size_mb": 29.2907,
+    "mtime": "2026-03-06T19:41:21",
+    "exact_key_file": true,
+    "term_hits": [
+      "adapter"
+    ],
+    "sha256": "9af6a3996c5abf9b2ce74357e58f6b87a0cd6b224ece93b047b7c81bf82ec273"
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\03_训练结果_恢复final_run\\resume_meta.json",
+    "relative_path": "03_训练结果_恢复final_run\\resume_meta.json",
+    "filename": "resume_meta.json",
+    "suffix": ".json",
+    "size_bytes": 499,
+    "size_mb": 0.0005,
+    "mtime": "2026-03-08T11:00:58",
+    "exact_key_file": false,
+    "term_hits": [
+      "final",
+      "resume"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\03_训练结果_恢复final_run\\train_log.jsonl",
+    "relative_path": "03_训练结果_恢复final_run\\train_log.jsonl",
+    "filename": "train_log.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 56298,
+    "size_mb": 0.0537,
+    "mtime": "2026-03-10T16:13:36",
+    "exact_key_file": false,
+    "term_hits": [
+      "train",
+      "log",
+      "final"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\03_训练结果_恢复final_run\\ckpt_step020500\\adapter_config.json",
+    "relative_path": "03_训练结果_恢复final_run\\ckpt_step020500\\adapter_config.json",
+    "filename": "adapter_config.json",
+    "suffix": ".json",
+    "size_bytes": 1042,
+    "size_mb": 0.001,
+    "mtime": "2026-03-08T15:05:18",
+    "exact_key_file": true,
+    "term_hits": [
+      "adapter",
+      "final"
+    ],
+    "sha256": "742b2f602084490d198f8c4d3d5499c05e0d11fc562a76c71f5c76d02667072f"
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\03_训练结果_恢复final_run\\ckpt_step020500\\adapter_model.safetensors",
+    "relative_path": "03_训练结果_恢复final_run\\ckpt_step020500\\adapter_model.safetensors",
+    "filename": "adapter_model.safetensors",
+    "suffix": ".safetensors",
+    "size_bytes": 30713512,
+    "size_mb": 29.2907,
+    "mtime": "2026-03-08T15:05:18",
+    "exact_key_file": true,
+    "term_hits": [
+      "adapter",
+      "final"
+    ],
+    "sha256": "8366d4e838668b8e3e42c0bff588a051e321b75c9705878d5918db6335cf5af7"
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\03_训练结果_恢复final_run\\ckpt_step020500\\README.md",
+    "relative_path": "03_训练结果_恢复final_run\\ckpt_step020500\\README.md",
+    "filename": "README.md",
+    "suffix": ".md",
+    "size_bytes": 5276,
+    "size_mb": 0.005,
+    "mtime": "2026-03-08T15:05:18",
+    "exact_key_file": false,
+    "term_hits": [
+      "final"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\03_训练结果_恢复final_run\\ckpt_step021000\\adapter_config.json",
+    "relative_path": "03_训练结果_恢复final_run\\ckpt_step021000\\adapter_config.json",
+    "filename": "adapter_config.json",
+    "suffix": ".json",
+    "size_bytes": 1042,
+    "size_mb": 0.001,
+    "mtime": "2026-03-08T18:56:00",
+    "exact_key_file": true,
+    "term_hits": [
+      "adapter",
+      "final"
+    ],
+    "sha256": "742b2f602084490d198f8c4d3d5499c05e0d11fc562a76c71f5c76d02667072f"
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\03_训练结果_恢复final_run\\ckpt_step021000\\adapter_model.safetensors",
+    "relative_path": "03_训练结果_恢复final_run\\ckpt_step021000\\adapter_model.safetensors",
+    "filename": "adapter_model.safetensors",
+    "suffix": ".safetensors",
+    "size_bytes": 30713512,
+    "size_mb": 29.2907,
+    "mtime": "2026-03-08T18:56:00",
+    "exact_key_file": true,
+    "term_hits": [
+      "adapter",
+      "final"
+    ],
+    "sha256": "a2a53ab37b03f48a3d0b1171294e5c5ebdfd7ff6ac1f2cef9920fbfb8972f3f1"
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\03_训练结果_恢复final_run\\ckpt_step021000\\README.md",
+    "relative_path": "03_训练结果_恢复final_run\\ckpt_step021000\\README.md",
+    "filename": "README.md",
+    "suffix": ".md",
+    "size_bytes": 5276,
+    "size_mb": 0.005,
+    "mtime": "2026-03-08T18:56:00",
+    "exact_key_file": false,
+    "term_hits": [
+      "final"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\03_训练结果_恢复final_run\\ckpt_step026500\\adapter_config.json",
+    "relative_path": "03_训练结果_恢复final_run\\ckpt_step026500\\adapter_config.json",
+    "filename": "adapter_config.json",
+    "suffix": ".json",
+    "size_bytes": 1042,
+    "size_mb": 0.001,
+    "mtime": "2026-03-10T15:21:52",
+    "exact_key_file": true,
+    "term_hits": [
+      "adapter",
+      "final"
+    ],
+    "sha256": "742b2f602084490d198f8c4d3d5499c05e0d11fc562a76c71f5c76d02667072f"
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\03_训练结果_恢复final_run\\ckpt_step026500\\adapter_model.safetensors",
+    "relative_path": "03_训练结果_恢复final_run\\ckpt_step026500\\adapter_model.safetensors",
+    "filename": "adapter_model.safetensors",
+    "suffix": ".safetensors",
+    "size_bytes": 30713512,
+    "size_mb": 29.2907,
+    "mtime": "2026-03-10T15:21:52",
+    "exact_key_file": true,
+    "term_hits": [
+      "adapter",
+      "final"
+    ],
+    "sha256": "587347116a2d07e29d3d120aa988afeb4d7a3ea5fcbbfcd7d17ed836d47091ef"
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\03_训练结果_恢复final_run\\ckpt_step026500\\README.md",
+    "relative_path": "03_训练结果_恢复final_run\\ckpt_step026500\\README.md",
+    "filename": "README.md",
+    "suffix": ".md",
+    "size_bytes": 5276,
+    "size_mb": 0.005,
+    "mtime": "2026-03-10T15:21:52",
+    "exact_key_file": false,
+    "term_hits": [
+      "final"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\04_最终模型_final\\final\\adapter_config.json",
+    "relative_path": "04_最终模型_final\\final\\adapter_config.json",
+    "filename": "adapter_config.json",
+    "suffix": ".json",
+    "size_bytes": 1042,
+    "size_mb": 0.001,
+    "mtime": "2026-03-10T16:17:29",
+    "exact_key_file": true,
+    "term_hits": [
+      "adapter",
+      "final"
+    ],
+    "sha256": "742b2f602084490d198f8c4d3d5499c05e0d11fc562a76c71f5c76d02667072f"
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\04_最终模型_final\\final\\adapter_model.safetensors",
+    "relative_path": "04_最终模型_final\\final\\adapter_model.safetensors",
+    "filename": "adapter_model.safetensors",
+    "suffix": ".safetensors",
+    "size_bytes": 30713512,
+    "size_mb": 29.2907,
+    "mtime": "2026-03-10T16:17:29",
+    "exact_key_file": true,
+    "term_hits": [
+      "adapter",
+      "final"
+    ],
+    "sha256": "ca8839bb328ed03322432fa43035edb8c0ee37882d66dba7198d45bd9a2657bd"
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\04_最终模型_final\\final\\README.md",
+    "relative_path": "04_最终模型_final\\final\\README.md",
+    "filename": "README.md",
+    "suffix": ".md",
+    "size_bytes": 5276,
+    "size_mb": 0.005,
+    "mtime": "2026-03-10T16:17:29",
+    "exact_key_file": false,
+    "term_hits": [
+      "final"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\test2000_confusion_matrix.json",
+    "relative_path": "eval_results\\test2000_confusion_matrix.json",
+    "filename": "test2000_confusion_matrix.json",
+    "suffix": ".json",
+    "size_bytes": 161,
+    "size_mb": 0.0002,
+    "mtime": "2026-03-13T15:06:29",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "test",
+      "result",
+      "confusion"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\test2000_disagreements_sample100.jsonl",
+    "relative_path": "eval_results\\test2000_disagreements_sample100.jsonl",
+    "filename": "test2000_disagreements_sample100.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 25718,
+    "size_mb": 0.0245,
+    "mtime": "2026-03-13T15:06:29",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "test",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\test2000_error_distribution.json",
+    "relative_path": "eval_results\\test2000_error_distribution.json",
+    "filename": "test2000_error_distribution.json",
+    "suffix": ".json",
+    "size_bytes": 86,
+    "size_mb": 0.0001,
+    "mtime": "2026-03-13T15:06:29",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "test",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\test2000_eval_report.json",
+    "relative_path": "eval_results\\test2000_eval_report.json",
+    "filename": "test2000_eval_report.json",
+    "suffix": ".json",
+    "size_bytes": 1209,
+    "size_mb": 0.0012,
+    "mtime": "2026-03-13T15:06:29",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "test",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\test2000_predictions.jsonl",
+    "relative_path": "eval_results\\test2000_predictions.jsonl",
+    "filename": "test2000_predictions.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 515720,
+    "size_mb": 0.4918,
+    "mtime": "2026-03-13T06:13:19",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "test",
+      "predict",
+      "prediction",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\test2000_summary.json",
+    "relative_path": "eval_results\\test2000_summary.json",
+    "filename": "test2000_summary.json",
+    "suffix": ".json",
+    "size_bytes": 482,
+    "size_mb": 0.0005,
+    "mtime": "2026-03-13T06:13:19",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "test",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\test_stratified_2000.jsonl",
+    "relative_path": "eval_results\\test_stratified_2000.jsonl",
+    "filename": "test_stratified_2000.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 614515,
+    "size_mb": 0.586,
+    "mtime": "2026-03-12T14:55:01",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "test",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\test_stratified_2000_meta.json",
+    "relative_path": "eval_results\\test_stratified_2000_meta.json",
+    "filename": "test_stratified_2000_meta.json",
+    "suffix": ".json",
+    "size_bytes": 354,
+    "size_mb": 0.0003,
+    "mtime": "2026-03-12T14:55:01",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "test",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val1000_confusion_matrix.json",
+    "relative_path": "eval_results\\val1000_confusion_matrix.json",
+    "filename": "val1000_confusion_matrix.json",
+    "suffix": ".json",
+    "size_bytes": 158,
+    "size_mb": 0.0002,
+    "mtime": "2026-03-12T13:06:16",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result",
+      "confusion"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val1000_disagreements_sample100.jsonl",
+    "relative_path": "eval_results\\val1000_disagreements_sample100.jsonl",
+    "filename": "val1000_disagreements_sample100.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 25777,
+    "size_mb": 0.0246,
+    "mtime": "2026-03-12T13:16:58",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val1000_disagreements_sample50.jsonl",
+    "relative_path": "eval_results\\val1000_disagreements_sample50.jsonl",
+    "filename": "val1000_disagreements_sample50.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 12886,
+    "size_mb": 0.0123,
+    "mtime": "2026-03-12T13:06:16",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val1000_error_analysis.txt",
+    "relative_path": "eval_results\\val1000_error_analysis.txt",
+    "filename": "val1000_error_analysis.txt",
+    "suffix": ".txt",
+    "size_bytes": 201,
+    "size_mb": 0.0002,
+    "mtime": "2026-03-12T13:16:58",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val1000_error_distribution.json",
+    "relative_path": "eval_results\\val1000_error_distribution.json",
+    "filename": "val1000_error_distribution.json",
+    "suffix": ".json",
+    "size_bytes": 70,
+    "size_mb": 0.0001,
+    "mtime": "2026-03-12T13:16:58",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val1000_eval_report.json",
+    "relative_path": "eval_results\\val1000_eval_report.json",
+    "filename": "val1000_eval_report.json",
+    "suffix": ".json",
+    "size_bytes": 1074,
+    "size_mb": 0.001,
+    "mtime": "2026-03-12T13:06:16",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val1000_explain_cases50.jsonl",
+    "relative_path": "eval_results\\val1000_explain_cases50.jsonl",
+    "filename": "val1000_explain_cases50.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 12867,
+    "size_mb": 0.0123,
+    "mtime": "2026-03-21T16:45:50",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val1000_explain_cases50_meta.json",
+    "relative_path": "eval_results\\val1000_explain_cases50_meta.json",
+    "filename": "val1000_explain_cases50_meta.json",
+    "suffix": ".json",
+    "size_bytes": 481,
+    "size_mb": 0.0005,
+    "mtime": "2026-03-21T16:45:50",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val1000_explain_cases50_outputs.jsonl",
+    "relative_path": "eval_results\\val1000_explain_cases50_outputs.jsonl",
+    "filename": "val1000_explain_cases50_outputs.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 74238,
+    "size_mb": 0.0708,
+    "mtime": "2026-03-21T17:17:46",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val1000_explain_cases50_outputs_base8b_v5.jsonl",
+    "relative_path": "eval_results\\val1000_explain_cases50_outputs_base8b_v5.jsonl",
+    "filename": "val1000_explain_cases50_outputs_base8b_v5.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 125708,
+    "size_mb": 0.1199,
+    "mtime": "2026-03-22T01:05:11",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val1000_explain_cases50_outputs_v3.jsonl",
+    "relative_path": "eval_results\\val1000_explain_cases50_outputs_v3.jsonl",
+    "filename": "val1000_explain_cases50_outputs_v3.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 78709,
+    "size_mb": 0.0751,
+    "mtime": "2026-03-21T18:05:19",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val1000_explain_cases50_outputs_v4.jsonl",
+    "relative_path": "eval_results\\val1000_explain_cases50_outputs_v4.jsonl",
+    "filename": "val1000_explain_cases50_outputs_v4.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 93605,
+    "size_mb": 0.0893,
+    "mtime": "2026-03-22T00:13:58",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val1000_explain_cases50_summary.json",
+    "relative_path": "eval_results\\val1000_explain_cases50_summary.json",
+    "filename": "val1000_explain_cases50_summary.json",
+    "suffix": ".json",
+    "size_bytes": 380,
+    "size_mb": 0.0004,
+    "mtime": "2026-03-21T17:17:46",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val1000_explain_cases50_summary_base8b_v5.json",
+    "relative_path": "eval_results\\val1000_explain_cases50_summary_base8b_v5.json",
+    "filename": "val1000_explain_cases50_summary_base8b_v5.json",
+    "suffix": ".json",
+    "size_bytes": 391,
+    "size_mb": 0.0004,
+    "mtime": "2026-03-22T01:05:11",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val1000_explain_cases50_summary_v3.json",
+    "relative_path": "eval_results\\val1000_explain_cases50_summary_v3.json",
+    "filename": "val1000_explain_cases50_summary_v3.json",
+    "suffix": ".json",
+    "size_bytes": 383,
+    "size_mb": 0.0004,
+    "mtime": "2026-03-21T18:05:19",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val1000_explain_cases50_summary_v4.json",
+    "relative_path": "eval_results\\val1000_explain_cases50_summary_v4.json",
+    "filename": "val1000_explain_cases50_summary_v4.json",
+    "suffix": ".json",
+    "size_bytes": 382,
+    "size_mb": 0.0004,
+    "mtime": "2026-03-22T00:13:58",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val1000_predictions.jsonl",
+    "relative_path": "eval_results\\val1000_predictions.jsonl",
+    "filename": "val1000_predictions.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 257972,
+    "size_mb": 0.246,
+    "mtime": "2026-03-12T09:37:01",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "predict",
+      "prediction",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val1000_summary.json",
+    "relative_path": "eval_results\\val1000_summary.json",
+    "filename": "val1000_summary.json",
+    "suffix": ".json",
+    "size_bytes": 465,
+    "size_mb": 0.0004,
+    "mtime": "2026-03-12T09:37:02",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val_constrained_test100_n100_bs2_predictions.jsonl",
+    "relative_path": "eval_results\\val_constrained_test100_n100_bs2_predictions.jsonl",
+    "filename": "val_constrained_test100_n100_bs2_predictions.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 737,
+    "size_mb": 0.0007,
+    "mtime": "2026-03-11T17:05:49",
+    "exact_key_file": false,
+    "term_hits": [
+      "train",
+      "eval",
+      "test",
+      "predict",
+      "prediction",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val_first100_predictions.jsonl",
+    "relative_path": "eval_results\\val_first100_predictions.jsonl",
+    "filename": "val_first100_predictions.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 25723,
+    "size_mb": 0.0245,
+    "mtime": "2026-03-11T15:57:04",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "predict",
+      "prediction",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val_first100_predictions_reparsed.jsonl",
+    "relative_path": "eval_results\\val_first100_predictions_reparsed.jsonl",
+    "filename": "val_first100_predictions_reparsed.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 27423,
+    "size_mb": 0.0262,
+    "mtime": "2026-03-11T16:29:15",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "predict",
+      "prediction",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val_first100_summary.json",
+    "relative_path": "eval_results\\val_first100_summary.json",
+    "filename": "val_first100_summary.json",
+    "suffix": ".json",
+    "size_bytes": 347,
+    "size_mb": 0.0003,
+    "mtime": "2026-03-11T15:57:04",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val_first100_summary_reparsed.json",
+    "relative_path": "eval_results\\val_first100_summary_reparsed.json",
+    "filename": "val_first100_summary_reparsed.json",
+    "suffix": ".json",
+    "size_bytes": 407,
+    "size_mb": 0.0004,
+    "mtime": "2026-03-11T16:29:15",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val_first100_v3_predictions.jsonl",
+    "relative_path": "eval_results\\val_first100_v3_predictions.jsonl",
+    "filename": "val_first100_v3_predictions.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 25554,
+    "size_mb": 0.0244,
+    "mtime": "2026-03-11T18:06:22",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "predict",
+      "prediction",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val_first100_v3_summary.json",
+    "relative_path": "eval_results\\val_first100_v3_summary.json",
+    "filename": "val_first100_v3_summary.json",
+    "suffix": ".json",
+    "size_bytes": 375,
+    "size_mb": 0.0004,
+    "mtime": "2026-03-11T18:06:22",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val_opt_test100_n100_bs2_predictions.jsonl",
+    "relative_path": "eval_results\\val_opt_test100_n100_bs2_predictions.jsonl",
+    "filename": "val_opt_test100_n100_bs2_predictions.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 1622,
+    "size_mb": 0.0015,
+    "mtime": "2026-03-11T16:47:30",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "test",
+      "predict",
+      "prediction",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val_stratified_1000.jsonl",
+    "relative_path": "eval_results\\val_stratified_1000.jsonl",
+    "filename": "val_stratified_1000.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 307388,
+    "size_mb": 0.2931,
+    "mtime": "2026-03-11T19:03:01",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\val_stratified_1000_meta.json",
+    "relative_path": "eval_results\\val_stratified_1000_meta.json",
+    "filename": "val_stratified_1000_meta.json",
+    "suffix": ".json",
+    "size_bytes": 352,
+    "size_mb": 0.0003,
+    "mtime": "2026-03-11T19:03:01",
+    "exact_key_file": false,
+    "term_hits": [
+      "eval",
+      "result"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\final Lora adapter\\adapter_config.json",
+    "relative_path": "final Lora adapter\\adapter_config.json",
+    "filename": "adapter_config.json",
+    "suffix": ".json",
+    "size_bytes": 1042,
+    "size_mb": 0.001,
+    "mtime": "2026-03-10T16:17:29",
+    "exact_key_file": true,
+    "term_hits": [
+      "lora",
+      "adapter",
+      "final"
+    ],
+    "sha256": "742b2f602084490d198f8c4d3d5499c05e0d11fc562a76c71f5c76d02667072f"
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\final Lora adapter\\adapter_model.safetensors",
+    "relative_path": "final Lora adapter\\adapter_model.safetensors",
+    "filename": "adapter_model.safetensors",
+    "suffix": ".safetensors",
+    "size_bytes": 30713512,
+    "size_mb": 29.2907,
+    "mtime": "2026-03-10T16:17:29",
+    "exact_key_file": true,
+    "term_hits": [
+      "lora",
+      "adapter",
+      "final"
+    ],
+    "sha256": "ca8839bb328ed03322432fa43035edb8c0ee37882d66dba7198d45bd9a2657bd"
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\final Lora adapter\\README.md",
+    "relative_path": "final Lora adapter\\README.md",
+    "filename": "README.md",
+    "suffix": ".md",
+    "size_bytes": 5276,
+    "size_mb": 0.005,
+    "mtime": "2026-03-10T16:17:29",
+    "exact_key_file": false,
+    "term_hits": [
+      "lora",
+      "adapter",
+      "final"
+    ],
+    "sha256": null
+  },
+  {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\final Lora adapter\\train_log.jsonl",
+    "relative_path": "final Lora adapter\\train_log.jsonl",
+    "filename": "train_log.jsonl",
+    "suffix": ".jsonl",
+    "size_bytes": 56298,
+    "size_mb": 0.0537,
+    "mtime": "2026-03-10T16:13:36",
+    "exact_key_file": false,
+    "term_hits": [
+      "train",
+      "log",
+      "lora",
+      "adapter",
+      "final"
+    ],
+    "sha256": null
+  }
+]

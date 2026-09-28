@@ -1,0 +1,14 @@
+{
+  "phase": "P4-E2",
+  "status": "COMPLETE",
+  "master_sha256": "942ebcc3c92a6c4ccd480a4573bf4240360e2a33d37fd180991734b78e54766f",
+  "A_summary_sha256": "b4a5bec18d3ccac8ae8e7bece4393f1344a3b59a34875c1e7a1dc9529b896f29",
+  "BC_summary_sha256": "2f66f2cd0532c5e330a5087d3e140c1a4ee42bd9ca5c54d8841c826a912b6477",
+  "D_summary_sha256": "84f844cb1ad7d78c9d4ac9787a6c28e5e0617d2062d777e342856e829da2a8e1",
+  "stage_table_sha256": "f5c3a7e79f4145420bb85829495d64d2a79829166b0a891aae528e48910a660a",
+  "component_table_sha256": "7a8fd8bf2cc6cd00dea05f8610b8e89c8e1d453ffa7930a096e3a6bb19364c45",
+  "A_boundary_audit_sha256": "06a01caf1afcafa685459794c7287a0802c4e3ea9f753964cb855827abed4012",
+  "summary_sha256": "62e51ce8f667aaad8dbbcc84ad3d0cadd4d514b5cb6e2e84dddb76c905281c9a",
+  "model_execution": false,
+  "source_mutation": false
+}

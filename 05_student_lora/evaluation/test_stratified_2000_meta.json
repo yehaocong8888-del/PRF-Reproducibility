@@ -1,0 +1,17 @@
+{
+  "source": "<LOCAL_LINUX_HOME>/PRF_WORK_v1/dataset/test.jsonl",
+  "output": "/mnt/f/PRF/loraUbuntu/GCSJ/prf_vl_student_v1/eval_results/test_stratified_2000.jsonl",
+  "seed": 20260312,
+  "target_n": 2000,
+  "actual_n": 2000,
+  "full_dist": {
+    "A": 2894,
+    "U": 1376,
+    "R": 3777
+  },
+  "sampled_dist": {
+    "A": 719,
+    "R": 939,
+    "U": 342
+  }
+}

@@ -1,0 +1,10 @@
+﻿dataset,N,Student_correct,PRF_correct,Student_accuracy,PRF_accuracy,student_correct_prf_wrong,student_wrong_prf_correct,discordant,exact_two_sided_p,backend
+PIPAL,2000,1362,1821,0.681,0.9105,8,467,475,1.2634135080022866e-126,scipy.stats.binomtest
+LIVE,810,809,810,0.9987654320987654,1.0,0,1,1,1.0,scipy.stats.binomtest
+Waterloo,3999,2953,3197,0.738434608652163,0.7994498624656164,46,290,336,1.9847901455912287e-44,scipy.stats.binomtest
+INRIA_Copydays,3284,2389,2975,0.7274665042630938,0.9059074299634592,21,607,628,1.483908755467384e-150,scipy.stats.binomtest
+COVERAGE200,200,188,192,0.94,0.96,1,5,6,0.21875,scipy.stats.binomtest
+ISC2021,200,124,153,0.62,0.765,0,29,29,3.725290298461914e-09,scipy.stats.binomtest
+CLWD_controlled,80,70,74,0.875,0.925,2,6,8,0.2890625,scipy.stats.binomtest
+LVW,2000,1840,1966,0.92,0.983,1,127,128,7.581938562803754e-37,scipy.stats.binomtest
+IMD2020,828,548,557,0.6618357487922706,0.6727053140096618,19,28,47,0.24296021728332556,scipy.stats.binomtest

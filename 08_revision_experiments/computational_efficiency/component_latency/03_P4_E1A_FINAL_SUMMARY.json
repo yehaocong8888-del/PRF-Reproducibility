@@ -1,0 +1,61 @@
+{
+  "phase": "P4-E1-A",
+  "status": "COMPLETE",
+  "hardware": "NVIDIA GeForce RTX 5090",
+  "sample_N": 120,
+  "sample_sha256": "6f3581a259da84d6ac87e0e20c97dd87a84943a490b7d49167e3d8d4d6b5c30b",
+  "model": "openai/clip-vit-large-patch14",
+  "model_load_sec_excluded": 1.0717836999997417,
+  "uncached_pair_encoding": {
+    "total": {
+      "N": 120,
+      "mean": 0.05062068416668429,
+      "median": 0.029943900000262147,
+      "p95": 0.13903611999983237,
+      "min": 0.016301900000144087,
+      "max": 0.1956902000001719
+    },
+    "image_open": {
+      "N": 120,
+      "mean": 0.017437279166676943,
+      "median": 0.007785099999864542,
+      "p95": 0.05786654000014546,
+      "min": 0.000715199999831384,
+      "max": 0.10113309999997
+    },
+    "preprocess": {
+      "N": 120,
+      "mean": 0.020768775833357723,
+      "median": 0.00917675000005147,
+      "p95": 0.060934774999805076,
+      "min": 0.004793699999936507,
+      "max": 0.07892570000012711
+    },
+    "clip_inference": {
+      "N": 120,
+      "mean": 0.012335934166685547,
+      "median": 0.011582549999957337,
+      "p95": 0.016467639999859784,
+      "min": 0.010444099999858736,
+      "max": 0.026051800000004732
+    },
+    "similarity_max_abs_diff_vs_frozen": 0.0026526451110839844,
+    "similarity_mean_abs_diff_vs_frozen": 0.00033822456995646156
+  },
+  "cached_pipeline": {
+    "unique_images": 232,
+    "batch_size": 64,
+    "cache_build_total_sec": 4.656584800000019,
+    "cache_image_open_sec": 1.9498309999999037,
+    "cache_preprocess_sec": 2.2438979999997173,
+    "cache_clip_infer_sec": 0.4609921999999642,
+    "cache_build_amortized_sec_per_pair": 0.03880487333333349,
+    "cached_dot_threshold_sec_per_pair": 9.883114999994784e-07,
+    "full_amortized_A_sec_per_pair": 0.03880586164483349,
+    "cached_similarity_max_abs_diff_vs_frozen": 0.0019359588623046875,
+    "microbenchmark_repeats": 5000
+  },
+  "gpu_post": "NVIDIA GeForce RTX 5090, 616.64, 32607, 4035, 28153, 0",
+  "gold_used": false,
+  "source_mutation": false
+}

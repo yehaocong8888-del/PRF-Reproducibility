@@ -1,0 +1,88 @@
+{
+  "schema": "PRF_G4_S1A4_STUDENT_RUNTIME_FINAL_FREEZE_V1",
+  "created_at": "2026-09-22T21:22:32.631253+08:00",
+  "hf_base": "<LOCAL_USER_HOME>\\Downloads\\8B\\Qwen3-VL-8B-Instruct",
+  "final_adapter": "<STUDENT_DISTILLATION_ROOT>\\04_最终模型_final\\final",
+  "historical_inference_source": "<LOCAL_DRIVE_D>\\PRF期刊撰写\\2 验证及泛化阶段\\00_代码\\WSL补充脚本\\47_run_pickapic_prf_eval.py",
+  "replay_root": "<PHASE2_STUDENT_ROOT>\\G4-S1A3C_EXACT_HISTORICAL_REPLAY",
+  "runtime": {
+    "python_executable": "<LOCAL_DRIVE_D>\\anaconda3\\envs\\prf_student_g4\\python.exe",
+    "python_version": "3.10.19 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 16:41:31) [MSC v.1929 64 bit (AMD64)]",
+    "torch": "2.7.0+cu128",
+    "cuda_runtime": "12.8",
+    "transformers": "4.57.1",
+    "peft": "0.18.0",
+    "accelerate": "1.15.0",
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "gpu_capability": [
+      12,
+      0
+    ],
+    "processor_class": "Qwen3VLProcessor",
+    "model_class": "PeftModelForCausalLM",
+    "model_training": false,
+    "active_adapter": "default"
+  },
+  "hashes": {
+    "adapter_model_sha256": "ca8839bb328ed03322432fa43035edb8c0ee37882d66dba7198d45bd9a2657bd",
+    "adapter_config_sha256": "742b2f602084490d198f8c4d3d5499c05e0d11fc562a76c71f5c76d02667072f",
+    "historical_inference_source_sha256": "55b535e9d0154812e0f2f1922ae19c0a2971e7321e39ea9741602e247d7b4681",
+    "replay_summary_sha256": "24887f31f9f7e0efdcabe2d542c3df623e4c39173010868c4507d0408d1b8854",
+    "replay_predictions_sha256": "46c20563ad748f3f78f619e3f960ce914f661a5643c2b9b71d49b87f1b2b2208"
+  },
+  "gpu_state": {
+    "allocated_gb": 16.37721872329712,
+    "reserved_gb": 17.337890625,
+    "driver_free_gb": 12.7880859375,
+    "driver_total_gb": 31.81585693359375
+  },
+  "protocol": {
+    "image_order": "query_then_candidate",
+    "chat_template": true,
+    "add_generation_prompt": true,
+    "decode_scope": "generated_completion_only",
+    "do_sample": false,
+    "historical_replay_max_new_tokens": 12,
+    "historical_parser_priority": [
+      "DEC=A",
+      "DEC=R",
+      "DEC=U",
+      "ACCEPT",
+      "REJECT",
+      "A",
+      "R",
+      "U"
+    ],
+    "runtime_mutation_after_freeze": false,
+    "prompt_tuning_after_freeze": false,
+    "threshold_tuning_after_freeze": false
+  },
+  "replay_evidence": {
+    "cases": 20,
+    "raw_text_exact": "19/20 (0.9500)",
+    "parsed_decision_exact": "20/20 (1.0000)",
+    "defined_dec_token_exact": "18/18 (1.0000)",
+    "historical_pred_dist": {
+      "REJECT": 11,
+      "AMBIGUOUS": 7,
+      "UNK": 2
+    },
+    "current_pred_dist": {
+      "REJECT": 11,
+      "AMBIGUOUS": 7,
+      "UNK": 2
+    },
+    "historical_valid_binary_accuracy": 0.36363636363636365,
+    "current_valid_binary_accuracy": 0.36363636363636365
+  },
+  "status": {
+    "student_asset_recovered": true,
+    "hf_base_load_pass": true,
+    "final_lora_attach_pass": true,
+    "historical_replay_complete": true,
+    "decision_level_exact_reproduction": true,
+    "defined_dec_token_exact_reproduction": true,
+    "raw_text_exact_rate": 0.95,
+    "external_evaluation_authorized": true
+  }
+}

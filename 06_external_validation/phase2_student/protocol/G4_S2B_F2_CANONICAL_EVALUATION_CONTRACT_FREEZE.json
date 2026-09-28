@@ -1,0 +1,269 @@
+{
+  "schema": "PRF_G4_S2B_F2_CANONICAL_EVALUATION_CONTRACT_V1",
+  "created_at": "2026-09-22T21:44:13.921166+08:00",
+  "policy": {
+    "gold": "Use only explicit decision-like frozen Gold fields. No semantic boolean remapping.",
+    "B": "Read frozen B decision from G3 final result.",
+    "PRF": "Read frozen Full PRF final decision.",
+    "teacher_routed": "Defined exclusively by membership in the frozen dispute_for_teacher file.",
+    "main_settings": [
+      "PIPAL",
+      "LIVE",
+      "Waterloo",
+      "INRIA_Copydays",
+      "COVERAGE200",
+      "ISC2021",
+      "CLWD_controlled",
+      "LVW",
+      "IMD2020"
+    ],
+    "expected_total_rows": 13401,
+    "COVERAGE1000": "SUPPLEMENTARY_ONLY",
+    "KADID_TID2013": "ROUTE_ONLY_EXCLUDED_FROM_MAIN_ACCURACY"
+  },
+  "dataset_audit": [
+    {
+      "dataset": "Waterloo",
+      "expected_n": 3999,
+      "contract_rows": 3999,
+      "expected_routed": 752,
+      "actual_routed": 752,
+      "unresolved_gold": 0,
+      "unresolved_B": 0,
+      "unresolved_PRF": 0,
+      "missing_paths": 0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "INRIA_Copydays",
+      "expected_n": 3284,
+      "contract_rows": 3284,
+      "expected_routed": 1133,
+      "actual_routed": 1133,
+      "unresolved_gold": 0,
+      "unresolved_B": 0,
+      "unresolved_PRF": 0,
+      "missing_paths": 0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "COVERAGE200",
+      "expected_n": 200,
+      "contract_rows": 200,
+      "expected_routed": 29,
+      "actual_routed": 29,
+      "unresolved_gold": 0,
+      "unresolved_B": 0,
+      "unresolved_PRF": 0,
+      "missing_paths": 0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "ISC2021",
+      "expected_n": 200,
+      "contract_rows": 200,
+      "expected_routed": 76,
+      "actual_routed": 76,
+      "unresolved_gold": 0,
+      "unresolved_B": 0,
+      "unresolved_PRF": 0,
+      "missing_paths": 0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "CLWD_controlled",
+      "expected_n": 80,
+      "contract_rows": 80,
+      "expected_routed": 24,
+      "actual_routed": 24,
+      "unresolved_gold": 0,
+      "unresolved_B": 0,
+      "unresolved_PRF": 0,
+      "missing_paths": 0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "LVW",
+      "expected_n": 2000,
+      "contract_rows": 2000,
+      "expected_routed": 744,
+      "actual_routed": 744,
+      "unresolved_gold": 0,
+      "unresolved_B": 0,
+      "unresolved_PRF": 0,
+      "missing_paths": 0,
+      "status": "PASS"
+    },
+    {
+      "dataset": "IMD2020",
+      "expected_n": 828,
+      "contract_rows": 828,
+      "expected_routed": 129,
+      "actual_routed": 129,
+      "unresolved_gold": 0,
+      "unresolved_B": 0,
+      "unresolved_PRF": 0,
+      "missing_paths": 0,
+      "status": "PASS"
+    }
+  ],
+  "dataset_contracts": {
+    "Waterloo": {
+      "contract_path": "<PHASE2_STUDENT_ROOT>\\G4-S2B-F2_CANONICAL_EVALUATION_CONTRACT\\Waterloo_CANONICAL_CONTRACT.jsonl",
+      "contract_sha256": "bf417ebd7207988f873aa6f711776e90d4674783d2f14aa1b38d8fe592448488",
+      "pair_source_sha256": "2384dc2167d5e5d47140ded381b7f122a942c42b792a41281e57b8bb9d4682ea",
+      "final_source_sha256": "7f2a16540f4131c4f76b775cd3cc5080e2986a52526568f2fff341838ff0cdaa",
+      "route_source_sha256": "4e986437866c36ace0559cb694d2f571b69a1ba21fe968080e3fd939381e2be8",
+      "teacher_routed": 752,
+      "gold_fields": {
+        "('FINAL', 'expected_decision')": 3999
+      },
+      "b_fields": {
+        "B_decision": 3999
+      },
+      "prf_fields": {
+        "PRF_final": 3999
+      },
+      "teacher_fields": {},
+      "pair_only_ids": [
+        "W_MATCH_03714_T2_L4"
+      ]
+    },
+    "INRIA_Copydays": {
+      "contract_path": "<PHASE2_STUDENT_ROOT>\\G4-S2B-F2_CANONICAL_EVALUATION_CONTRACT\\INRIA_Copydays_CANONICAL_CONTRACT.jsonl",
+      "contract_sha256": "d37e5a53081728fc1fc32da2e82f3743945425dff14c4dbbcd43cc16a75806fd",
+      "pair_source_sha256": "9cecabaa042a80040a6b30f534ec8aaec65cd0e62249dd9cbfedfaa6b95a8603",
+      "final_source_sha256": "d1b6dcfc53f6fd2dbd48f2e36bb2922e60d6872d7663e1de52a7cddcbc0b5075",
+      "route_source_sha256": "e5873eb201e8faed73177ecfc614fe1be209181a57ed542509ec7ef567d8e2f3",
+      "teacher_routed": 1133,
+      "gold_fields": {
+        "('FINAL', 'gold_label')": 3284
+      },
+      "b_fields": {
+        "B_final": 3284
+      },
+      "prf_fields": {
+        "final_decision": 3284
+      },
+      "teacher_fields": {
+        "teacher_decision": 1133
+      },
+      "pair_only_ids": []
+    },
+    "COVERAGE200": {
+      "contract_path": "<PHASE2_STUDENT_ROOT>\\G4-S2B-F2_CANONICAL_EVALUATION_CONTRACT\\COVERAGE200_CANONICAL_CONTRACT.jsonl",
+      "contract_sha256": "77ab79d401bc38052970bb62b34821c3936a02d55b0fa79f00c21a21ccfa1f2c",
+      "pair_source_sha256": "3ed9558c123bfd0c1ebd96765248aad10d7d5c5005af07dae7af50c1331d5c91",
+      "final_source_sha256": "0b23195dfd7079138bc5321ac1ded998632604e3531d7f06b5a39adeb8f01890",
+      "route_source_sha256": "2d043d1771c56939c271203147eda1e3d66458b692908073f5a9aaf831dfc782",
+      "teacher_routed": 29,
+      "gold_fields": {
+        "('FINAL', 'gold_label')": 200
+      },
+      "b_fields": {
+        "B_final": 200
+      },
+      "prf_fields": {
+        "final_decision": 200
+      },
+      "teacher_fields": {
+        "teacher_decision": 29
+      },
+      "pair_only_ids": []
+    },
+    "ISC2021": {
+      "contract_path": "<PHASE2_STUDENT_ROOT>\\G4-S2B-F2_CANONICAL_EVALUATION_CONTRACT\\ISC2021_CANONICAL_CONTRACT.jsonl",
+      "contract_sha256": "e0f79d02d8efc768595addc55e17e1e657d3ceaa91925d1553dfa998d552dcc5",
+      "pair_source_sha256": "424c0a9fba3431308468d963f6fb9e3e01f52449228d504c20cc639d0612602d",
+      "final_source_sha256": "e25c9cb44c938680a9388c85e68bb1712cd6da0f5dda1e1303996a869fe90ba7",
+      "route_source_sha256": "81a0ac4088528276bf58db753cf80410440dfade511575e4c7b3f39df3d8b1cc",
+      "teacher_routed": 76,
+      "gold_fields": {
+        "('FINAL', 'gold_label')": 200
+      },
+      "b_fields": {
+        "B_final": 200
+      },
+      "prf_fields": {
+        "final_decision": 200
+      },
+      "teacher_fields": {
+        "teacher_decision": 76
+      },
+      "pair_only_ids": []
+    },
+    "CLWD_controlled": {
+      "contract_path": "<PHASE2_STUDENT_ROOT>\\G4-S2B-F2_CANONICAL_EVALUATION_CONTRACT\\CLWD_controlled_CANONICAL_CONTRACT.jsonl",
+      "contract_sha256": "e4e574a2af6e74af4750493eafffee9ecbb540c8ea5549db865b3a6f869c6c78",
+      "pair_source_sha256": "7d74182a724d07050552ffbd2f00679402ed49e33996b02b9126a6b199ef60bd",
+      "final_source_sha256": "fc79eef9c02306eab04ded41855146b87dd38f16b4cee9af2412dfc80f3c88e0",
+      "route_source_sha256": "65abba751392548a17814a14bbb027be81c4a54adcf8525ef997e3b5a47ef6eb",
+      "teacher_routed": 24,
+      "gold_fields": {
+        "('FINAL', 'gold_label')": 80
+      },
+      "b_fields": {
+        "B_final": 80
+      },
+      "prf_fields": {
+        "final_decision": 80
+      },
+      "teacher_fields": {
+        "teacher_decision": 24
+      },
+      "pair_only_ids": []
+    },
+    "LVW": {
+      "contract_path": "<PHASE2_STUDENT_ROOT>\\G4-S2B-F2_CANONICAL_EVALUATION_CONTRACT\\LVW_CANONICAL_CONTRACT.jsonl",
+      "contract_sha256": "a4a9c697a506f41195c861d464dc68ef772e8d3d79e561463cbb590170c816f3",
+      "pair_source_sha256": "fd628f2640cecee7344f5f30da92d73ea1fe487a741a6907728e84fe40b9c30b",
+      "final_source_sha256": "a31c9336962ea378f0e000bac7ea17b83a77c81cd46653350cb33d7def04cab2",
+      "route_source_sha256": "673f81378885d04b15f5407730acd8d1be539f8eb3884666f02d33b2038e136a",
+      "teacher_routed": 744,
+      "gold_fields": {
+        "('FINAL', 'gold_label')": 2000
+      },
+      "b_fields": {
+        "B_final": 2000
+      },
+      "prf_fields": {
+        "final_decision": 2000
+      },
+      "teacher_fields": {
+        "teacher_decision": 744
+      },
+      "pair_only_ids": []
+    },
+    "IMD2020": {
+      "contract_path": "<PHASE2_STUDENT_ROOT>\\G4-S2B-F2_CANONICAL_EVALUATION_CONTRACT\\IMD2020_CANONICAL_CONTRACT.jsonl",
+      "contract_sha256": "bc025f001c0cc32a841d0b2b7baa46c8b87930819ff1b675601b01dc36d5061d",
+      "pair_source_sha256": "965cc6e8826ef95085e7da0673fca845daad79e1681d4431d665ada0c9890d80",
+      "final_source_sha256": "ad759342e38e8abc1793590615bbebfd45c4eb833f8a34526ed741726e7b4ad1",
+      "route_source_sha256": "0c3805bb54972e24f2bf84aa9dc111cff917e1a200b915107ee0400fdbdc498c",
+      "teacher_routed": 129,
+      "gold_fields": {
+        "('FINAL', 'gold_label')": 828
+      },
+      "b_fields": {
+        "B_final": 828
+      },
+      "prf_fields": {
+        "final_decision": 828
+      },
+      "teacher_fields": {
+        "teacher_decision": 129
+      },
+      "pair_only_ids": []
+    }
+  },
+  "master_contract": {
+    "written": false,
+    "path": null,
+    "rows": null,
+    "sha256": null
+  },
+  "blocking_issues": [
+    "LIVE: no final-result candidates",
+    "PIPAL: no final-result candidates"
+  ]
+}

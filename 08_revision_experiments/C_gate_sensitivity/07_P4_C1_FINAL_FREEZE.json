@@ -1,0 +1,17 @@
+{
+  "phase": "P4-C1",
+  "status": "COMPLETE",
+  "canonical_delta": -0.2,
+  "canonical_threshold_changed": false,
+  "replacement_threshold_selected": false,
+  "model_execution": false,
+  "source_mutation": false,
+  "master_sha256": "942ebcc3c92a6c4ccd480a4573bf4240360e2a33d37fd180991734b78e54766f",
+  "A_master_sha256": "b9934c75a54e30173b323090d7deed50885371aac10866a7a740919d3d24bdbf",
+  "source_audit_sha256": "4a5dc94aa75b3f389e6ae43a3e97e9c9312d36f0184d68021148a1af641389ea",
+  "joined_C_master_sha256": "6ecf3fc27b2aa322ed6ed52b6bb339127df014fd16d5efdeba43b0ad067febd5",
+  "detail_sha256": "3434e877d35a847c5021264a1aa0d89f15c19b7c672a3870b787068b3ab4731c",
+  "macro_sha256": "8bdfe63d00adf22109a061494a19760bfbffcdace99dbacbdfbec8e2ccf7c346",
+  "distribution_sha256": "feed1538810de528c6b43944c6dd2e7bca070a86e8f9be08bafb373382bedf70",
+  "summary_sha256": "1837a625dbea30fb597fe3f04d0e82a4260397e0ae62f771e7cc549908cf6749"
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "LVW_pairs_2000_freeze_v1",
+  "seed": 20260922,
+  "source_split": "official_test",
+  "aligned_test_assets": 12000,
+  "selected_case_n": 1000,
+  "pair_n": 2000,
+  "positive_n": 1000,
+  "negative_n": 1000,
+  "negative_mining": "CLIP ViT-L/14 top1 wrong background over all 12000 official test backgrounds",
+  "A_thresholds": {
+    "SUPPORT": "sim >= 0.90",
+    "WEAK": "0.80 <= sim < 0.90",
+    "AGAINST": "sim < 0.80"
+  },
+  "manifest_sha256": "fd628f2640cecee7344f5f30da92d73ea1fe487a741a6907728e84fe40b9c30b",
+  "A_sha256": "4f5ca85c940042359f9142138b69bc05a2e8087119cf7c141bc8783bdfd73883",
+  "source_mutation": false
+}

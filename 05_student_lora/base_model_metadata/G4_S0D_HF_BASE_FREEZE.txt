@@ -1,0 +1,43 @@
+PRF G4-S0D | HF BASE MODEL FINAL FREEZE
+============================================================
+
+HF base:
+<LOCAL_USER_HOME>\Downloads\8B\Qwen3-VL-8B-Instruct
+
+Final Student LoRA:
+<STUDENT_DISTILLATION_ROOT>\04_最终模型_final\final
+
+HF model type:
+qwen3_vl
+
+HF architecture:
+['Qwen3VLForConditionalGeneration']
+
+Declared Student base:
+<LOCAL_LINUX_HOME>/projects/axolotl/hf_models/Qwen3-VL-8B-Instruct
+
+HF base folder match:
+True
+
+Weight shard count:
+4
+
+Total HF weight size:
+16.330 GB
+
+All shards present:
+True
+
+Student adapter SHA256:
+ca8839bb328ed03322432fa43035edb8c0ee37882d66dba7198d45bd9a2657bd
+
+Student adapter SHA verified:
+True
+
+OVERALL PASS:
+True
+
+NO MODEL LOAD
+NO INFERENCE
+NO TRAINING
+NO DOWNLOAD

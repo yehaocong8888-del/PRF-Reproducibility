@@ -1,0 +1,4 @@
+﻿mode,N,mean_sec_per_pair,median_sec_per_pair,p95_sec_per_pair
+A_uncached_pair_encoding,120,0.05062068416668429,0.029943900000262147,0.13903611999983237
+A_batched_unique_image_cache_amortized,120,0.03880586164483349,,
+A_cached_similarity_only,120,9.883114999994784e-07,,

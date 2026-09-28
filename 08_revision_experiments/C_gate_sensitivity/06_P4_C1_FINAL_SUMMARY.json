@@ -1,0 +1,176 @@
+{
+  "phase": "P4-C1",
+  "status": "COMPLETE",
+  "canonical_delta_threshold": -0.2,
+  "delta_grid": [
+    -0.05,
+    -0.1,
+    -0.15,
+    -0.2,
+    -0.25,
+    -0.3
+  ],
+  "noise_gate": "Use frozen post-tau noise_decision; tau_noise=0.70 is not changed.",
+  "threshold_selection": false,
+  "replacement_threshold_selected": false,
+  "model_execution": false,
+  "source_mutation": false,
+  "canonical_route_reconstruction": {
+    "PIPAL": {
+      "observed": 1165,
+      "expected": 1165,
+      "strong_C": 0
+    },
+    "LIVE": {
+      "observed": 74,
+      "expected": 74,
+      "strong_C": 0
+    },
+    "Waterloo": {
+      "observed": 752,
+      "expected": 752,
+      "strong_C": 0
+    },
+    "INRIA_Copydays": {
+      "observed": 1133,
+      "expected": 1133,
+      "strong_C": 0
+    },
+    "COVERAGE200": {
+      "observed": 29,
+      "expected": 29,
+      "strong_C": 0
+    },
+    "ISC2021": {
+      "observed": 76,
+      "expected": 76,
+      "strong_C": 0
+    },
+    "CLWD_controlled": {
+      "observed": 24,
+      "expected": 24,
+      "strong_C": 0
+    },
+    "LVW": {
+      "observed": 744,
+      "expected": 744,
+      "strong_C": 0
+    },
+    "IMD2020": {
+      "observed": 129,
+      "expected": 129,
+      "strong_C": 0
+    }
+  },
+  "macro": [
+    {
+      "delta_threshold": -0.05,
+      "is_canonical": 0,
+      "n_settings": 9,
+      "macro_strong_C_rate": 0.00928214138880936,
+      "macro_strong_C_precision_defined": 0.36888888888888893,
+      "settings_with_strong_C": 5,
+      "macro_reject_recall": 0.007582930756843801,
+      "macro_false_reject_rate": 0.010981491013891271,
+      "macro_route_rate": 0.28788857643874377,
+      "pooled_strong_C": 66,
+      "pooled_strong_C_gold_reject": 31,
+      "pooled_strong_C_gold_accept": 35,
+      "pooled_strong_C_precision": 0.4696969696969697,
+      "pooled_routed": 4160,
+      "pooled_route_delta_vs_canonical": 34,
+      "pooled_new_routes_vs_canonical": 34
+    },
+    {
+      "delta_threshold": -0.1,
+      "is_canonical": 0,
+      "n_settings": 9,
+      "macro_strong_C_rate": 0.0007961690503141083,
+      "macro_strong_C_precision_defined": 0.35185185185185186,
+      "settings_with_strong_C": 3,
+      "macro_reject_recall": 0.0008239398819108964,
+      "macro_false_reject_rate": 0.0007684121180289554,
+      "macro_route_rate": 0.28493041660893126,
+      "pooled_strong_C": 12,
+      "pooled_strong_C_gold_reject": 6,
+      "pooled_strong_C_gold_accept": 6,
+      "pooled_strong_C_precision": 0.5,
+      "pooled_routed": 4133,
+      "pooled_route_delta_vs_canonical": 7,
+      "pooled_new_routes_vs_canonical": 7
+    },
+    {
+      "delta_threshold": -0.15,
+      "is_canonical": 0,
+      "n_settings": 9,
+      "macro_strong_C_rate": 0.00018974771873322597,
+      "macro_strong_C_precision_defined": 0.5,
+      "settings_with_strong_C": 2,
+      "macro_reject_recall": 0.00011111111111111112,
+      "macro_false_reject_rate": 0.00026838432635534085,
+      "macro_route_rate": 0.28454621749957254,
+      "pooled_strong_C": 2,
+      "pooled_strong_C_gold_reject": 1,
+      "pooled_strong_C_gold_accept": 1,
+      "pooled_strong_C_precision": 0.5,
+      "pooled_routed": 4127,
+      "pooled_route_delta_vs_canonical": 1,
+      "pooled_new_routes_vs_canonical": 1
+    },
+    {
+      "delta_threshold": -0.2,
+      "is_canonical": 1,
+      "n_settings": 9,
+      "macro_strong_C_rate": 0.0,
+      "macro_strong_C_precision_defined": null,
+      "settings_with_strong_C": 0,
+      "macro_reject_recall": 0.0,
+      "macro_false_reject_rate": 0.0,
+      "macro_route_rate": 0.2844120253363949,
+      "pooled_strong_C": 0,
+      "pooled_strong_C_gold_reject": 0,
+      "pooled_strong_C_gold_accept": 0,
+      "pooled_strong_C_precision": null,
+      "pooled_routed": 4126,
+      "pooled_route_delta_vs_canonical": 0,
+      "pooled_new_routes_vs_canonical": 0
+    },
+    {
+      "delta_threshold": -0.25,
+      "is_canonical": 0,
+      "n_settings": 9,
+      "macro_strong_C_rate": 0.0,
+      "macro_strong_C_precision_defined": null,
+      "settings_with_strong_C": 0,
+      "macro_reject_recall": 0.0,
+      "macro_false_reject_rate": 0.0,
+      "macro_route_rate": 0.2844120253363949,
+      "pooled_strong_C": 0,
+      "pooled_strong_C_gold_reject": 0,
+      "pooled_strong_C_gold_accept": 0,
+      "pooled_strong_C_precision": null,
+      "pooled_routed": 4126,
+      "pooled_route_delta_vs_canonical": 0,
+      "pooled_new_routes_vs_canonical": 0
+    },
+    {
+      "delta_threshold": -0.3,
+      "is_canonical": 0,
+      "n_settings": 9,
+      "macro_strong_C_rate": 0.0,
+      "macro_strong_C_precision_defined": null,
+      "settings_with_strong_C": 0,
+      "macro_reject_recall": 0.0,
+      "macro_false_reject_rate": 0.0,
+      "macro_route_rate": 0.2844120253363949,
+      "pooled_strong_C": 0,
+      "pooled_strong_C_gold_reject": 0,
+      "pooled_strong_C_gold_accept": 0,
+      "pooled_strong_C_precision": null,
+      "pooled_routed": 4126,
+      "pooled_route_delta_vs_canonical": 0,
+      "pooled_new_routes_vs_canonical": 0
+    }
+  ],
+  "interpretation_guard": "Counterfactual thresholds quantify strong-C activation and routing burden only. No newly routed pair receives a counterfactual Teacher decision."
+}

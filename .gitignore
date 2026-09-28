@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Environments
+.venv/
+venv/
+env/
+conda-env/
+
+# Model/data caches
+.cache/
+hf_cache/
+huggingface/
+transformers_cache/
+
+# Raw datasets and large external model weights
+data/raw/
+datasets/raw/
+base_models/
+*.gguf
+*.bin
+
+# Training checkpoints
+checkpoint-*/
+ckpt_step*/
+checkpoints/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary
+*.tmp
+*.temp
+~$*

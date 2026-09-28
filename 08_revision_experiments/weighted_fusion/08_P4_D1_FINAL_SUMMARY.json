@@ -1,0 +1,168 @@
+{
+  "phase": "P4-D1",
+  "status": "COMPLETE",
+  "calibration_N": 480,
+  "confirmatory_N": 12921,
+  "A_reliability": {
+    "decisive_n": 404,
+    "correct_n": 313,
+    "reliability": 0.7747524752475248
+  },
+  "B_reliability": {
+    "decisive_n": 463,
+    "correct_n": 417,
+    "reliability": 0.9006479481641468
+  },
+  "B_confidence_audit": [
+    {
+      "confidence_bin": "[0.70,0.80)",
+      "N": 0,
+      "accuracy": null
+    },
+    {
+      "confidence_bin": "[0.80,0.90)",
+      "N": 5,
+      "accuracy": 0.8
+    },
+    {
+      "confidence_bin": "[0.90,0.95)",
+      "N": 0,
+      "accuracy": null
+    },
+    {
+      "confidence_bin": "[0.95,1.00]",
+      "N": 458,
+      "accuracy": 0.9017467248908297
+    }
+  ],
+  "thresholds": {
+    "RW": {
+      "mode": "RW",
+      "tau": 1.0,
+      "dev_target_auto": 351,
+      "dev_weighted_auto": 351,
+      "auto_count_difference": 0,
+      "selection_basis": "closest canonical auto-count on Dev480; no accuracy optimization"
+    },
+    "RCW": {
+      "mode": "RCW",
+      "tau": 1.0,
+      "dev_target_auto": 351,
+      "dev_weighted_auto": 351,
+      "auto_count_difference": 0,
+      "selection_basis": "closest canonical auto-count on Dev480; no accuracy optimization"
+    }
+  },
+  "dev_results": [
+    {
+      "method": "CANONICAL_2OF3",
+      "N": 480,
+      "auto_n": 351,
+      "coverage": 0.73125,
+      "routed_n": 129,
+      "route_rate": 0.26875,
+      "correct_auto": 310,
+      "wrong_auto": 41,
+      "selective_accuracy": 0.8831908831908832,
+      "correct_auto_rate_all": 0.6458333333333334,
+      "wrong_auto_rate_all": 0.08541666666666667
+    },
+    {
+      "method": "RW",
+      "N": 480,
+      "auto_n": 351,
+      "coverage": 0.73125,
+      "routed_n": 129,
+      "route_rate": 0.26875,
+      "correct_auto": 310,
+      "wrong_auto": 41,
+      "selective_accuracy": 0.8831908831908832,
+      "correct_auto_rate_all": 0.6458333333333334,
+      "wrong_auto_rate_all": 0.08541666666666667
+    },
+    {
+      "method": "RCW",
+      "N": 480,
+      "auto_n": 351,
+      "coverage": 0.73125,
+      "routed_n": 129,
+      "route_rate": 0.26875,
+      "correct_auto": 310,
+      "wrong_auto": 41,
+      "selective_accuracy": 0.8831908831908832,
+      "correct_auto_rate_all": 0.6458333333333334,
+      "wrong_auto_rate_all": 0.08541666666666667
+    }
+  ],
+  "confirmatory_results": [
+    {
+      "method": "CANONICAL_2OF3",
+      "N": 12921,
+      "auto_n": 8924,
+      "coverage": 0.6906586177540438,
+      "routed_n": 3997,
+      "route_rate": 0.3093413822459562,
+      "correct_auto": 8040,
+      "wrong_auto": 884,
+      "selective_accuracy": 0.9009412819363514,
+      "correct_auto_rate_all": 0.6222428604597168,
+      "wrong_auto_rate_all": 0.06841575729432707,
+      "goldA_to_predR": 849,
+      "goldR_to_predA": 35
+    },
+    {
+      "method": "RW",
+      "N": 12921,
+      "auto_n": 8924,
+      "coverage": 0.6906586177540438,
+      "routed_n": 3997,
+      "route_rate": 0.3093413822459562,
+      "correct_auto": 8040,
+      "wrong_auto": 884,
+      "selective_accuracy": 0.9009412819363514,
+      "correct_auto_rate_all": 0.6222428604597168,
+      "wrong_auto_rate_all": 0.06841575729432707,
+      "goldA_to_predR": 849,
+      "goldR_to_predA": 35
+    },
+    {
+      "method": "RCW",
+      "N": 12921,
+      "auto_n": 8924,
+      "coverage": 0.6906586177540438,
+      "routed_n": 3997,
+      "route_rate": 0.3093413822459562,
+      "correct_auto": 8040,
+      "wrong_auto": 884,
+      "selective_accuracy": 0.9009412819363514,
+      "correct_auto_rate_all": 0.6222428604597168,
+      "wrong_auto_rate_all": 0.06841575729432707,
+      "goldA_to_predR": 849,
+      "goldR_to_predA": 35
+    }
+  ],
+  "route_decision_changes": [
+    {
+      "method": "RW",
+      "common_auto": 8924,
+      "canonical_only_auto": 0,
+      "weighted_only_auto": 0,
+      "prediction_changed_on_common_auto": 0,
+      "canonical_correct_weighted_wrong_common": 0,
+      "weighted_correct_canonical_wrong_common": 0
+    },
+    {
+      "method": "RCW",
+      "common_auto": 8924,
+      "canonical_only_auto": 0,
+      "weighted_only_auto": 0,
+      "prediction_changed_on_common_auto": 0,
+      "canonical_correct_weighted_wrong_common": 0,
+      "weighted_correct_canonical_wrong_common": 0
+    }
+  ],
+  "interpretation_guard": "Weighted methods are fusion comparators. Because Teacher outputs were not generated for counterfactually routed cases, report coverage, selective accuracy, auto-error rate, and routing burden; do not claim counterfactual end-to-end PRF accuracy.",
+  "model_execution": false,
+  "source_mutation": false,
+  "confirmatory_tuning": false
+}

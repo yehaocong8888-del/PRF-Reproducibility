@@ -1,0 +1,15 @@
+{
+  "schema": "prf_external_teacher_summary_v1",
+  "expected_disputes": 842,
+  "teacher_completed": 842,
+  "teacher_remaining": 0,
+  "teacher_completion_rate": 1.0,
+  "decision_distribution": {
+    "REJECT": 503,
+    "ACCEPT": 308,
+    "AMBIGUOUS": 31
+  },
+  "current_run_success": 842,
+  "current_run_failure": 0,
+  "unresolved_pair_ids": []
+}

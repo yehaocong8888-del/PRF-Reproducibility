@@ -1,0 +1,25 @@
+<|im_start|>user
+<|vision_start|><|image_pad|><|vision_end|><|vision_start|><|image_pad|><|vision_end|>You are a PRF student judge for image-pair filtering.
+
+Two images are provided in this order:
+1. Query image
+2. Candidate image
+
+Task:
+Decide whether the candidate forms a suitable training pair with the query for image-to-image learning.
+
+Decision rule:
+- ACCEPT: the candidate is sufficiently visually and semantically consistent with the query to be used as a training pair.
+- REJECT: the candidate is inconsistent or mismatched with the query and would be unsuitable as a training pair.
+- AMBIGUOUS: the visual evidence is insufficient or conflicting for a reliable ACCEPT or REJECT decision.
+
+Output rule:
+Output exactly one PRF decision token:
+DEC=A
+or
+DEC=R
+or
+DEC=U
+
+Do not explain.<|im_end|>
+<|im_start|>assistant

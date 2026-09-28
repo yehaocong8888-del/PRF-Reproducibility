@@ -1,0 +1,15 @@
+# Reference Python dependencies for released PRF code.
+# This is a reproducibility-oriented environment list rather than
+# a byte-identical historical environment lock.
+
+numpy>=1.26
+pandas>=2.0
+Pillow>=10.0
+tqdm>=4.66
+scikit-learn>=1.4
+torch>=2.7
+transformers>=4.57
+peft>=0.18
+accelerate>=1.15
+open_clip_torch>=2.24
+requests>=2.31

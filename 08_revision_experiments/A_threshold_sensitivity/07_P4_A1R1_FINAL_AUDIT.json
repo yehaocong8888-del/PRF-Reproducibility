@@ -1,0 +1,357 @@
+{
+  "phase": "P4-A1R1",
+  "status": "COMPLETE",
+  "timestamp": "2026-09-24 09:56:44",
+  "master": {
+    "path": "<PHASE2_STUDENT_ROOT>\\G4-S2B-F4_9SET_CANONICAL_MASTER_FINAL_LOCK\\PRF_EXTERNAL_9SET_CANONICAL_EVALUATION_CONTRACT_v1.jsonl",
+    "rows": 13401,
+    "sha256": "942ebcc3c92a6c4ccd480a4573bf4240360e2a33d37fd180991734b78e54766f"
+  },
+  "protocol": {
+    "canonical_low": 0.8,
+    "canonical_high": 0.9,
+    "grid": [
+      {
+        "low": 0.7,
+        "high": 0.85
+      },
+      {
+        "low": 0.7,
+        "high": 0.9
+      },
+      {
+        "low": 0.7,
+        "high": 0.95
+      },
+      {
+        "low": 0.75,
+        "high": 0.85
+      },
+      {
+        "low": 0.75,
+        "high": 0.9
+      },
+      {
+        "low": 0.75,
+        "high": 0.95
+      },
+      {
+        "low": 0.8,
+        "high": 0.85
+      },
+      {
+        "low": 0.8,
+        "high": 0.9
+      },
+      {
+        "low": 0.8,
+        "high": 0.95
+      },
+      {
+        "low": 0.85,
+        "high": 0.9
+      },
+      {
+        "low": 0.85,
+        "high": 0.95
+      }
+    ],
+    "threshold_optimization": false,
+    "replacement_threshold_selected": false,
+    "external_gold_used_for_selection": false,
+    "model_execution": false,
+    "source_mutation": false
+  },
+  "canonical_metrics": {
+    "PIPAL": {
+      "N": 2000,
+      "low": 0.8,
+      "high": 0.9,
+      "strict_accuracy": 0.418,
+      "coverage": 0.5815,
+      "selective_accuracy": 0.7188306104901118,
+      "balanced_accuracy": 0.41800000000000004,
+      "accept_recall": 0.278,
+      "reject_recall": 0.558,
+      "pred_accept": 308,
+      "pred_reject": 855,
+      "pred_ambiguous": 837,
+      "gold_accept": 1000,
+      "gold_reject": 1000
+    },
+    "LIVE": {
+      "N": 810,
+      "low": 0.8,
+      "high": 0.9,
+      "strict_accuracy": 0.908641975308642,
+      "coverage": 0.9160493827160494,
+      "selective_accuracy": 0.9919137466307277,
+      "balanced_accuracy": 0.908641975308642,
+      "accept_recall": 0.8197530864197531,
+      "reject_recall": 0.9975308641975309,
+      "pred_accept": 332,
+      "pred_reject": 410,
+      "pred_ambiguous": 68,
+      "gold_accept": 405,
+      "gold_reject": 405
+    },
+    "Waterloo": {
+      "N": 3999,
+      "low": 0.8,
+      "high": 0.9,
+      "strict_accuracy": 0.679169792448112,
+      "coverage": 0.8939734933733433,
+      "selective_accuracy": 0.7597202797202797,
+      "balanced_accuracy": 0.6790895447723861,
+      "accept_recall": 0.3581790895447724,
+      "reject_recall": 1.0,
+      "pred_accept": 716,
+      "pred_reject": 2859,
+      "pred_ambiguous": 424,
+      "gold_accept": 1999,
+      "gold_reject": 2000
+    },
+    "INRIA_Copydays": {
+      "N": 3284,
+      "low": 0.8,
+      "high": 0.9,
+      "strict_accuracy": 0.6406820950060901,
+      "coverage": 0.7152862362971986,
+      "selective_accuracy": 0.8957002979991485,
+      "balanced_accuracy": 0.6406820950060901,
+      "accept_recall": 0.7673568818514007,
+      "reject_recall": 0.5140073081607796,
+      "pred_accept": 1381,
+      "pred_reject": 968,
+      "pred_ambiguous": 935,
+      "gold_accept": 1642,
+      "gold_reject": 1642
+    },
+    "COVERAGE200": {
+      "N": 200,
+      "low": 0.8,
+      "high": 0.9,
+      "strict_accuracy": 0.86,
+      "coverage": 0.9,
+      "selective_accuracy": 0.9555555555555556,
+      "balanced_accuracy": 0.86,
+      "accept_recall": 1.0,
+      "reject_recall": 0.72,
+      "pred_accept": 108,
+      "pred_reject": 72,
+      "pred_ambiguous": 20,
+      "gold_accept": 100,
+      "gold_reject": 100
+    },
+    "ISC2021": {
+      "N": 200,
+      "low": 0.8,
+      "high": 0.9,
+      "strict_accuracy": 0.435,
+      "coverage": 0.785,
+      "selective_accuracy": 0.554140127388535,
+      "balanced_accuracy": 0.435,
+      "accept_recall": 0.08,
+      "reject_recall": 0.79,
+      "pred_accept": 8,
+      "pred_reject": 149,
+      "pred_ambiguous": 43,
+      "gold_accept": 100,
+      "gold_reject": 100
+    },
+    "CLWD_controlled": {
+      "N": 80,
+      "low": 0.8,
+      "high": 0.9,
+      "strict_accuracy": 0.675,
+      "coverage": 0.8375,
+      "selective_accuracy": 0.8059701492537313,
+      "balanced_accuracy": 0.675,
+      "accept_recall": 0.35,
+      "reject_recall": 1.0,
+      "pred_accept": 14,
+      "pred_reject": 53,
+      "pred_ambiguous": 13,
+      "gold_accept": 40,
+      "gold_reject": 40
+    },
+    "LVW": {
+      "N": 2000,
+      "low": 0.8,
+      "high": 0.9,
+      "strict_accuracy": 0.631,
+      "coverage": 0.681,
+      "selective_accuracy": 0.9265785609397944,
+      "balanced_accuracy": 0.631,
+      "accept_recall": 0.508,
+      "reject_recall": 0.754,
+      "pred_accept": 522,
+      "pred_reject": 840,
+      "pred_ambiguous": 638,
+      "gold_accept": 1000,
+      "gold_reject": 1000
+    },
+    "IMD2020": {
+      "N": 828,
+      "low": 0.8,
+      "high": 0.9,
+      "strict_accuracy": 0.5664251207729468,
+      "coverage": 0.893719806763285,
+      "selective_accuracy": 0.6337837837837837,
+      "balanced_accuracy": 0.5664251207729468,
+      "accept_recall": 0.16908212560386474,
+      "reject_recall": 0.9637681159420289,
+      "pred_accept": 73,
+      "pred_reject": 667,
+      "pred_ambiguous": 88,
+      "gold_accept": 414,
+      "gold_reject": 414
+    }
+  },
+  "source_audit": [
+    {
+      "dataset": "PIPAL",
+      "path": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3D_PIPAL\\01_manifest\\PIPAL_D1_challenge1000_pairs_v1.csv",
+      "sim_field": "clip_similarity",
+      "rows": 2000,
+      "expected_n": 2000,
+      "matched_n": 2000,
+      "coverage": 1.0,
+      "sha256": "4c0bf8dfbdf2d652b21a21b55a7a1685d23a000e977d157c39831192c0026f79",
+      "expected_sha256": "4c0bf8dfbdf2d652b21a21b55a7a1685d23a000e977d157c39831192c0026f79",
+      "sha_check": true,
+      "stored_vote_n": 2000,
+      "stored_vote_consistency": 1.0,
+      "join_methods": "{\"pair_id\": 2000}"
+    },
+    {
+      "dataset": "LIVE",
+      "path": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3F_LIVE_Multiply\\01_manifest\\LIVE_Multiply_primary_pairs_v1.csv",
+      "sim_field": "clip_similarity",
+      "rows": 810,
+      "expected_n": 810,
+      "matched_n": 810,
+      "coverage": 1.0,
+      "sha256": "3f976711bacf93c4a90cc90bf621e7dbe188fe8ba0f246c9ece9b70ed366587e",
+      "expected_sha256": "3f976711bacf93c4a90cc90bf621e7dbe188fe8ba0f246c9ece9b70ed366587e",
+      "sha_check": true,
+      "stored_vote_n": 810,
+      "stored_vote_consistency": 1.0,
+      "join_methods": "{\"pair_id\": 810}"
+    },
+    {
+      "dataset": "Waterloo",
+      "path": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3E_Waterloo\\02_prf_full\\waterloo_A_clip_v1.jsonl",
+      "sim_field": "clip_similarity",
+      "rows": 4000,
+      "expected_n": 3999,
+      "matched_n": 3999,
+      "coverage": 1.0,
+      "sha256": "b0031dfc9daf49170864e8310f53256c4cc0db8f04cc152f0721b7700b6a78a5",
+      "expected_sha256": null,
+      "sha_check": true,
+      "stored_vote_n": 3999,
+      "stored_vote_consistency": 1.0,
+      "join_methods": "{\"pair_id\": 3999}"
+    },
+    {
+      "dataset": "INRIA_Copydays",
+      "path": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3G_INRIA_COVERAGE\\02_prf_inria\\INRIA_A_clip_pairs_v1.jsonl",
+      "sim_field": "clip_similarity",
+      "rows": 3284,
+      "expected_n": 3284,
+      "matched_n": 3284,
+      "coverage": 1.0,
+      "sha256": "d371b965c33d8fa9f675ca9dc088d2567c64f5ae99dca7a73c7c9127c19bcc3f",
+      "expected_sha256": null,
+      "sha_check": true,
+      "stored_vote_n": 3284,
+      "stored_vote_consistency": 1.0,
+      "join_methods": "{\"pair_id\": 3284}"
+    },
+    {
+      "dataset": "COVERAGE200",
+      "path": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3G_INRIA_COVERAGE\\99_final_closure\\A_clip_recomputed_v1.jsonl",
+      "sim_field": "clip_similarity",
+      "rows": 200,
+      "expected_n": 200,
+      "matched_n": 200,
+      "coverage": 1.0,
+      "sha256": "4ac0ddcfbd63132da869705fb05f2a24a1a1b0fb234533a061425303ca1ffd3b",
+      "expected_sha256": "4ac0ddcfbd63132da869705fb05f2a24a1a1b0fb234533a061425303ca1ffd3b",
+      "sha_check": true,
+      "stored_vote_n": 200,
+      "stored_vote_consistency": 1.0,
+      "join_methods": "{\"pair_id\": 200}"
+    },
+    {
+      "dataset": "ISC2021",
+      "path": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3I_ISC2021\\02_prf_activation\\ISC2021_C_noise_maskclip_v4.jsonl",
+      "sim_field": "manifest_raw_clip_similarity",
+      "rows": 200,
+      "expected_n": 200,
+      "matched_n": 200,
+      "coverage": 1.0,
+      "sha256": "3e7dd058b489a95e907b39147096b056dd82f22afcd7786c4d547ca3a65986a4",
+      "expected_sha256": null,
+      "sha_check": true,
+      "stored_vote_n": 0,
+      "stored_vote_consistency": null,
+      "join_methods": "{\"pair_id\": 200}"
+    },
+    {
+      "dataset": "CLWD_controlled",
+      "path": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3J_CLWD\\01_shared_watermark_dev\\02_prf_dev80\\CLWD_DEV80_A_clip_pairs_v1.jsonl",
+      "sim_field": "clip_similarity",
+      "rows": 80,
+      "expected_n": 80,
+      "matched_n": 80,
+      "coverage": 1.0,
+      "sha256": "a9576143a65b1e27e3c9bcb8b84b3b8d3535a129b83aa534ba9c20e861dfec4f",
+      "expected_sha256": null,
+      "sha_check": true,
+      "stored_vote_n": 80,
+      "stored_vote_consistency": 1.0,
+      "join_methods": "{\"pair_id\": 80}"
+    },
+    {
+      "dataset": "LVW",
+      "path": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3K_LVW\\02_A\\LVW_A_v1.jsonl",
+      "sim_field": "clip_similarity",
+      "rows": 2000,
+      "expected_n": 2000,
+      "matched_n": 2000,
+      "coverage": 1.0,
+      "sha256": "4f5ca85c940042359f9142138b69bc05a2e8087119cf7c141bc8783bdfd73883",
+      "expected_sha256": "4f5ca85c940042359f9142138b69bc05a2e8087119cf7c141bc8783bdfd73883",
+      "sha_check": true,
+      "stored_vote_n": 2000,
+      "stored_vote_consistency": 1.0,
+      "join_methods": "{\"pair_id\": 2000}"
+    },
+    {
+      "dataset": "IMD2020",
+      "path": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3L_IMD2020\\02_A\\IMD2020_A_v1.jsonl",
+      "sim_field": "clip_similarity",
+      "rows": 828,
+      "expected_n": 828,
+      "matched_n": 828,
+      "coverage": 1.0,
+      "sha256": "0a110f149d2ce123a7acb6a0e765d30999b8fd68d89ff173af957e9951c187d7",
+      "expected_sha256": "0a110f149d2ce123a7acb6a0e765d30999b8fd68d89ff173af957e9951c187d7",
+      "sha_check": true,
+      "stored_vote_n": 828,
+      "stored_vote_consistency": 1.0,
+      "join_methods": "{\"pair_id\": 828}"
+    }
+  ],
+  "outputs": {
+    "canonical_similarity_master": "<PHASE4_REVISION_ROOT>\\P4-A1R1_DEFINITIVE_9SET_A_THRESHOLD_SENSITIVITY\\P4_A1R1_9SET_CANONICAL_A_SIMILARITY_MASTER.jsonl",
+    "source_audit": "<PHASE4_REVISION_ROOT>\\P4-A1R1_DEFINITIVE_9SET_A_THRESHOLD_SENSITIVITY\\01_P4_A1R1_SOURCE_IDENTITY_AUDIT.csv",
+    "per_setting_sensitivity": "<PHASE4_REVISION_ROOT>\\P4-A1R1_DEFINITIVE_9SET_A_THRESHOLD_SENSITIVITY\\02_P4_A1R1_THRESHOLD_SENSITIVITY_PER_SETTING.csv",
+    "macro_summary": "<PHASE4_REVISION_ROOT>\\P4-A1R1_DEFINITIVE_9SET_A_THRESHOLD_SENSITIVITY\\03_P4_A1R1_THRESHOLD_SENSITIVITY_EQUAL_SETTING_MACRO.csv",
+    "dataset_envelope": "<PHASE4_REVISION_ROOT>\\P4-A1R1_DEFINITIVE_9SET_A_THRESHOLD_SENSITIVITY\\04_P4_A1R1_DATASET_SENSITIVITY_ENVELOPE.csv",
+    "similarity_distributions": "<PHASE4_REVISION_ROOT>\\P4-A1R1_DEFINITIVE_9SET_A_THRESHOLD_SENSITIVITY\\05_P4_A1R1_A_SIMILARITY_DISTRIBUTIONS.csv",
+    "supersession_note": "<PHASE4_REVISION_ROOT>\\P4-A1R1_DEFINITIVE_9SET_A_THRESHOLD_SENSITIVITY\\06_P4_A1R1_SUPERSESSION_NOTE.json"
+  }
+}

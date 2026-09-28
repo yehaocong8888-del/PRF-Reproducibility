@@ -1,0 +1,86 @@
+{
+  "schema": "ablation_metrics_v1",
+  "timestamp": "2026-02-25T19:45:53",
+  "inputs": {
+    "mother_U": "<FULL_PRF_ROOT>\\abcpipeline_full\\mother_U_v1.jsonl",
+    "pred_v1": "<FULL_PRF_ROOT>\\YL\\HXYZ\\direct30b_pred_v1.jsonl",
+    "variants": [
+      "NO_GATE",
+      "NO_C",
+      "ONLY_B",
+      "ONE_OF_THREE_ACCEPT"
+    ]
+  },
+  "results": {
+    "PRF_BASELINE": {
+      "n": 4294,
+      "agree": 2908,
+      "agree_rate": 0.6772240335351654,
+      "dist_pred": {
+        "REJECT": 2268,
+        "ACCEPT": 1442,
+        "AMBIGUOUS": 584
+      },
+      "dist_direct": {
+        "REJECT": 1698,
+        "ACCEPT": 2596
+      }
+    },
+    "NO_GATE": {
+      "n": 4294,
+      "agree": 1967,
+      "agree_rate": 0.45808104331625527,
+      "dist_pred": {
+        "REJECT": 1358,
+        "ACCEPT": 927,
+        "AMBIGUOUS": 2009
+      },
+      "dist_direct": {
+        "REJECT": 1698,
+        "ACCEPT": 2596
+      }
+    },
+    "NO_C": {
+      "n": 4294,
+      "agree": 1829,
+      "agree_rate": 0.42594317652538427,
+      "dist_pred": {
+        "REJECT": 1198,
+        "ACCEPT": 927,
+        "AMBIGUOUS": 2169
+      },
+      "dist_direct": {
+        "REJECT": 1698,
+        "ACCEPT": 2596
+      }
+    },
+    "ONLY_B": {
+      "n": 4294,
+      "agree": 2896,
+      "agree_rate": 0.6744294364229158,
+      "dist_pred": {
+        "REJECT": 2231,
+        "ACCEPT": 1452,
+        "AMBIGUOUS": 611
+      },
+      "dist_direct": {
+        "REJECT": 1698,
+        "ACCEPT": 2596
+      }
+    },
+    "ONE_OF_THREE_ACCEPT": {
+      "n": 4294,
+      "agree": 3064,
+      "agree_rate": 0.7135537959944108,
+      "dist_pred": {
+        "REJECT": 2371,
+        "ACCEPT": 1618,
+        "AMBIGUOUS": 305
+      },
+      "dist_direct": {
+        "REJECT": 1698,
+        "ACCEPT": 2596
+      }
+    }
+  }
+}

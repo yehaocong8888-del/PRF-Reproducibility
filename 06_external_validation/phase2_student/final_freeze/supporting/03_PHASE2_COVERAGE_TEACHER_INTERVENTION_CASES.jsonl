@@ -1,0 +1,2 @@
+{"dataset": "COVERAGE200", "pair_id": "COVERAGE::21::POS", "gold": "ACCEPT", "B": "AMBIGUOUS", "teacher_decision": "ACCEPT", "PRF": "ACCEPT", "Student": "ACCEPT", "teacher_routed": true, "Student_matches_B": false, "Student_matches_PRF": true, "Student_matches_Gold": true}
+{"dataset": "COVERAGE200", "pair_id": "COVERAGE::72::POS", "gold": "ACCEPT", "B": "AMBIGUOUS", "teacher_decision": "ACCEPT", "PRF": "ACCEPT", "Student": "ACCEPT", "teacher_routed": true, "Student_matches_B": false, "Student_matches_PRF": true, "Student_matches_Gold": true}

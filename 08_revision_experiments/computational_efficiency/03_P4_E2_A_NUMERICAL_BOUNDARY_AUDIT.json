@@ -1,0 +1,10 @@
+{
+  "phase": "P4-E2",
+  "uncached_recomputed_decision_flips": 0,
+  "cached_recomputed_decision_flips": 0,
+  "uncached_flip_rows": [],
+  "cached_flip_rows": [],
+  "uncached_max_abs_similarity_diff": 0.0026526451110839844,
+  "cached_max_abs_similarity_diff": 0.0019359588623046875,
+  "interpretation": "The latency benchmark recomputes CLIP values under the current runtime only to measure cost. Frozen Phase-1/P4-A1R1 similarities remain authoritative for scientific results."
+}

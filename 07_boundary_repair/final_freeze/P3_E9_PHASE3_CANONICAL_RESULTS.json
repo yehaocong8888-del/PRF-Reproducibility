@@ -1,0 +1,131 @@
+{
+  "schema": "P3_E9_PHASE3_CANONICAL_RESULTS_V1",
+  "created_at": "2026-09-24T08:47:36",
+  "phase": "PRF Student uncertainty-boundary correction",
+  "final_student": {
+    "name": "PU050",
+    "adapter_sha256": "7bf6aba86db71680a9461e7e2c4ffcd93f25c54af10239db223fbdf911079d82",
+    "selection_basis": "frozen val1000 rule: Macro-F1 >= Original, then maximize U-F1"
+  },
+  "intervention": {
+    "description": "post-distillation prior-restored uncertainty-boundary adaptation",
+    "custom_loss": false,
+    "class_weighting": false,
+    "fixed_updates": 250,
+    "learning_rate": 2e-05,
+    "controlled_ratio_arm": "PU050",
+    "training_quota": {
+      "A": 79,
+      "R": 109,
+      "U": 62
+    },
+    "training_U_fraction": 0.248
+  },
+  "val1000_ratio_selection": {
+    "Original": {
+      "accuracy": 0.696,
+      "macro_f1": 0.6892885811143468,
+      "U_precision": 0.3394,
+      "U_recall": 0.925,
+      "U_f1": 0.4966442953020134,
+      "pred_U": 436
+    },
+    "PU050": {
+      "accuracy": 0.818,
+      "macro_f1": 0.7714109961974197,
+      "U_precision": 0.48,
+      "U_recall": 0.675,
+      "U_f1": 0.561038961038961,
+      "pred_U": 225
+    }
+  },
+  "test2000_confirmatory": {
+    "Original": {
+      "accuracy": 0.722,
+      "macro_f1": 0.7135,
+      "U_precision": 0.3742,
+      "U_recall": 0.9094,
+      "U_f1": 0.5303,
+      "pred_U": 831,
+      "false_U": 520,
+      "missed_U": 31
+    },
+    "PU050": {
+      "accuracy": 0.809,
+      "macro_f1": 0.7589,
+      "U_precision": 0.4727,
+      "U_recall": 0.5819,
+      "U_f1": 0.5216,
+      "pred_U": 421,
+      "false_U": 222,
+      "missed_U": 143
+    },
+    "delta": {
+      "accuracy": 0.087,
+      "macro_f1": 0.045424,
+      "U_precision": 0.098436,
+      "U_recall": -0.327485,
+      "U_f1": -0.008639
+    },
+    "paired": {
+      "Original_correct_PU050_wrong": 112,
+      "Original_wrong_PU050_correct": 286,
+      "exact_McNemar_p": 1.1799484000625268e-18
+    }
+  },
+  "external12921_confirmatory": {
+    "Original": {
+      "strict_accuracy": 0.7663,
+      "coverage": 0.7828,
+      "selective_accuracy": 0.9789,
+      "u_rate": 0.2172,
+      "wrong_decisive": 213,
+      "student_prf_agreement": 0.8129,
+      "direct_flip_vs_prf": 28
+    },
+    "PU050": {
+      "strict_accuracy": 0.8519,
+      "coverage": 0.8875,
+      "selective_accuracy": 0.9599,
+      "u_rate": 0.1125,
+      "wrong_decisive": 460,
+      "student_prf_agreement": 0.8826,
+      "direct_flip_vs_prf": 130
+    },
+    "delta": {
+      "strict_accuracy": 0.0857,
+      "coverage": 0.1048,
+      "selective_accuracy": -0.0191,
+      "u_rate": -0.1048,
+      "wrong_decisive": 247,
+      "student_prf_agreement": 0.0697
+    },
+    "transition": {
+      "A_to_A": 4566,
+      "R_to_R": 5548,
+      "U_to_A": 560,
+      "U_to_R": 794,
+      "U_to_U": 1453,
+      "Original_U_to_correct_decisive": 1107,
+      "Original_U_to_wrong_decisive": 247,
+      "Original_correct_PU050_wrong": 0,
+      "Original_wrong_PU050_correct": 1107,
+      "resolved_U_total": 1354,
+      "resolved_U_correct_rate": 0.8175775480059084
+    },
+    "exact_McNemar_p_decimal": "1.150336223285E-333"
+  },
+  "canonical_interpretation": {
+    "supported": "The intervention substantially reduces over-abstention and improves ambiguous-class precision, overall accuracy and Macro-F1. On untouched external binary benchmarks, it increases strict accuracy and coverage while preserving all previously decisive Original Student outputs.",
+    "tradeoff": "The intervention reduces ambiguous-class recall on the held-out internal test and reduces selective accuracy on the external binary evaluation, demonstrating a precision-recall / coverage-risk trade-off.",
+    "not_supported": "Do not claim universal improvement of all ambiguous-class metrics or elimination of uncertainty-boundary errors."
+  },
+  "guards": {
+    "test_used_for_model_selection": false,
+    "external_used_for_model_selection": false,
+    "retraining_after_test": false,
+    "retraining_after_external": false,
+    "development_external_480_excluded": true,
+    "external_confirmatory_n": 12921
+  }
+}

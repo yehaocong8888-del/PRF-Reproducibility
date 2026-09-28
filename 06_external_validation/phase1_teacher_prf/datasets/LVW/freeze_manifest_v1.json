@@ -1,0 +1,22 @@
+{
+  "schema": "external_final_freeze_v1",
+  "dataset": "LVW",
+  "created_at": "2026-09-22T04:59:26",
+  "complete": true,
+  "files": {
+    "B_pair_review_v3.jsonl": "e3d98bb42dc3f8593c35a0397eee81e817b2477a1b6d824a4ae30fd02e03ed90",
+    "C_noise_maskclip_v4.jsonl": "6c5e619a76eead4a19a405eebcfe7b4c9e82a115049f7a06d3de67702814761a",
+    "merged_abc_votes_v1.jsonl": "ba352c64e903f1a4dfbb381ec7be28fc7262cceaac08ec75bcf69c89092a4448",
+    "dispute_for_teacher_v1.jsonl": "673f81378885d04b15f5407730acd8d1be539f8eb3884666f02d33b2038e136a",
+    "teacher_30b_full_v1.jsonl": "04412d7d198d9700bfe3255131b789b866a7233eef52be91daf50b2baca4cc49",
+    "full_prf_final_v1.jsonl": "a31c9336962ea378f0e000bac7ea17b83a77c81cd46653350cb33d7def04cab2",
+    "final_results_v1.csv": "a45099c521ffc742742e9ca2d3e93071159240c36cd1e18554c4ede8333117e0",
+    "final_summary_v1.json": "fabc3206607174390c525d720d7d8ed429906eb18a0eae522050b3ac58422b53"
+  },
+  "params": {
+    "TAU_NOISE": 0.7,
+    "MAX_POLY": 3,
+    "COVER_CAP": 0.2,
+    "DELTA_STRONG": -0.2
+  }
+}

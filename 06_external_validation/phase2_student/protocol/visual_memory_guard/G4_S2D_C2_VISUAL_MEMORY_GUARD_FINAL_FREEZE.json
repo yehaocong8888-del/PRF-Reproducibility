@@ -1,0 +1,689 @@
+{
+  "schema": "PRF_G4_S2D_C2_VISUAL_MEMORY_GUARD_FINAL_FREEZE_V1",
+  "created_at": "2026-09-22T22:23:25.100944+08:00",
+  "status": "FROZEN",
+  "guard_name": "PRF_G4_UNIFORM_VISUAL_MEMORY_GUARD_V1",
+  "reason": "Engineering-only memory guard introduced after blinded technical smoke identified visual-token explosion and CUDA OOM. No external accuracy/Gold metric was used.",
+  "semantic_protocol_change": false,
+  "frozen_semantic_protocol": {
+    "protocol_freeze_path": "<PHASE2_STUDENT_ROOT>\\G4-S2D-A_STUDENT_EXTERNAL_PROTOCOL_FINAL_FREEZE\\G4_S2D_A_STUDENT_EXTERNAL_PROTOCOL_FINAL_FREEZE.json",
+    "protocol_freeze_sha256": "2cb81a721ff25bb37946670da8e885b30b0706d2436a0b86908ce391274c05c6",
+    "prompt_changed": false,
+    "parser_changed": false,
+    "generation_policy_changed": false,
+    "image_order_changed": false
+  },
+  "technical_preprocessing": {
+    "max_pixels_per_image": 1048576,
+    "max_megapixels_per_image": 1.048576,
+    "aspect_ratio_preserved": true,
+    "crop": false,
+    "padding": false,
+    "upscale": false,
+    "downsample_filter": "LANCZOS",
+    "algorithm": "Input: one image with original width W and height H.\n\nMAX_PIXELS = 1,048,576.\n\nIf W * H <= MAX_PIXELS:\n    keep the image at original resolution.\n\nOtherwise:\n    scale = sqrt(MAX_PIXELS / (W * H))\n    new_W = max(1, floor(W * scale))\n    new_H = max(1, floor(H * scale))\n\n    Apply PIL LANCZOS resize to (new_W, new_H).\n\nProperties:\n- aspect ratio preserved up to integer rounding;\n- no crop;\n- no padding;\n- no upscaling;\n- same rule for every dataset and every pair;\n- rule is independent of Gold, B, PRF, Teacher, Student output, and dataset identity.",
+    "algorithm_sha256": "006e00ccda0d364a28c5cd3bdce27eb60fbf838e260b8b514dad96825dde169b"
+  },
+  "full_image_universe": {
+    "unique_images": 9691,
+    "images_resized": 1615,
+    "images_unchanged": 8076,
+    "fraction_resized": 0.16664946857909402
+  },
+  "guarded_smoke_processor": {
+    "N": 18,
+    "max_input_tokens": 2237,
+    "max_visual_tokens": 2072,
+    "rows": [
+      {
+        "dataset": "PIPAL",
+        "pair_id": "G3D-0179_POS",
+        "query_original": [
+          288,
+          288
+        ],
+        "query_guarded": [
+          288,
+          288
+        ],
+        "query_resized": false,
+        "candidate_original": [
+          288,
+          288
+        ],
+        "candidate_guarded": [
+          288,
+          288
+        ],
+        "candidate_resized": false,
+        "input_tokens": 327,
+        "image_grid_thw": [
+          [
+            1,
+            18,
+            18
+          ],
+          [
+            1,
+            18,
+            18
+          ]
+        ],
+        "visual_tokens": 162
+      },
+      {
+        "dataset": "PIPAL",
+        "pair_id": "G3D-0853_NEG",
+        "query_original": [
+          288,
+          288
+        ],
+        "query_guarded": [
+          288,
+          288
+        ],
+        "query_resized": false,
+        "candidate_original": [
+          288,
+          288
+        ],
+        "candidate_guarded": [
+          288,
+          288
+        ],
+        "candidate_resized": false,
+        "input_tokens": 327,
+        "image_grid_thw": [
+          [
+            1,
+            18,
+            18
+          ],
+          [
+            1,
+            18,
+            18
+          ]
+        ],
+        "visual_tokens": 162
+      },
+      {
+        "dataset": "LIVE",
+        "pair_id": "G3F-0007_POS",
+        "query_original": [
+          1280,
+          720
+        ],
+        "query_guarded": [
+          1280,
+          720
+        ],
+        "query_resized": false,
+        "candidate_original": [
+          1280,
+          720
+        ],
+        "candidate_guarded": [
+          1280,
+          720
+        ],
+        "candidate_resized": false,
+        "input_tokens": 1925,
+        "image_grid_thw": [
+          [
+            1,
+            44,
+            80
+          ],
+          [
+            1,
+            44,
+            80
+          ]
+        ],
+        "visual_tokens": 1760
+      },
+      {
+        "dataset": "LIVE",
+        "pair_id": "G3F-0175_POS",
+        "query_original": [
+          1280,
+          720
+        ],
+        "query_guarded": [
+          1280,
+          720
+        ],
+        "query_resized": false,
+        "candidate_original": [
+          1280,
+          720
+        ],
+        "candidate_guarded": [
+          1280,
+          720
+        ],
+        "candidate_resized": false,
+        "input_tokens": 1925,
+        "image_grid_thw": [
+          [
+            1,
+            44,
+            80
+          ],
+          [
+            1,
+            44,
+            80
+          ]
+        ],
+        "visual_tokens": 1760
+      },
+      {
+        "dataset": "Waterloo",
+        "pair_id": "W_MISMATCH_00916__01396_T4_L2",
+        "query_original": [
+          476,
+          268
+        ],
+        "query_guarded": [
+          476,
+          268
+        ],
+        "query_resized": false,
+        "candidate_original": [
+          500,
+          345
+        ],
+        "candidate_guarded": [
+          500,
+          345
+        ],
+        "candidate_resized": false,
+        "input_tokens": 461,
+        "image_grid_thw": [
+          [
+            1,
+            16,
+            30
+          ],
+          [
+            1,
+            22,
+            32
+          ]
+        ],
+        "visual_tokens": 296
+      },
+      {
+        "dataset": "Waterloo",
+        "pair_id": "W_MISMATCH_00318__00229_T3_L1",
+        "query_original": [
+          461,
+          295
+        ],
+        "query_guarded": [
+          461,
+          295
+        ],
+        "query_resized": false,
+        "candidate_original": [
+          540,
+          411
+        ],
+        "candidate_guarded": [
+          540,
+          411
+        ],
+        "candidate_resized": false,
+        "input_tokens": 512,
+        "image_grid_thw": [
+          [
+            1,
+            18,
+            28
+          ],
+          [
+            1,
+            26,
+            34
+          ]
+        ],
+        "visual_tokens": 347
+      },
+      {
+        "dataset": "INRIA_Copydays",
+        "pair_id": "INRIA::CROP:crops\\30\\212200.jpg::POS",
+        "query_original": [
+          1715,
+          1286
+        ],
+        "query_guarded": [
+          1182,
+          886
+        ],
+        "query_resized": true,
+        "candidate_original": [
+          2048,
+          1536
+        ],
+        "candidate_guarded": [
+          1182,
+          886
+        ],
+        "candidate_resized": true,
+        "input_tokens": 2237,
+        "image_grid_thw": [
+          [
+            1,
+            56,
+            74
+          ],
+          [
+            1,
+            56,
+            74
+          ]
+        ],
+        "visual_tokens": 2072
+      },
+      {
+        "dataset": "INRIA_Copydays",
+        "pair_id": "INRIA::CROP:crops\\80\\215300.jpg::POS",
+        "query_original": [
+          1147,
+          861
+        ],
+        "query_guarded": [
+          1147,
+          861
+        ],
+        "query_resized": false,
+        "candidate_original": [
+          2560,
+          1920
+        ],
+        "candidate_guarded": [
+          1182,
+          886
+        ],
+        "candidate_resized": true,
+        "input_tokens": 2173,
+        "image_grid_thw": [
+          [
+            1,
+            54,
+            72
+          ],
+          [
+            1,
+            56,
+            74
+          ]
+        ],
+        "visual_tokens": 2008
+      },
+      {
+        "dataset": "COVERAGE200",
+        "pair_id": "COVERAGE::6::POS",
+        "query_original": [
+          364,
+          367
+        ],
+        "query_guarded": [
+          364,
+          367
+        ],
+        "query_resized": false,
+        "candidate_original": [
+          364,
+          367
+        ],
+        "candidate_guarded": [
+          364,
+          367
+        ],
+        "candidate_resized": false,
+        "input_tokens": 407,
+        "image_grid_thw": [
+          [
+            1,
+            22,
+            22
+          ],
+          [
+            1,
+            22,
+            22
+          ]
+        ],
+        "visual_tokens": 242
+      },
+      {
+        "dataset": "COVERAGE200",
+        "pair_id": "COVERAGE::8::NEG_CLIP1",
+        "query_original": [
+          451,
+          379
+        ],
+        "query_guarded": [
+          451,
+          379
+        ],
+        "query_resized": false,
+        "candidate_original": [
+          576,
+          214
+        ],
+        "candidate_guarded": [
+          576,
+          214
+        ],
+        "candidate_resized": false,
+        "input_tokens": 459,
+        "image_grid_thw": [
+          [
+            1,
+            24,
+            28
+          ],
+          [
+            1,
+            14,
+            36
+          ]
+        ],
+        "visual_tokens": 294
+      },
+      {
+        "dataset": "ISC2021",
+        "pair_id": "ISC2021::Q40747::NEG_CLIP1",
+        "query_original": [
+          1024,
+          576
+        ],
+        "query_guarded": [
+          1024,
+          576
+        ],
+        "query_resized": false,
+        "candidate_original": [
+          768,
+          1024
+        ],
+        "candidate_guarded": [
+          768,
+          1024
+        ],
+        "candidate_resized": false,
+        "input_tokens": 1509,
+        "image_grid_thw": [
+          [
+            1,
+            36,
+            64
+          ],
+          [
+            1,
+            64,
+            48
+          ]
+        ],
+        "visual_tokens": 1344
+      },
+      {
+        "dataset": "ISC2021",
+        "pair_id": "ISC2021::Q12994::NEG_CLIP1",
+        "query_original": [
+          1024,
+          704
+        ],
+        "query_guarded": [
+          1024,
+          704
+        ],
+        "query_resized": false,
+        "candidate_original": [
+          1024,
+          640
+        ],
+        "candidate_guarded": [
+          1024,
+          640
+        ],
+        "candidate_resized": false,
+        "input_tokens": 1509,
+        "image_grid_thw": [
+          [
+            1,
+            44,
+            64
+          ],
+          [
+            1,
+            40,
+            64
+          ]
+        ],
+        "visual_tokens": 1344
+      },
+      {
+        "dataset": "CLWD_controlled",
+        "pair_id": "CLWDDEV::case_017::NEG_SHARED_WM",
+        "query_original": [
+          256,
+          256
+        ],
+        "query_guarded": [
+          256,
+          256
+        ],
+        "query_resized": false,
+        "candidate_original": [
+          256,
+          256
+        ],
+        "candidate_guarded": [
+          256,
+          256
+        ],
+        "candidate_resized": false,
+        "input_tokens": 293,
+        "image_grid_thw": [
+          [
+            1,
+            16,
+            16
+          ],
+          [
+            1,
+            16,
+            16
+          ]
+        ],
+        "visual_tokens": 128
+      },
+      {
+        "dataset": "CLWD_controlled",
+        "pair_id": "CLWDDEV::case_007::NEG_SHARED_WM",
+        "query_original": [
+          256,
+          256
+        ],
+        "query_guarded": [
+          256,
+          256
+        ],
+        "query_resized": false,
+        "candidate_original": [
+          256,
+          256
+        ],
+        "candidate_guarded": [
+          256,
+          256
+        ],
+        "candidate_resized": false,
+        "input_tokens": 293,
+        "image_grid_thw": [
+          [
+            1,
+            16,
+            16
+          ],
+          [
+            1,
+            16,
+            16
+          ]
+        ],
+        "visual_tokens": 128
+      },
+      {
+        "dataset": "LVW",
+        "pair_id": "LVW::904569::NEG",
+        "query_original": [
+          500,
+          375
+        ],
+        "query_guarded": [
+          500,
+          375
+        ],
+        "query_resized": false,
+        "candidate_original": [
+          500,
+          334
+        ],
+        "candidate_guarded": [
+          500,
+          334
+        ],
+        "candidate_resized": false,
+        "input_tokens": 517,
+        "image_grid_thw": [
+          [
+            1,
+            24,
+            32
+          ],
+          [
+            1,
+            20,
+            32
+          ]
+        ],
+        "visual_tokens": 352
+      },
+      {
+        "dataset": "LVW",
+        "pair_id": "LVW::908449::POS",
+        "query_original": [
+          500,
+          367
+        ],
+        "query_guarded": [
+          500,
+          367
+        ],
+        "query_resized": false,
+        "candidate_original": [
+          500,
+          367
+        ],
+        "candidate_guarded": [
+          500,
+          367
+        ],
+        "candidate_resized": false,
+        "input_tokens": 517,
+        "image_grid_thw": [
+          [
+            1,
+            22,
+            32
+          ],
+          [
+            1,
+            22,
+            32
+          ]
+        ],
+        "visual_tokens": 352
+      },
+      {
+        "dataset": "IMD2020",
+        "pair_id": "IMD2020::z41::NEG",
+        "query_original": [
+          636,
+          618
+        ],
+        "query_guarded": [
+          636,
+          618
+        ],
+        "query_resized": false,
+        "candidate_original": [
+          392,
+          520
+        ],
+        "candidate_guarded": [
+          392,
+          520
+        ],
+        "candidate_resized": false,
+        "input_tokens": 737,
+        "image_grid_thw": [
+          [
+            1,
+            38,
+            40
+          ],
+          [
+            1,
+            32,
+            24
+          ]
+        ],
+        "visual_tokens": 572
+      },
+      {
+        "dataset": "IMD2020",
+        "pair_id": "IMD2020::1bajww::POS",
+        "query_original": [
+          4300,
+          2418
+        ],
+        "query_guarded": [
+          1365,
+          767
+        ],
+        "query_resized": true,
+        "candidate_original": [
+          4300,
+          2418
+        ],
+        "candidate_guarded": [
+          1365,
+          767
+        ],
+        "candidate_resized": true,
+        "input_tokens": 2229,
+        "image_grid_thw": [
+          [
+            1,
+            48,
+            86
+          ],
+          [
+            1,
+            48,
+            86
+          ]
+        ],
+        "visual_tokens": 2064
+      }
+    ]
+  },
+  "next_policy": "Re-run the exact same 18-pair blinded technical smoke with this frozen visual guard. Do not access Gold/B/PRF metrics and do not tune the guard using Student correctness."
+}

@@ -1,0 +1,461 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "2a941a4e-a5a4-42ae-ab98-b2e5476bf585",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[CFG] MOTHER_U: <FULL_PRF_ROOT>\\abcpipeline_full\\mother_U_v1.jsonl\n",
+      "[OUT] ZLSJJ: <PRF_ROOT>\\lora Ubuntu\\ZLSJJ\n",
+      "[OUT] GCSJ : <PRF_ROOT>\\lora Ubuntu\\GCSJ\n"
+     ]
+    }
+   ],
+   "source": [
+    "import json, random, time\n",
+    "from pathlib import Path\n",
+    "from collections import Counter, defaultdict\n",
+    "from tqdm import tqdm\n",
+    "\n",
+    "# ===== 输入 =====\n",
+    "MOTHER_U = Path(r\"<FULL_PRF_ROOT>\\abcpipeline_full\\mother_U_v1.jsonl\")\n",
+    "assert MOTHER_U.exists(), MOTHER_U\n",
+    "\n",
+    "# ===== 输出 =====\n",
+    "ROOT = Path(r\"<PRF_ROOT>\\lora Ubuntu\")\n",
+    "ZLSJJ = ROOT / \"ZLSJJ\"   # 蒸馏数据\n",
+    "GCSJ  = ROOT / \"GCSJ\"    # 训练输出\n",
+    "\n",
+    "ZLSJJ.mkdir(parents=True, exist_ok=True)\n",
+    "GCSJ.mkdir(parents=True, exist_ok=True)\n",
+    "\n",
+    "TRAIN_JSONL = ZLSJJ / \"distill_train_v1.jsonl\"\n",
+    "VAL_JSONL   = ZLSJJ / \"distill_val_v1.jsonl\"\n",
+    "TEST_JSONL  = ZLSJJ / \"distill_test_v1.jsonl\"\n",
+    "STATS_JSON  = ZLSJJ / \"distill_stats_v1.json\"\n",
+    "\n",
+    "SEED = 20260206\n",
+    "\n",
+    "print(\"[CFG] MOTHER_<LOCAL_DRIVE_U>\", MOTHER_U)\n",
+    "print(\"[OUT] ZLSJJ:\", ZLSJJ)\n",
+    "print(\"[OUT] GCSJ :\", GCSJ)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "87cd1121-44f6-46ef-85b3-e9dd025da342",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[INFO] loaded mother_U rows: 80431\n"
+     ]
+    }
+   ],
+   "source": [
+    "rows = []\n",
+    "with MOTHER_U.open(\"r\", encoding=\"utf-8\") as <LOCAL_DRIVE_F>\n",
+    "    for line in <LOCAL_DRIVE_F>\n",
+    "        if line.strip():\n",
+    "            rows.append(json.loads(line))\n",
+    "\n",
+    "print(\"[INFO] loaded mother_U rows:\", len(rows))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "661730d1-a122-4d0b-82a5-5576feed4806",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[INFO] built samples: 80431\n"
+     ]
+    }
+   ],
+   "source": [
+    "def norm(x):\n",
+    "    t = str(x).strip().upper()\n",
+    "    if t in (\"ACCEPT\",\"REJECT\",\"AMBIGUOUS\"):\n",
+    "        return t\n",
+    "    if \"ACCEPT\" in t: return \"ACCEPT\"\n",
+    "    if \"REJECT\" in t: return \"REJECT\"\n",
+    "    return \"AMBIGUOUS\"\n",
+    "\n",
+    "def build_sample(row):\n",
+    "    A = row.get(\"A\", {})\n",
+    "    B = row.get(\"B\", {})\n",
+    "    C = row.get(\"C\", {})\n",
+    "\n",
+    "    sample = {\n",
+    "        \"query_image_id\": row[\"query_image_id\"],\n",
+    "        \"candidate_image_id\": row[\"candidate_image_id\"],\n",
+    "\n",
+    "        # ===== A 证据 =====\n",
+    "        \"a_similarity\": A.get(\"similarity\"),\n",
+    "        \"a_rank\": A.get(\"rank\"),\n",
+    "        \"a_vote\": norm(A.get(\"vote\")),\n",
+    "\n",
+    "        # ===== B 证据 =====\n",
+    "        \"b_final\": norm(B.get(\"final\")),\n",
+    "        \"b_confidence\": B.get(\"confidence\"),\n",
+    "\n",
+    "        # ===== C 证据 =====\n",
+    "        \"c_decision\": norm(C.get(\"decision\")),\n",
+    "        \"c_noise\": C.get(\"noise\"),\n",
+    "        \"c_delta\": C.get(\"delta\"),\n",
+    "        \"force_dispute\": bool(row.get(\"force_dispute\", False)),\n",
+    "\n",
+    "        # ===== 标签 =====\n",
+    "        \"label\": norm(row.get(\"final_decision\")),\n",
+    "        \"source\": row.get(\"final_source\"),\n",
+    "    }\n",
+    "\n",
+    "    return sample\n",
+    "\n",
+    "samples = [build_sample(r) for r in rows]\n",
+    "\n",
+    "print(\"[INFO] built samples:\", len(samples))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "b07c800a-154a-4dc2-933c-d2fa8503929a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[SPLIT]\n",
+      "train: 64338\n",
+      "val  : 8062\n",
+      "test : 8031\n"
+     ]
+    }
+   ],
+   "source": [
+    "rng = random.Random(SEED)\n",
+    "\n",
+    "# 先按 query 分组\n",
+    "by_query = defaultdict(list)\n",
+    "for s in samples:\n",
+    "    by_query[s[\"query_image_id\"]].append(s)\n",
+    "\n",
+    "queries = list(by_query.keys())\n",
+    "rng.shuffle(queries)\n",
+    "\n",
+    "n = len(queries)\n",
+    "n_train = int(n * 0.8)\n",
+    "n_val   = int(n * 0.1)\n",
+    "\n",
+    "train_q = set(queries[:n_train])\n",
+    "val_q   = set(queries[n_train:n_train+n_val])\n",
+    "test_q  = set(queries[n_train+n_val:])\n",
+    "\n",
+    "train, val, test = [], [], []\n",
+    "\n",
+    "for q in queries:\n",
+    "    if q in train_<LOCAL_DRIVE_Q>\n",
+    "        train.extend(by_query[q])\n",
+    "    elif q in val_<LOCAL_DRIVE_Q>\n",
+    "        val.extend(by_query[q])\n",
+    "    else:\n",
+    "        test.extend(by_query[q])\n",
+    "\n",
+    "print(\"[SPLIT]\")\n",
+    "print(\"train:\", len(train))\n",
+    "print(\"val  :\", len(val))\n",
+    "print(\"test :\", len(test))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "1aa20f1b-0f35-4595-95a3-18c1fc4a7eb7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[OUT] train -> <PRF_ROOT>\\lora Ubuntu\\ZLSJJ\\distill_train_v1.jsonl\n",
+      "[OUT] val   -> <PRF_ROOT>\\lora Ubuntu\\ZLSJJ\\distill_val_v1.jsonl\n",
+      "[OUT] test  -> <PRF_ROOT>\\lora Ubuntu\\ZLSJJ\\distill_test_v1.jsonl\n"
+     ]
+    }
+   ],
+   "source": [
+    "def write_jsonl(path, data):\n",
+    "    with path.open(\"w\", encoding=\"utf-8\") as <LOCAL_DRIVE_F>\n",
+    "        for x in data:\n",
+    "            f.write(json.dumps(x, ensure_ascii=False) + \"\\n\")\n",
+    "\n",
+    "write_jsonl(TRAIN_JSONL, train)\n",
+    "write_jsonl(VAL_JSONL, val)\n",
+    "write_jsonl(TEST_JSONL, test)\n",
+    "\n",
+    "print(\"[OUT] train ->\", TRAIN_JSONL)\n",
+    "print(\"[OUT] val   ->\", VAL_JSONL)\n",
+    "print(\"[OUT] test  ->\", TEST_JSONL)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "80a7ba1b-1128-448b-a89c-c942c40b6f4c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[STATS]\n",
+      "{\n",
+      "  \"total\": 80431,\n",
+      "  \"train\": 64338,\n",
+      "  \"val\": 8062,\n",
+      "  \"test\": 8031,\n",
+      "  \"label_dist_train\": {\n",
+      "    \"REJECT\": 31111,\n",
+      "    \"AMBIGUOUS\": 10673,\n",
+      "    \"ACCEPT\": 22554\n",
+      "  },\n",
+      "  \"label_dist_val\": {\n",
+      "    \"ACCEPT\": 2788,\n",
+      "    \"AMBIGUOUS\": 1297,\n",
+      "    \"REJECT\": 3977\n",
+      "  },\n",
+      "  \"label_dist_test\": {\n",
+      "    \"ACCEPT\": 2758,\n",
+      "    \"REJECT\": 3926,\n",
+      "    \"AMBIGUOUS\": 1347\n",
+      "  }\n",
+      "}\n"
+     ]
+    }
+   ],
+   "source": [
+    "def label_dist(data):\n",
+    "    c = Counter([x[\"label\"] for x in data])\n",
+    "    return dict(c)\n",
+    "\n",
+    "stats = {\n",
+    "    \"total\": len(samples),\n",
+    "    \"train\": len(train),\n",
+    "    \"val\": len(val),\n",
+    "    \"test\": len(test),\n",
+    "    \"label_dist_train\": label_dist(train),\n",
+    "    \"label_dist_val\": label_dist(val),\n",
+    "    \"label_dist_test\": label_dist(test),\n",
+    "}\n",
+    "\n",
+    "with STATS_JSON.open(\"w\", encoding=\"utf-8\") as <LOCAL_DRIVE_F>\n",
+    "    json.dump(stats, f, ensure_ascii=False, indent=2)\n",
+    "\n",
+    "print(\"[STATS]\")\n",
+    "print(json.dumps(stats, indent=2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "466c3f96-58c7-464b-a83a-fd98dab454c1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[OUT] train v2 -> <PRF_ROOT>\\lora Ubuntu\\ZLSJJ\\distill_train_v2_weighted.jsonl\n",
+      "[OUT] val   v2 -> <PRF_ROOT>\\lora Ubuntu\\ZLSJJ\\distill_val_v2_weighted.jsonl\n",
+      "[OUT] test  v2 -> <PRF_ROOT>\\lora Ubuntu\\ZLSJJ\\distill_test_v2_weighted.jsonl\n",
+      "[OUT] stats v2 -> <PRF_ROOT>\\lora Ubuntu\\ZLSJJ\\distill_stats_v2_weighted.json\n",
+      "{\n",
+      "  \"train\": 64338,\n",
+      "  \"val\": 8062,\n",
+      "  \"test\": 8031,\n",
+      "  \"weight_dist_train\": {\n",
+      "    \"2.0\": 37415,\n",
+      "    \"1.0\": 26674,\n",
+      "    \"3.0\": 249\n",
+      "  },\n",
+      "  \"weight_dist_val\": {\n",
+      "    \"2.0\": 4653,\n",
+      "    \"1.0\": 3375,\n",
+      "    \"3.0\": 34\n",
+      "  },\n",
+      "  \"weight_dist_test\": {\n",
+      "    \"2.0\": 4763,\n",
+      "    \"1.0\": 3238,\n",
+      "    \"3.0\": 30\n",
+      "  },\n",
+      "  \"source_dist_train\": {\n",
+      "    \"TEACHER_30B\": 37664,\n",
+      "    \"AUTO_2OF3\": 26674\n",
+      "  },\n",
+      "  \"source_dist_val\": {\n",
+      "    \"TEACHER_30B\": 4687,\n",
+      "    \"AUTO_2OF3\": 3375\n",
+      "  },\n",
+      "  \"source_dist_test\": {\n",
+      "    \"TEACHER_30B\": 4793,\n",
+      "    \"AUTO_2OF3\": 3238\n",
+      "  }\n",
+      "}\n"
+     ]
+    }
+   ],
+   "source": [
+    "import json\n",
+    "from pathlib import Path\n",
+    "from collections import Counter\n",
+    "\n",
+    "ZLSJJ = Path(r\"<PRF_ROOT>\\lora Ubuntu\\ZLSJJ\")\n",
+    "\n",
+    "TRAIN_V1 = ZLSJJ / \"distill_train_v1.jsonl\"\n",
+    "VAL_V1   = ZLSJJ / \"distill_val_v1.jsonl\"\n",
+    "TEST_V1  = ZLSJJ / \"distill_test_v1.jsonl\"\n",
+    "\n",
+    "TRAIN_V2 = ZLSJJ / \"distill_train_v2_weighted.jsonl\"\n",
+    "VAL_V2   = ZLSJJ / \"distill_val_v2_weighted.jsonl\"\n",
+    "TEST_V2  = ZLSJJ / \"distill_test_v2_weighted.jsonl\"\n",
+    "STATS_V2 = ZLSJJ / \"distill_stats_v2_weighted.json\"\n",
+    "\n",
+    "DELTA_STRONG = -0.2\n",
+    "\n",
+    "def load_jsonl(p: Path):\n",
+    "    rows = []\n",
+    "    with p.open(\"r\", encoding=\"utf-8\") as <LOCAL_DRIVE_F>\n",
+    "        for line in <LOCAL_DRIVE_F>\n",
+    "            if line.strip():\n",
+    "                rows.append(json.loads(line))\n",
+    "    return rows\n",
+    "\n",
+    "def write_jsonl(p: Path, rows):\n",
+    "    with p.open(\"w\", encoding=\"utf-8\") as <LOCAL_DRIVE_F>\n",
+    "        for r in rows:\n",
+    "            f.write(json.dumps(r, ensure_ascii=False) + \"\\n\")\n",
+    "\n",
+    "def is_strongc(r):\n",
+    "    if bool(r.get(\"force_dispute\", False)):\n",
+    "        return True\n",
+    "    d = r.get(\"c_delta\", None)\n",
+    "    try:\n",
+    "        return d is not None and float(d) <= DELTA_STRONG\n",
+    "    except Exception:\n",
+    "        return False\n",
+    "\n",
+    "def assign_weight(r):\n",
+    "    src = r.get(\"source\")\n",
+    "    if is_strongc(r):\n",
+    "        return 3.0\n",
+    "    if src == \"TEACHER_30B\":\n",
+    "        return 2.0\n",
+    "    return 1.0\n",
+    "\n",
+    "train = load_jsonl(TRAIN_V1)\n",
+    "val   = load_jsonl(VAL_V1)\n",
+    "test  = load_jsonl(TEST_V1)\n",
+    "\n",
+    "for split in (train, val, test):\n",
+    "    for r in split:\n",
+    "        r[\"weight\"] = assign_weight(r)\n",
+    "\n",
+    "write_jsonl(TRAIN_V2, train)\n",
+    "write_jsonl(VAL_V2, val)\n",
+    "write_jsonl(TEST_V2, test)\n",
+    "\n",
+    "# stats\n",
+    "def dist(rows, key):\n",
+    "    return dict(Counter([r.get(key) for r in rows]))\n",
+    "\n",
+    "stats = {\n",
+    "    \"train\": len(train),\n",
+    "    \"val\": len(val),\n",
+    "    \"test\": len(test),\n",
+    "    \"weight_dist_train\": dist(train, \"weight\"),\n",
+    "    \"weight_dist_val\": dist(val, \"weight\"),\n",
+    "    \"weight_dist_test\": dist(test, \"weight\"),\n",
+    "    \"source_dist_train\": dist(train, \"source\"),\n",
+    "    \"source_dist_val\": dist(val, \"source\"),\n",
+    "    \"source_dist_test\": dist(test, \"source\"),\n",
+    "}\n",
+    "\n",
+    "with STATS_V2.open(\"w\", encoding=\"utf-8\") as <LOCAL_DRIVE_F>\n",
+    "    json.dump(stats, f, ensure_ascii=False, indent=2)\n",
+    "\n",
+    "print(\"[OUT] train v2 ->\", TRAIN_V2)\n",
+    "print(\"[OUT] val   v2 ->\", VAL_V2)\n",
+    "print(\"[OUT] test  v2 ->\", TEST_V2)\n",
+    "print(\"[OUT] stats v2 ->\", STATS_V2)\n",
+    "print(json.dumps(stats, indent=2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1b8ea6d4-ad23-4411-a252-1dbc2673fb7f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bb3b9481-2fad-4598-80bc-948b69df3137",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "db621f19-62f9-4579-9bde-ad84bc30182a",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "54f583c2-963e-4d74-af9b-373081886821",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "rtx5090_final (CUDA13.1)",
+   "language": "python",
+   "name": "rtx5090_final"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.19"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

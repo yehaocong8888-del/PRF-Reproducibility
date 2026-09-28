@@ -1,0 +1,11 @@
+{
+  "phase": "P4-E1-A",
+  "status": "COMPLETE",
+  "sample_sha256": "6f3581a259da84d6ac87e0e20c97dd87a84943a490b7d49167e3d8d4d6b5c30b",
+  "raw_pair_sha256": "772a4116eb37346e8935e2357cbf4d7bae1b4fb77414996f490556544add4e87",
+  "cache_detail_sha256": "3be421f69a79a7cb73622d447ba22b73864d3933f2b646739876d181f1eb22e7",
+  "summary_csv_sha256": "e8ab20fa77adc5982b87b76e1b2255ce1115e70f7880dc5969b8bf4033f0a0f7",
+  "summary_json_sha256": "b4a5bec18d3ccac8ae8e7bece4393f1344a3b59a34875c1e7a1dc9529b896f29",
+  "gold_used": false,
+  "source_mutation": false
+}

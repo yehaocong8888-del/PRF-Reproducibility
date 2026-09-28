@@ -1,0 +1,14 @@
+{
+  "schema": "INRIA_Copydays_manifest_freeze_v1",
+  "created": "2026-09-21T20:29:47",
+  "query_n": 1642,
+  "positive_n": 1642,
+  "negative_n": 1642,
+  "pair_n": 3284,
+  "negative_strategy": "CLIP_HARD_TOP1",
+  "gold_definition": {
+    "ACCEPT": "attacked query and original candidate share source identity",
+    "REJECT": "attacked query paired with a different source image"
+  },
+  "manifest_sha256": "9cecabaa042a80040a6b30f534ec8aaec65cd0e62249dd9cbfedfaa6b95a8603"
+}

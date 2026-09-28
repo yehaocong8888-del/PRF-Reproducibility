@@ -1,0 +1,4 @@
+﻿Subset,N_pairs,Query_groups,B_Accuracy,PRF_Accuracy,Delta_Accuracy,B_Balanced_Accuracy,PRF_Balanced_Accuracy,Teacher_Routed,Teacher_ne_B,Correction,Harm,Net,Strong_C,Interpretation
+Nested COVERAGE-200,200,100,0.95,0.96,0.010000000000000009,0.95,0.96,29,2,2,0,2,0,Exact nested reproduction of COVERAGE-200.
+NEW-800 Rank 2-9 negatives,800,100,0.995,0.995,0.0,,,23,0,0,0,0,0,No additional teacher override on the newly added Rank 2-9 negatives.
+Full COVERAGE-1000,1000,100,0.986,0.988,0.0020000000000000018,0.9788888888888889,0.9888888888888889,52,2,2,0,2,0,1000 pair observations clustered within the same 100 query groups; not an independent 1000-query benchmark.

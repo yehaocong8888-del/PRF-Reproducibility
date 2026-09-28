@@ -1,0 +1,7 @@
+﻿method_raw,method,evidence,teacher_arbitration,n,agreement_pct,coverage_rate_pct,uncertain_rate_pct,covered_agreement_pct,deterministic_conflict_rate_pct,pred_ACCEPT,pred_REJECT,pred_AMBIGUOUS,A_to_R_conflict,R_to_A_conflict
+ONLY_A,CLIP-only retrieval baseline,A,No,4294,48.18,63.81,36.19,75.51,15.63,1093,1647,1554,33,638
+ONLY_B,8B semantic review baseline,B,No,4294,67.44,85.77,14.23,78.63,18.33,1452,2231,611,81,706
+NO_C,A+B evidence baseline,A+B,No,4294,42.59,49.49,50.51,86.07,6.89,927,1198,2169,2,294
+NO_GATE,ABC voting without gate,A+B+C,No,4294,45.81,53.21,46.79,86.08,7.41,927,1358,2009,2,316
+ONE_OF_THREE_ACCEPT,Aggressive one-positive voting,A+B+C,No,4294,71.36,92.9,7.1,76.81,21.54,1618,2371,305,112,813
+PRF_BASELINE,Full PRF,A+B+C+D,Yes,4294,67.72,86.4,13.6,78.38,18.68,1442,2268,584,75,727

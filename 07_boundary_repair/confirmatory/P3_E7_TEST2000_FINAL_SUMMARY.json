@@ -1,0 +1,141 @@
+{
+  "schema": "P3_E7_TEST2000_CONFIRMATORY_SUMMARY_V1",
+  "created_at": "2026-09-24T02:09:01",
+  "scientific_role": "untouched confirmatory internal three-class evaluation",
+  "selection_was_frozen_before_test": true,
+  "selected_model": "PU050",
+  "test_source": {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\eval_results\\test_stratified_2000.jsonl",
+    "sha256": "2e384380495d7ceff38e1408edff4181fc7c551a675732f37800371233866ab9",
+    "remap_sha256": "faf949a29b86ad1762e36c55f608fc67f43dc03d912b33294cbe495c0cd98e4a",
+    "n": 2000,
+    "gold_distribution": {
+      "A": 719,
+      "R": 939,
+      "U": 342
+    }
+  },
+  "models": {
+    "Original": {
+      "adapter_sha256": "ca8839bb328ed03322432fa43035edb8c0ee37882d66dba7198d45bd9a2657bd",
+      "prediction_sha256": "0864227d4bafdd5563a381689e49338768bc3165b6187d2cfad1241aa73d1bda",
+      "metrics": {
+        "n": 2000,
+        "accuracy": 0.722,
+        "macro_f1": 0.7135173711689138,
+        "A_precision": 0.9625,
+        "A_recall": 0.7496522948539638,
+        "A_f1": 0.8428459734167318,
+        "R_precision": 0.9753694581280788,
+        "R_recall": 0.6325878594249201,
+        "R_f1": 0.7674418604651163,
+        "U_precision": 0.3742478941034898,
+        "U_recall": 0.9093567251461988,
+        "U_f1": 0.5302642796248934,
+        "pred_A": 560,
+        "pred_R": 609,
+        "pred_U": 831,
+        "gold_U": 342,
+        "pred_U_rate": 0.4155,
+        "predU_over_goldU": 2.4298245614035086,
+        "false_U": 520,
+        "missed_U": 31,
+        "direct_AR_error": 5,
+        "confusion": {
+          "A": {
+            "A": 539,
+            "R": 1,
+            "U": 179
+          },
+          "R": {
+            "A": 4,
+            "R": 594,
+            "U": 341
+          },
+          "U": {
+            "A": 17,
+            "R": 14,
+            "U": 311
+          }
+        }
+      }
+    },
+    "PU050": {
+      "adapter_sha256": "7bf6aba86db71680a9461e7e2c4ffcd93f25c54af10239db223fbdf911079d82",
+      "prediction_sha256": "bdac76af95d8181fdeb4c6b206340884b0007ac55ba9fa839e2175c79d234624",
+      "metrics": {
+        "n": 2000,
+        "accuracy": 0.809,
+        "macro_f1": 0.758941329270589,
+        "A_precision": 0.9293394777265745,
+        "A_recall": 0.8414464534075105,
+        "A_f1": 0.8832116788321168,
+        "R_precision": 0.8771551724137931,
+        "R_recall": 0.8668796592119276,
+        "R_f1": 0.8719871451526513,
+        "U_precision": 0.47268408551068886,
+        "U_recall": 0.5818713450292398,
+        "U_f1": 0.5216251638269986,
+        "pred_A": 651,
+        "pred_R": 928,
+        "pred_U": 421,
+        "gold_U": 342,
+        "pred_U_rate": 0.2105,
+        "predU_over_goldU": 1.2309941520467835,
+        "false_U": 222,
+        "missed_U": 143,
+        "direct_AR_error": 17,
+        "confusion": {
+          "A": {
+            "A": 605,
+            "R": 11,
+            "U": 103
+          },
+          "R": {
+            "A": 6,
+            "R": 814,
+            "U": 119
+          },
+          "U": {
+            "A": 40,
+            "R": 103,
+            "U": 199
+          }
+        }
+      }
+    }
+  },
+  "delta_PU050_minus_Original": {
+    "accuracy": 0.08700000000000008,
+    "macro_f1": 0.04542395810167521,
+    "U_precision": 0.09843619140719906,
+    "U_recall": -0.32748538011695905,
+    "U_f1": -0.00863911579789478
+  },
+  "paired": {
+    "Original_correct_PU050_wrong": 112,
+    "Original_wrong_PU050_correct": 286,
+    "exact_two_sided_McNemar_p": 1.1799484000625268e-18,
+    "transitions": {
+      "A->A": 560,
+      "U->R": 319,
+      "Original_U_to_correct_decisive": 286,
+      "U->U": 421,
+      "R->R": 609,
+      "U->A": 91,
+      "Original_U_to_wrong_decisive": 124,
+      "GoldU_original_correct_lost": 112
+    }
+  },
+  "runtime_seconds": {
+    "Original": 2200.7239923477173,
+    "PU050": 788.7935078144073
+  },
+  "peak_vram_gb": 16.901498317718506,
+  "guards": {
+    "test_used_for_model_selection": false,
+    "retraining_after_test": false,
+    "other_candidate_models_tested": false,
+    "external_used": false
+  }
+}

@@ -1,0 +1,10 @@
+﻿dataset,path,source_sha256,expected_n,matched_n,coverage,stored_c_n,stored_c_consistency,join_methods
+PIPAL,<PHASE1_EXTERNAL_ROOT>\02_external_validation\G3D_PIPAL\03_prf\PIPAL_D1_challenge1000_c_noise_maskclip_v4.jsonl,e1860e4ecd8ec2f57528dcfed24e33821b4970f9dc772c94e0ffb2b0e71016d1,2000,2000,1.0,2000,1.0,"{""pair_id"": 2000}"
+LIVE,<PHASE1_EXTERNAL_ROOT>\02_external_validation\G3F_LIVE_Multiply\03_prf\LIVE_Multiply_primary_c_noise_maskclip_v4.jsonl,002c39f8c3d730b6933889f3ce4f1ac8cc62c1aa11f5fb0fbc01f22a3ce7de00,810,810,1.0,810,1.0,"{""pair_id"": 810}"
+Waterloo,<PHASE1_EXTERNAL_ROOT>\02_external_validation\G3E_Waterloo\02_prf_full\waterloo_C_noise_maskclip_v4.jsonl,9fcd0eeda0d5a73111b6283c875e702d904b2b8b56d1295af5596f82c7444740,3999,3999,1.0,3999,1.0,"{""pair_id"": 3999}"
+INRIA_Copydays,<PHASE1_EXTERNAL_ROOT>\02_external_validation\G3G_INRIA_COVERAGE\02_prf_inria\INRIA_C_noise_maskclip_v4.jsonl,e6192e4ef67867be7a50a0e48c341e2a08017250791df80123dda014cf3facde,3284,3284,1.0,3284,1.0,"{""pair_id"": 3284}"
+COVERAGE200,<PHASE1_EXTERNAL_ROOT>\02_external_validation\G3G_INRIA_COVERAGE\03_prf_coverage\COVERAGE_C_noise_maskclip_v4.jsonl,f19b6c6aee11a5ccd7dd0c31437ac40cb8745cbefeeb3cd9577f2c1615b510e9,200,200,1.0,200,1.0,"{""pair_id"": 200}"
+ISC2021,<PHASE1_EXTERNAL_ROOT>\02_external_validation\G3I_ISC2021\02_prf_activation\ISC2021_C_noise_maskclip_v4.jsonl,3e7dd058b489a95e907b39147096b056dd82f22afcd7786c4d547ca3a65986a4,200,200,1.0,200,1.0,"{""pair_id"": 200}"
+CLWD_controlled,<PHASE1_EXTERNAL_ROOT>\02_external_validation\G3J_CLWD\01_shared_watermark_dev\02_prf_dev80\CLWD_DEV80_C_noise_maskclip_v4.jsonl,00f01d1690e7cfd98162172c05f5532726bf47a76ea92e42b1a43fa788c711a3,80,80,1.0,80,1.0,"{""pair_id"": 80}"
+LVW,<PHASE1_EXTERNAL_ROOT>\02_external_validation\G3K_LVW\99_final_closure\C_noise_maskclip_v4.jsonl,6c5e619a76eead4a19a405eebcfe7b4c9e82a115049f7a06d3de67702814761a,2000,2000,1.0,2000,1.0,"{""pair_id"": 2000}"
+IMD2020,<PHASE1_EXTERNAL_ROOT>\02_external_validation\G3L_IMD2020\99_final_closure\C_noise_maskclip_v4.jsonl,82a452be9ec53518fbea261e0680e41583bcaae08c8f17babd81499ea9e153a4,828,828,1.0,828,1.0,"{""pair_id"": 828}"

@@ -1,0 +1,103 @@
+{
+  "schema": "PRF_G4_S2D_A_STUDENT_EXTERNAL_PROTOCOL_FINAL_FREEZE_V1",
+  "created_at": "2026-09-22T22:07:53.201841+08:00",
+  "status": "FROZEN",
+  "protocol_name": "G4_EXTERNAL_PRF_THREEWAY_V1",
+  "protocol_type": "RECONSTRUCTED_FROZEN_ZERO_SHOT_SAME_TASK_PROTOCOL",
+  "historical_prompt_status": "Exact canonical internal Student prompt text was not recovered. Runtime mechanics were recovered and replay-validated.",
+  "master_contract": {
+    "path": "<PHASE2_STUDENT_ROOT>\\G4-S2B-F4_9SET_CANONICAL_MASTER_FINAL_LOCK\\PRF_EXTERNAL_9SET_CANONICAL_EVALUATION_CONTRACT_v1.jsonl",
+    "sha256": "942ebcc3c92a6c4ccd480a4573bf4240360e2a33d37fd180991734b78e54766f",
+    "rows": 13401
+  },
+  "student_adapter": {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\04_最终模型_final\\final",
+    "adapter_model_sha256": "ca8839bb328ed03322432fa43035edb8c0ee37882d66dba7198d45bd9a2657bd",
+    "adapter_config_sha256": "742b2f602084490d198f8c4d3d5499c05e0d11fc562a76c71f5c76d02667072f"
+  },
+  "historical_runtime_source": {
+    "path": "<PHASE2_STUDENT_ROOT>\\G4-S1A2F_EXACT_INFERENCE_SOURCE\\47_run_pickapic_prf_eval.py",
+    "sha256": "55b535e9d0154812e0f2f1922ae19c0a2971e7321e39ea9741602e247d7b4681"
+  },
+  "runtime": {
+    "python": "3.10.19 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 16:41:31) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "torch": "2.7.0+cu128",
+    "transformers": "4.57.1",
+    "peft": "0.18.0",
+    "accelerate": "1.15.0",
+    "model_class": "PeftModelForCausalLM",
+    "processor_class": "Qwen3VLProcessor",
+    "model_training": false,
+    "active_adapter": "default",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  "input_protocol": {
+    "image_count": 2,
+    "image_order": [
+      "QUERY",
+      "CANDIDATE"
+    ],
+    "chat_template": true,
+    "add_generation_prompt": true,
+    "prompt": "You are a PRF student judge for image-pair filtering.\n\nTwo images are provided in this order:\n1. Query image\n2. Candidate image\n\nTask:\nDecide whether the candidate forms a suitable training pair with the query for image-to-image learning.\n\nDecision rule:\n- ACCEPT: the candidate is sufficiently visually and semantically consistent with the query to be used as a training pair.\n- REJECT: the candidate is inconsistent or mismatched with the query and would be unsuitable as a training pair.\n- AMBIGUOUS: the visual evidence is insufficient or conflicting for a reliable ACCEPT or REJECT decision.\n\nOutput rule:\nOutput exactly one PRF decision token:\nDEC=A\nor\nDEC=R\nor\nDEC=U\n\nDo not explain.",
+    "prompt_sha256": "c284e8a4a2b98051558b9686de6b9b56a02235cdaa2b96f39ddc6aa2207d9ce2",
+    "rendered_template_sha256": "9f26feff344b845cecbba5b85f135cdea2f69b603434cec4d7e0dfd11fe9bc9e",
+    "auxiliary_features": []
+  },
+  "generation": {
+    "max_new_tokens": 12,
+    "do_sample": false,
+    "decode_generated_continuation_only": true,
+    "skip_special_tokens": true,
+    "batch_size": 1
+  },
+  "parser": {
+    "priority_1": "contains DEC=A -> ACCEPT",
+    "priority_2": "contains DEC=R -> REJECT",
+    "priority_3": "contains DEC=U -> AMBIGUOUS",
+    "priority_4": "exact DEC= -> AMBIGUOUS",
+    "priority_5": "exact ACCEPT -> ACCEPT",
+    "priority_6": "exact REJECT -> REJECT",
+    "priority_7": "exact AMBIGUOUS -> AMBIGUOUS",
+    "priority_8": "exact A -> ACCEPT",
+    "priority_9": "exact R -> REJECT",
+    "priority_10": "exact U -> AMBIGUOUS",
+    "fallback": "UNK"
+  },
+  "parser_policy_sha256": "c0aec8d1baffbfa46e5683e87382ccd8624d0ae4a7d287ccad6b21a7547e1507",
+  "leakage_policy": {
+    "dataset_name_in_prompt": false,
+    "gold_in_prompt": false,
+    "B_final_in_prompt": false,
+    "PRF_final_in_prompt": false,
+    "teacher_decision_in_prompt": false,
+    "teacher_routed_in_prompt": false,
+    "A_or_CLIP_score_in_prompt": false,
+    "a_similarity_bin_in_prompt": false,
+    "dataset_specific_prompt": false,
+    "prompt_ablation_after_freeze": false,
+    "threshold_tuning_on_external_results": false
+  },
+  "protocol_change_policy": {
+    "after_freeze": "No semantic prompt, parser, decision rule, image order, generation length, or decoding-policy changes are allowed after any G3N Student outcome is observed.",
+    "technical_failure_exception": "A purely engineering fix that does not change the frozen semantic protocol may be versioned and documented. Any semantic change requires a new protocol version and must not be selected using outcome metrics."
+  },
+  "evaluation_policy": {
+    "Student_to_Gold": [
+      "strict_accuracy",
+      "macro_f1",
+      "coverage",
+      "selective_accuracy"
+    ],
+    "Student_to_PRF": [
+      "exact_threeway_agreement",
+      "macro_f1",
+      "per_class_recall",
+      "PRF_U_to_Student_U_retention"
+    ],
+    "UNK_policy": "UNK is retained as an inference-format failure; it is not silently converted to ACCEPT/REJECT/AMBIGUOUS.",
+    "strict_accuracy_policy": "AMBIGUOUS and UNK are incorrect against binary external Gold."
+  }
+}

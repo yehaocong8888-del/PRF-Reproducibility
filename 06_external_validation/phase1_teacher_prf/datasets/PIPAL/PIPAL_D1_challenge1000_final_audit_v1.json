@@ -1,0 +1,97 @@
+{
+  "schema": "final_external_PRF_audit_v1",
+  "manifest_expected_pairs": 2000,
+  "ABC_valid_pairs": 2000,
+  "final_resolved_pairs": 2000,
+  "unresolved_teacher_pairs": 0,
+  "paired_complete_queries": 1000,
+  "paired_complete_pairs": 2000,
+  "B_PRF_changed": 0,
+  "B_PRF_agreement": 1.0,
+  "B_wrong_to_PRF_correct": 0,
+  "B_correct_to_PRF_wrong": 0,
+  "changed_same_correctness_status": 0,
+  "net_correction": 0,
+  "mcnemar_exact_p": 1.0,
+  "ALL_VALID": {
+    "B": {
+      "N": 2000,
+      "strict_accuracy": 0.9105,
+      "coverage": 0.9375,
+      "selective_accuracy": 0.9712,
+      "precision_accept": 0.9796137339055794,
+      "recall_accept": 0.913,
+      "f1_accept": 0.9451345755693583,
+      "TP": 913,
+      "TN": 908,
+      "FP": 19,
+      "FN_including_ambiguous": 87,
+      "positive_acceptance": 0.913,
+      "hardnegative_reject": 0.908
+    },
+    "PRF": {
+      "N": 2000,
+      "strict_accuracy": 0.9105,
+      "coverage": 0.9375,
+      "selective_accuracy": 0.9712,
+      "precision_accept": 0.9796137339055794,
+      "recall_accept": 0.913,
+      "f1_accept": 0.9451345755693583,
+      "TP": 913,
+      "TN": 908,
+      "FP": 19,
+      "FN_including_ambiguous": 87,
+      "positive_acceptance": 0.913,
+      "hardnegative_reject": 0.908
+    }
+  },
+  "PAIRED_COMPLETE": {
+    "B": {
+      "N": 2000,
+      "strict_accuracy": 0.9105,
+      "coverage": 0.9375,
+      "selective_accuracy": 0.9712,
+      "precision_accept": 0.9796137339055794,
+      "recall_accept": 0.913,
+      "f1_accept": 0.9451345755693583,
+      "TP": 913,
+      "TN": 908,
+      "FP": 19,
+      "FN_including_ambiguous": 87,
+      "positive_acceptance": 0.913,
+      "hardnegative_reject": 0.908
+    },
+    "PRF": {
+      "N": 2000,
+      "strict_accuracy": 0.9105,
+      "coverage": 0.9375,
+      "selective_accuracy": 0.9712,
+      "precision_accept": 0.9796137339055794,
+      "recall_accept": 0.913,
+      "f1_accept": 0.9451345755693583,
+      "TP": 913,
+      "TN": 908,
+      "FP": 19,
+      "FN_including_ambiguous": 87,
+      "positive_acceptance": 0.913,
+      "hardnegative_reject": 0.908
+    }
+  },
+  "transition_table": {
+    "ACCEPT": {
+      "ACCEPT": 932,
+      "AMBIGUOUS": 0,
+      "REJECT": 0
+    },
+    "AMBIGUOUS": {
+      "ACCEPT": 0,
+      "AMBIGUOUS": 125,
+      "REJECT": 0
+    },
+    "REJECT": {
+      "ACCEPT": 0,
+      "AMBIGUOUS": 0,
+      "REJECT": 943
+    }
+  }
+}

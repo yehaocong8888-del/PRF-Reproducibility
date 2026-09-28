@@ -1,0 +1,8 @@
+﻿dataset,expected_n,contract_rows,expected_routed,actual_routed,unresolved_gold,unresolved_B,unresolved_PRF,missing_paths,status
+Waterloo,3999,3999,752,752,0,0,0,0,PASS
+INRIA_Copydays,3284,3284,1133,1133,0,0,0,0,PASS
+COVERAGE200,200,200,29,29,0,0,0,0,PASS
+ISC2021,200,200,76,76,0,0,0,0,PASS
+CLWD_controlled,80,80,24,24,0,0,0,0,PASS
+LVW,2000,2000,744,744,0,0,0,0,PASS
+IMD2020,828,828,129,129,0,0,0,0,PASS

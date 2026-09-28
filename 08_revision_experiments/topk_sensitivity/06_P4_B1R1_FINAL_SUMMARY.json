@@ -1,0 +1,33 @@
+{
+  "phase": "P4-B1R1",
+  "status": "COMPLETE",
+  "historical_ranking_reproduction": "qv=emb32[qi]; sims=emb32@qv; np.argsort(-sims)",
+  "self_included": true,
+  "model_execution": false,
+  "source_mutation": false,
+  "parameter_selection": false,
+  "embedding_A_score_identity": {
+    "checked_rows": 2984,
+    "max_abs_difference": 0.0,
+    "mean_abs_difference": 0.0
+  },
+  "exact_top5_guard": {
+    "expected_pairs": 49120,
+    "missing": 0,
+    "containment": 1.0
+  },
+  "approximate_vs_exact": {
+    "ranks_changed": 71,
+    "max_abs_rank_change": 2,
+    "mean_abs_rank_change": 0.0079
+  },
+  "branch": {
+    "rank_gt30_inaccessible": 5289,
+    "clip_top5_direct_hit": 2474,
+    "rank6_30_recovered_by_8B": 1149,
+    "rank6_30_accessible_but_not_selected": 912
+  },
+  "rank6_30_8B_recovery_rate": 0.5574963609898108,
+  "historical_final_pool_recall_success": 0.36879071661237783,
+  "interpretation_guard": "Alternative K values quantify candidate accessibility or direct CLIP retention only. They do not constitute counterfactual 8B outputs for altered access windows."
+}

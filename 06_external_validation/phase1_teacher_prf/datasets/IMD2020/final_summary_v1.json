@@ -1,0 +1,47 @@
+{
+  "schema": "external_final_summary_v1",
+  "dataset": "IMD2020",
+  "expected_n": 828,
+  "final_n": 828,
+  "complete": true,
+  "manifest_sha256": "965cc6e8826ef95085e7da0673fca845daad79e1681d4431d665ada0c9890d80",
+  "final_jsonl_sha256": "ad759342e38e8abc1793590615bbebfd45c4eb833f8a34526ed741726e7b4ad1",
+  "final_csv_sha256": "9cd5e51eb131ad537cb0c7e652b5802446b0cb7a37260e53e1e9ae5221c78caa",
+  "A": {
+    "accuracy": 0.5664251207729468,
+    "macro_f1_3class": 0.34189323268375865,
+    "coverage": 0.893719806763285,
+    "selective_accuracy": 0.6337837837837837
+  },
+  "B": {
+    "accuracy": 0.6727053140096618,
+    "macro_f1_3class": 0.42537145032149315,
+    "coverage": 0.9927536231884058,
+    "selective_accuracy": 0.6776155717761557
+  },
+  "PRF": {
+    "accuracy": 0.6727053140096618,
+    "macro_f1_3class": 0.42537145032149315,
+    "coverage": 0.9927536231884058,
+    "selective_accuracy": 0.6776155717761557
+  },
+  "A_ne_B_n": 128,
+  "strong_C_n": 0,
+  "teacher_routed_n": 129,
+  "teacher_routed_rate": 0.15579710144927536,
+  "teacher_ne_B_n": 0,
+  "teacher_ne_B_rate": 0.0,
+  "intervention_n": 0,
+  "correction_n": 0,
+  "harm_n": 0,
+  "net_correction": 0,
+  "final_source_dist": {
+    "AUTO_2OF3": 699,
+    "TEACHER_30B": 129
+  },
+  "final_dist": {
+    "REJECT": 671,
+    "AMBIGUOUS": 6,
+    "ACCEPT": 151
+  }
+}

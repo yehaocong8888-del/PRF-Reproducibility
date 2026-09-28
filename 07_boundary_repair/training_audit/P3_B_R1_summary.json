@@ -1,0 +1,30 @@
+{
+  "schema": "PRF_P3_B_R1_TRAINING_ASSET_AUDIT",
+  "root": "<STUDENT_DISTILLATION_ROOT>",
+  "root_exists": true,
+  "all_files_seen": 69,
+  "relevant_records": 64,
+  "adapter_model_files": 6,
+  "adapter_config_files": 6,
+  "trainer_state_files": 0,
+  "checkpoint_related_files": 0,
+  "loss_named_files": 0,
+  "training_logs": 0,
+  "training_scripts": 4,
+  "evaluation_files": 36,
+  "text_files_with_loss_evidence": 5,
+  "canonical_adapter_sha_matches": [
+    "<STUDENT_DISTILLATION_ROOT>\\04_最终模型_final\\final\\adapter_model.safetensors",
+    "<STUDENT_DISTILLATION_ROOT>\\final Lora adapter\\adapter_model.safetensors"
+  ],
+  "canonical_config_sha_matches": [
+    "<STUDENT_DISTILLATION_ROOT>\\03_训练结果_恢复final_run\\ckpt_step020500\\adapter_config.json",
+    "<STUDENT_DISTILLATION_ROOT>\\03_训练结果_恢复final_run\\ckpt_step021000\\adapter_config.json",
+    "<STUDENT_DISTILLATION_ROOT>\\03_训练结果_恢复final_run\\ckpt_step026500\\adapter_config.json",
+    "<STUDENT_DISTILLATION_ROOT>\\04_最终模型_final\\final\\adapter_config.json",
+    "<STUDENT_DISTILLATION_ROOT>\\final Lora adapter\\adapter_config.json"
+  ],
+  "historical_mutation": false,
+  "training_executed": false,
+  "inference_executed": false
+}

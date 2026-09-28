@@ -1,0 +1,33 @@
+{
+  "schema": "PRF_G4_S0D_HF_BASE_FREEZE_V1",
+  "created_at": "2026-09-22T19:45:29.933326+08:00",
+  "hf_base": {
+    "path": "<LOCAL_USER_HOME>\\Downloads\\8B\\Qwen3-VL-8B-Instruct",
+    "folder_name": "Qwen3-VL-8B-Instruct",
+    "model_type": "qwen3_vl",
+    "architectures": [
+      "Qwen3VLForConditionalGeneration"
+    ],
+    "weight_shards": 4,
+    "weight_total_bytes": 17534339512,
+    "weight_total_human": "16.330 GB",
+    "all_required_assets": true,
+    "all_weight_shards": true
+  },
+  "student_adapter": {
+    "path": "<STUDENT_DISTILLATION_ROOT>\\04_最终模型_final\\final",
+    "sha256": "ca8839bb328ed03322432fa43035edb8c0ee37882d66dba7198d45bd9a2657bd",
+    "sha_match": true,
+    "declared_base_model": "<LOCAL_LINUX_HOME>/projects/axolotl/hf_models/Qwen3-VL-8B-Instruct",
+    "declared_base_name": "Qwen3-VL-8B-Instruct",
+    "actual_hf_base_name": "Qwen3-VL-8B-Instruct",
+    "base_name_match": true
+  },
+  "overall_pass": true,
+  "protocol": {
+    "model_loaded": false,
+    "inference": false,
+    "training": false,
+    "download": false
+  }
+}

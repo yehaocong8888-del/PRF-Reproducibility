@@ -1,0 +1,48 @@
+{
+  "phase": "P4-D1",
+  "calibration_datasets": [
+    "CLWD_controlled",
+    "COVERAGE200",
+    "ISC2021"
+  ],
+  "calibration_N": 480,
+  "confirmatory_datasets": [
+    "IMD2020",
+    "INRIA_Copydays",
+    "LIVE",
+    "LVW",
+    "PIPAL",
+    "Waterloo"
+  ],
+  "confirmatory_N": 12921,
+  "A_reliability": {
+    "decisive_n": 404,
+    "correct_n": 313,
+    "reliability": 0.7747524752475248
+  },
+  "B_reliability": {
+    "decisive_n": 463,
+    "correct_n": 417,
+    "reliability": 0.9006479481641468
+  },
+  "RW_threshold_freeze": {
+    "mode": "RW",
+    "tau": 1.0,
+    "dev_target_auto": 351,
+    "dev_weighted_auto": 351,
+    "auto_count_difference": 0,
+    "selection_basis": "closest canonical auto-count on Dev480; no accuracy optimization"
+  },
+  "RCW_threshold_freeze": {
+    "mode": "RCW",
+    "tau": 1.0,
+    "dev_target_auto": 351,
+    "dev_weighted_auto": 351,
+    "auto_count_difference": 0,
+    "selection_basis": "closest canonical auto-count on Dev480; no accuracy optimization"
+  },
+  "C_policy": "retain canonical strong-C hard routing gate; no synthetic C confidence",
+  "confirmatory_accuracy_used_for_weight_or_threshold_selection": false,
+  "threshold_selection_objective": "match canonical auto-count on Dev480 only",
+  "model_execution": false
+}

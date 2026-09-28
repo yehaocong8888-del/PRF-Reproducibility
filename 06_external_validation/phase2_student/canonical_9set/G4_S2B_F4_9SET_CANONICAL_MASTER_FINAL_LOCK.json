@@ -1,0 +1,123 @@
+{
+  "schema": "PRF_G4_S2B_F4_9SET_CANONICAL_MASTER_FINAL_LOCK_V1",
+  "created_at": "2026-09-22T21:51:24.252694+08:00",
+  "status": "LOCKED",
+  "policy": {
+    "main_settings": [
+      "PIPAL",
+      "LIVE",
+      "Waterloo",
+      "INRIA_Copydays",
+      "COVERAGE200",
+      "ISC2021",
+      "CLWD_controlled",
+      "LVW",
+      "IMD2020"
+    ],
+    "main_setting_count": 9,
+    "main_pair_rows": 13401,
+    "teacher_routed_total": 4126,
+    "gold_policy": "Use frozen G3 final-evaluation Gold. For PIPAL/LIVE, historical ground_truth_same_reference mapping is accepted only because it is jointly validated by pair_type, historical B_correct/PRF_correct, and final_audit metrics.",
+    "COVERAGE1000": "SUPPLEMENTARY_ONLY_NOT_INCLUDED",
+    "KADID_TID2013": "ROUTE_ONLY_NOT_INCLUDED_IN_PAIR_LEVEL_ACCURACY"
+  },
+  "legacy_recovery": {
+    "PIPAL": {
+      "manifest": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3D_PIPAL\\01_manifest\\PIPAL_D1_challenge1000_pairs_v1.csv",
+      "manifest_sha256": "4c0bf8dfbdf2d652b21a21b55a7a1685d23a000e977d157c39831192c0026f79",
+      "final_predictions": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3D_PIPAL\\04_statistics\\PIPAL_D1_challenge1000_final_predictions_v1.csv",
+      "final_predictions_sha256": "f58aeebc0436d471747aadc78367f5e0112d7d3efdc8048032134574bc7d77fa",
+      "final_audit": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3D_PIPAL\\04_statistics\\PIPAL_D1_challenge1000_final_audit_v1.json",
+      "final_audit_sha256": "1f3f9d9b3215d0771c9f45b9c76a01e0ea5430ecbc5f266bdfada6c1f8806a9c",
+      "dispute_sha256": "ed245ad8233b29ba7d1898c239a924360136928ad93e5e78c22be66fc6c8ef8d",
+      "teacher_sha256": "fd59c012e72bf93a5910cc3e08bef5dd257e695fb1eff74ee1a20d66a357341a",
+      "contract_path": "<PHASE2_STUDENT_ROOT>\\G4-S2B-F4_9SET_CANONICAL_MASTER_FINAL_LOCK\\PIPAL_CANONICAL_CONTRACT.jsonl",
+      "contract_sha256": "99c5f3968239512e3861cae562d929c923a7b1c6d7fd06a0e95fbb39a2c90ab9",
+      "B_accuracy": 0.9105,
+      "PRF_accuracy": 0.9105,
+      "B_coverage": 0.9375,
+      "PRF_coverage": 0.9375,
+      "Teacher_routed": 1165,
+      "B_PRF_changed": 0
+    },
+    "LIVE": {
+      "manifest": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3F_LIVE_Multiply\\01_manifest\\LIVE_Multiply_primary_pairs_v1.csv",
+      "manifest_sha256": "3f976711bacf93c4a90cc90bf621e7dbe188fe8ba0f246c9ece9b70ed366587e",
+      "final_predictions": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3F_LIVE_Multiply\\04_statistics\\LIVE_Multiply_primary_final_predictions_v1.csv",
+      "final_predictions_sha256": "d6cbed4122b2ac0f6c13704d44a04ccc08e6acb65589292193bb382656ff4429",
+      "final_audit": "<PHASE1_EXTERNAL_ROOT>\\02_external_validation\\G3F_LIVE_Multiply\\04_statistics\\LIVE_Multiply_primary_final_audit_v1.json",
+      "final_audit_sha256": "eb6aca977cec915f3f6fbd51b6656abbbfb832a2fa2a78633144f37e61b18e80",
+      "dispute_sha256": "5dca727ebd6c690c340ba5ced3abd7bcc2de0f8ab35cd489789225adcb7952ff",
+      "teacher_sha256": "9d5c7d954ee68a2ce45658c76080826c6dea861f5dcf369130c4a21f254fdaae",
+      "contract_path": "<PHASE2_STUDENT_ROOT>\\G4-S2B-F4_9SET_CANONICAL_MASTER_FINAL_LOCK\\LIVE_CANONICAL_CONTRACT.jsonl",
+      "contract_sha256": "2ed0a6ffa712959eace35daf9fca278b441a3c7ba9195f6c09e181a818c20b68",
+      "B_accuracy": 1.0,
+      "PRF_accuracy": 1.0,
+      "B_coverage": 1.0,
+      "PRF_coverage": 1.0,
+      "Teacher_routed": 74,
+      "B_PRF_changed": 0
+    }
+  },
+  "master_audit": [
+    {
+      "dataset": "PIPAL",
+      "N": 2000,
+      "Teacher_routed": 1165,
+      "contract_sha256": "99c5f3968239512e3861cae562d929c923a7b1c6d7fd06a0e95fbb39a2c90ab9"
+    },
+    {
+      "dataset": "LIVE",
+      "N": 810,
+      "Teacher_routed": 74,
+      "contract_sha256": "2ed0a6ffa712959eace35daf9fca278b441a3c7ba9195f6c09e181a818c20b68"
+    },
+    {
+      "dataset": "Waterloo",
+      "N": 3999,
+      "Teacher_routed": 752,
+      "contract_sha256": "bf417ebd7207988f873aa6f711776e90d4674783d2f14aa1b38d8fe592448488"
+    },
+    {
+      "dataset": "INRIA_Copydays",
+      "N": 3284,
+      "Teacher_routed": 1133,
+      "contract_sha256": "d37e5a53081728fc1fc32da2e82f3743945425dff14c4dbbcd43cc16a75806fd"
+    },
+    {
+      "dataset": "COVERAGE200",
+      "N": 200,
+      "Teacher_routed": 29,
+      "contract_sha256": "77ab79d401bc38052970bb62b34821c3936a02d55b0fa79f00c21a21ccfa1f2c"
+    },
+    {
+      "dataset": "ISC2021",
+      "N": 200,
+      "Teacher_routed": 76,
+      "contract_sha256": "e0f79d02d8efc768595addc55e17e1e657d3ceaa91925d1553dfa998d552dcc5"
+    },
+    {
+      "dataset": "CLWD_controlled",
+      "N": 80,
+      "Teacher_routed": 24,
+      "contract_sha256": "e4e574a2af6e74af4750493eafffee9ecbb540c8ea5549db865b3a6f869c6c78"
+    },
+    {
+      "dataset": "LVW",
+      "N": 2000,
+      "Teacher_routed": 744,
+      "contract_sha256": "a4a9c697a506f41195c861d464dc68ef772e8d3d79e561463cbb590170c816f3"
+    },
+    {
+      "dataset": "IMD2020",
+      "N": 828,
+      "Teacher_routed": 129,
+      "contract_sha256": "bc025f001c0cc32a841d0b2b7baa46c8b87930819ff1b675601b01dc36d5061d"
+    }
+  ],
+  "master_contract": {
+    "path": "<PHASE2_STUDENT_ROOT>\\G4-S2B-F4_9SET_CANONICAL_MASTER_FINAL_LOCK\\PRF_EXTERNAL_9SET_CANONICAL_EVALUATION_CONTRACT_v1.jsonl",
+    "rows": 13401,
+    "sha256": "942ebcc3c92a6c4ccd480a4573bf4240360e2a33d37fd180991734b78e54766f"
+  }
+}
