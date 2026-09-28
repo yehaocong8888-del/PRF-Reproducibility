@@ -1,0 +1,36 @@
+﻿{
+  "title": "PRF for Structured Multi Evidence Arbitration of Aligned Image Pairs under Visual Distortions",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "access_right": "open",
+  "language": "eng",
+
+  "creators": [
+    {
+      "name": "Ye, Haocong",
+      "affiliation": "Faculty of Data Science, City University of Macau",
+      "orcid": "0009-0004-9106-1534"
+    },
+    {
+      "name": "Li, Yunhan",
+      "affiliation": "Faculty of Data Science, City University of Macau"
+    },
+    {
+      "name": "Wu, Gengshen",
+      "affiliation": "Faculty of Data Science, City University of Macau"
+    }
+  ],
+
+  "description": "Reproducibility package for Pair Review Filtering (PRF), including publication-facing code, frozen experimental assets, Student LoRA adapters, external validation, boundary-repair experiments, revision sensitivity analyses, computational-efficiency results, and representation-model baselines.",
+
+  "keywords": [
+    "Pair Review Filtering",
+    "PRF",
+    "vision-language models",
+    "multimodal learning",
+    "structured arbitration",
+    "image pair filtering",
+    "knowledge distillation",
+    "uncertainty-aware filtering"
+  ]
+}
